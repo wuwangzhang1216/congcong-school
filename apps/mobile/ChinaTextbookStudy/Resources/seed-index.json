@@ -831,6 +831,24 @@
       "hasStories": true
     },
     {
+      "id": "english-g5up-jingtong-2026",
+      "grade": 5,
+      "semester": "up",
+      "subject": "english",
+      "gradeName": "五年级",
+      "semesterName": "上册",
+      "subjectName": "英语",
+      "textbookName": "五年级上册（精通·2026秋版）",
+      "fullName": "人教版（精通）小学英语五年级上册（精通·2026秋版）",
+      "publisherLabel": "人教版（精通）",
+      "sourceEdition": "2022课标修订版 · 苗兴伟主编",
+      "editionLabel": "精通·2026秋版",
+      "unitsCount": 6,
+      "activitiesCount": 2,
+      "lessonsCount": 32,
+      "hasPassages": true
+    },
+    {
       "id": "english-g5up-54-luke",
       "grade": 5,
       "semester": "up",
@@ -1334,7 +1352,7 @@
       "lessonsCount": 36
     }
   ],
-  "generatedAt": "2026-10-29T01:06:26.567Z",
-  "totalLessons": 4448,
-  "totalQuestions": 27669
+  "generatedAt": "2026-11-02T03:48:09.899Z",
+  "totalLessons": 4480,
+  "totalQuestions": 27885
 }
