@@ -1,17 +1,21 @@
-# v1.8.2：长数字答题修复、资源增量更新与安装升级
+# v1.8.3：人教精通五上教材、语音与安装升级
 
-本版修复计算填空题超过 10 个字符无法完整输入的问题，屏幕数字键盘和实体键盘均可输入长答案，长数字可换行显示。新版安装器先校验本地资源，跳过完全一致的分包，支持 `--dry-run` 预览下载量、`--full-download` 强制全量更新；`--verify-only` 无需下载大型归档。包含 v1.8.1 的续学计时修复，教材、音频及 iOS 逐册包与 v1.8.0 相同，原成绩保留。
+本版新增人教版（精通）五年级上册（2026秋版），主编苗兴伟，根据2022年版课程标准修订。使用独立 ID `english-g5up-jingtong-2026`，在五年级英语中与 PEP 并列；不替换原教材，不迁移或清除原有成绩。
 
-v1.8.0已新增青岛版数学、科学各10册（小学1—5年级上下册），鲁科版英语6册（3—5年级上下册）。每册按核对后的原书目录编排，独立教材ID与六三制并列，不替换原58册教材或成绩。新增1,585个常规课时、244个单元挑战、375组英语听读，新增语音使用Edge，iOS按册提供AAC/M4A。原书版次为2010—2022年间，并非“2026最新版”；版次、印次、ISBN、来源指纹与目录见[逐册核对报告](five-four-2026-10-27/README.md)。资源包含完整84册，无需先安装旧版，无需AI API Key。
+包含6个单元、2节Revision、96条附录词汇、32节小课、216道配套练习和36道单元挑战。题目、选项、讲解及词汇听读所需1,044条音频全部提供；新增847条由Edge TTS生成（英文Aria、中文晓晓），其余197条复用既有音频。听读范围为单元词汇，不包含整册课文、歌曲或原页点读，详见[来源与范围](issue-62-jingtong-2026.md)。继承v1.8.2长数字输入与按分包增量更新、v1.8.1续学计时修复。无需AI API Key。
 
-**不用下载 Assets 中的全部附件。** 在线学习直接[打开课堂](https://d3nmsqi4n72idj.cloudfront.net/)；Web 用户使用安装器自动选择资源；iOS 用户在 App 内按册下载。手动离线下载的分类清单及逐册链接见[下载导航](https://github.com/wuwangzhang1216/congcong-school/releases/download/v1.8.2/DOWNLOADS.md)。主发布页仅保留入口和校验文件；新 Web 与源码 ZIP 位于 `v1.8.2-web-resources`；未变更的大型资源继续位于 `v1.8.0-web-resources`，iOS逐册包继续位于 `v1.8.0-ios-resources`。清单为复用附件注明原发布标签、大小及SHA-256，安装器自动选择，不重复上传191个未变更ZIP。Web 音频分为独立 ZIP，每个不超过 1.4 GB（十进制），按安装模式下载对应分包后直接解压，无需拼接。
+完整资源包含85册版本（71册当前、14册旧版兼容），4,480个常规课时、635个单元挑战、常规题27,885道、挑战题6,375道，另有1,317篇/组听读和284篇故事。五四制26册与既有内容保留。原书版次及核对范围见[五四制逐册报告](five-four-2026-10-27/README.md)。
+
+**不用下载 Assets 中的全部附件。** 在线学习直接[打开课堂](https://d3nmsqi4n72idj.cloudfront.net/)；Web使用安装器选择资源；手动离线下载见[下载导航](https://github.com/wuwangzhang1216/congcong-school/releases/download/v1.8.3/DOWNLOADS.md)。主发布页提供安装器、说明和校验入口；新Web、源码、数据、转换缓存及两个音频增补包位于 `v1.8.3-web-resources`，精通五上的两个iOS逐册包位于 `v1.8.3-ios-resources`。未变更的189个ZIP继续引用原发布页，清单逐包注明原标签、大小和SHA-256；不会重新上传或要求重复下载一致的旧资源。
+
+新增 `audio-original-jingtong-g5up-2026.zip` 和 `audio-web-jingtong-g5up-2026.zip` 为配套增补，**新装和升级都由安装器自动选择**，不是需要先装旧版的独立补丁。完整清单同时引用旧基础包，直接安装v1.8.3即可获得全部85册。所有音频ZIP均可独立解压，无需拼接。
 
 ## 最快使用：安装现成网站
 
-只需 Python 3.9+，无需 Node.js 或 FFmpeg。在 [Release](https://github.com/wuwangzhang1216/ChinaTextbookStudyFree/releases/tag/v1.8.2) 下载 `install-release.py`，执行：
+只需 Python 3.9+，无需 Node.js 或 FFmpeg。在 [Release](https://github.com/wuwangzhang1216/ChinaTextbookStudyFree/releases/tag/v1.8.3) 下载 `install-release.py`，执行：
 
 ```sh
-python3 install-release.py --tag v1.8.2 --mode static --root ChinaStudyFree-site
+python3 install-release.py --tag v1.8.3 --mode static --root ChinaStudyFree-site
 python3 -m http.server 8080 --directory ChinaStudyFree-site
 ```
 
@@ -21,10 +25,10 @@ python3 -m http.server 8080 --directory ChinaStudyFree-site
 
 ## 已有旧版：原目录升级
 
-先备份自定义文件或数据。增量更新需使用[仓库当前安装器](https://raw.githubusercontent.com/wuwangzhang1216/congcong-school/main/scripts/install-release.py)（可另存为 `install-release.py`）；已发布 v1.7.0 至 v1.8.1 附件中的旧安装器仍会全量下载。新版安装器兼容现有分包及清单，不要求重新发布资源。
+先备份自定义文件或数据。增量更新需使用[仓库当前安装器](https://raw.githubusercontent.com/wuwangzhang1216/congcong-school/main/scripts/install-release.py)（可另存为 `install-release.py`）；已发布 v1.7.0 至 v1.8.1 附件中的旧安装器仍会全量下载；v1.8.2安装器虽支持增量，默认目标仍是旧版，请换成本版安装器或显式指定 `--tag v1.8.3`。新版安装器兼容现有分包及清单，并会自动下载新增教材所需的数据、页面和音频增补包。
 
 ```sh
-python3 install-release.py --tag v1.8.2 --mode static --root /path/to/existing-site
+python3 install-release.py --tag v1.8.3 --mode static --root /path/to/existing-site
 ```
 
 默认执行**按分包增量更新**：只有包内全部文件均与目标版本一致时才跳过该包，不仅判断目录是否存在，也不依赖 `ASSETS-VERSION.json`。即使旧版没有安装记录，也可以复用一致的音频和图片；缺失、损坏、内容变化的文件会触发对应分包重新下载。比对需要读取本地资源，较慢磁盘可能需要几分钟。
@@ -32,7 +36,7 @@ python3 install-release.py --tag v1.8.2 --mode static --root /path/to/existing-s
 可以先预览所需包及总字节数（只获取清单，不下载资源包、不写入安装目录）：
 
 ```sh
-python3 install-release.py --tag v1.8.2 --mode static --root /path/to/existing-site --dry-run
+python3 install-release.py --tag v1.8.3 --mode static --root /path/to/existing-site --dry-run
 ```
 
 分包内只要有一个文件变化，就仍需下载整个分包；当前不提供跨版本的逐文件差量补丁。没有逐文件清单的旧 schema 1 发布仍全量安装。需要强制重新下载并安装全部所选包时加 `--full-download`。
@@ -42,7 +46,7 @@ python3 install-release.py --tag v1.8.2 --mode static --root /path/to/existing-s
 如果是源码部署，先备份本地代码修改；希望安装本版匹配源码与所有资源时执行：
 
 ```sh
-python3 install-release.py --tag v1.8.2 --with-source --root /path/to/ChinaTextbookStudyFree
+python3 install-release.py --tag v1.8.3 --with-source --root /path/to/ChinaTextbookStudyFree
 cd /path/to/ChinaTextbookStudyFree
 npm ci
 npm run build
@@ -55,7 +59,7 @@ npm run build
 需要 Node.js 20+、Python 3.9+、带 libmp3lame 的 FFmpeg（均加入 PATH）：
 
 ```sh
-python3 install-release.py --tag v1.8.2 --with-source --root ChinaTextbookStudyFree
+python3 install-release.py --tag v1.8.3 --with-source --root ChinaTextbookStudyFree
 cd ChinaTextbookStudyFree
 npm ci
 npm run build
@@ -66,11 +70,11 @@ python3 -m http.server 8080 --directory apps/web/out
 
 ## 离线安装与完整校验
 
-在[下载导航](https://github.com/wuwangzhang1216/congcong-school/releases/download/v1.8.2/DOWNLOADS.md)选择“现成静态网站”或“源码与完整资源”，只下载该模式列出的包至同一目录，另下载安装器、`manifest.json` 与 `files.jsonl`。Web 安装不需要 168个iOS逐册包。
+在[下载导航](https://github.com/wuwangzhang1216/congcong-school/releases/download/v1.8.3/DOWNLOADS.md)选择“现成静态网站”或“源码与完整资源”，只下载该模式列出的包至同一目录，另下载安装器、`manifest.json` 与 `files.jsonl`。Web 安装不需要170个iOS逐册包。
 
 ```sh
-python3 install-release.py --tag v1.8.2 --mode static --root ChinaStudyFree-site --archives-dir /path/to/downloads
-python3 install-release.py --tag v1.8.2 --mode static --root ChinaStudyFree-site --archives-dir /path/to/downloads --verify-only
+python3 install-release.py --tag v1.8.3 --mode static --root ChinaStudyFree-site --archives-dir /path/to/downloads
+python3 install-release.py --tag v1.8.3 --mode static --root ChinaStudyFree-site --archives-dir /path/to/downloads --verify-only
 ```
 
 源码目录校验使用 `--root /path/to/source`，省略 `--mode static`；如果安装过完整源码，同时加上 `--with-source`。
@@ -87,13 +91,13 @@ shasum -a 256 -c SHA256SUMS --ignore-missing
 
 ## 单独下载与覆盖资源
 
-[下载导航](https://github.com/wuwangzhang1216/congcong-school/releases/download/v1.8.2/DOWNLOADS.md)提供音频、数据、配图、课本原页和网站页面的独立下载链接。只需更新某类资源时，也可以让安装器自动选择、校验并覆盖该类资源，例如：
+[下载导航](https://github.com/wuwangzhang1216/congcong-school/releases/download/v1.8.3/DOWNLOADS.md)提供音频、数据、配图、课本原页和网站页面的独立下载链接。只需更新某类资源时，也可以让安装器自动选择、校验并覆盖该类资源，例如：
 
 ```sh
-# 静态站点：页面和配套 JSON 一起更新，保留现有音频及图片
-python3 install-release.py --tag v1.8.2 --mode static --root /path/to/existing-site --asset-kind web --asset-kind data
+# 静态站点：只适用于本地已装齐目标版音频的页面修补；首次升级v1.8.3请不要使用此筛选
+python3 install-release.py --tag v1.8.3 --mode static --root /path/to/existing-site --asset-kind web --asset-kind data
 # 源码部署：只更新配图
-python3 install-release.py --tag v1.8.2 --root /path/to/ChinaTextbookStudyFree --asset-kind story-images --asset-kind textbook-pages
+python3 install-release.py --tag v1.8.3 --root /path/to/ChinaTextbookStudyFree --asset-kind story-images --asset-kind textbook-pages
 ```
 
 可选资源类型及安装目录由目标版本清单决定，常用类型为 `audio-original`、`audio-web`、`data`、`story-images`、`textbook-pages`；静态站点另有 `web`，源码模式另有 `source-data`、`build-cache`。选择性更新不会检查未选资源是否匹配；若新页面或数据引用了新音频、图片，需要同步更新相关类型。一般升级建议省略 `--asset-kind`，让安装器检查全部资源并自动跳过一致的包。
@@ -105,7 +109,8 @@ python3 install-release.py --tag v1.8.2 --root /path/to/ChinaTextbookStudyFree -
 | 附件 | 内容与用途 |
 | --- | --- |
 | `audio-original-partNN.zip` | 原音频路径的兼容资源；每个 ZIP 含 `audio/` 顶层目录。历史 `.opus` 扩展名下可能是 Ogg/Opus 或 MP3，以实际内容为准 |
-| `audio-web-partNN.zip` | 浏览器 MP3与版本化文件名；本版逐字节复用v1.8.0音频 |
+| `audio-web-partNN.zip` | 浏览器MP3与版本化文件名；旧包逐字节复用，并自动安装精通五上增补包 |
+| `audio-original-jingtong-g5up-2026.zip` / `audio-web-jingtong-g5up-2026.zip` | 本版新增原路径音频和浏览器MP3；与基础分包一起由安装器安装 |
 | `data.zip` | 当前线上配套 JSON；手动解压到站点 `data/` |
 | `web-app.zip` | 当前线上页面、界面资源和服务工作线程；手动解压到站点根目录 |
 | `story-images.zip` / `textbook-pages.zip` | 手动解压到站点同名目录 |
@@ -119,7 +124,7 @@ python3 install-release.py --tag v1.8.2 --root /path/to/ChinaTextbookStudyFree -
 
 手动安装静态站点时，将全部音频 ZIP 解压到站点根目录，再按表中位置解压数据、页面和图片。安装器可以自动完成这些步骤及全部校验。
 
-本包保留14册历史教材路由：总计84册版本，当前展示70册，其中原有六三制58册、独立五四制26册。包含4,448个常规课时、629个单元挑战，常规题27,669道、挑战题6,339道，另有1,311篇/组课文和284篇故事。全部84册均提供iOS数据及AAC/M4A音频包，每本只需下载对应两包。原发布页、旧版下载地址和学习记录保留。
+本包保留14册历史教材路由，总计85册版本，当前展示71册，其中六三制59册、独立五四制26册。全部85册均提供逐册数据与AAC/M4A音频包；配套iOS源码已更新85册种子目录和逐包原发布标签解析，既有已安装App不会因Web发布自动更新客户端；手动下载按本版导航中的每册链接获取，新册与旧册可位于不同资源发布页。原发布页、旧版下载地址和学习记录保留。
 
 ## 题库保留与升级验收
 
@@ -137,6 +142,6 @@ python3 scripts/checks/content-retention.py --public apps/web/out
 
 旧版仍可从教材切换菜单进入，已选旧版时重新打开首页也保留该选择。新版课时、宝箱和朗读使用独立 ID，原成绩不会算入新版，也不会被清除。Web 更新只轮换页面及教材缓存，不访问或清空 localStorage/IndexedDB。
 
-本次不改写原教材题库或既有成绩；选择五四制教材后从独立路径开始学习。首次选书可切换“五四制/六三制”，六年级只提供六三制。原版教材仍可通过教材切换菜单进入。
+本次不改写原教材题库或既有成绩；选择精通五上或五四制教材后从独立路径开始学习。首次选书可切换“五四制/六三制”，六年级只提供六三制。原版教材仍可通过教材切换菜单进入。
 
 来源与验证范围见[五四制核对报告](five-four-2026-10-27/README.md)。#12中需要教师、儿童、真机和隔日学习效果配合的事项继续单独跟进。

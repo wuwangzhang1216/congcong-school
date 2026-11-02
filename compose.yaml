@@ -4,7 +4,7 @@ services:
     build:
       context: .
       args:
-        ASSETS_RELEASE: ${ASSETS_RELEASE:-v1.8.2}
+        ASSETS_RELEASE: ${ASSETS_RELEASE:-v1.8.3}
     ports:
       - "${WEB_BIND_ADDRESS:-127.0.0.1}:${WEB_PORT:-8080}:8080"
     restart: unless-stopped
