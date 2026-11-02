@@ -1,0 +1,722 @@
+{
+  "textbook": "（根据2022年版课程标准修订）义务教育教科书·英语 五年级上册（精通·2026秋版）",
+  "unit": "Putting things in order",
+  "unit_number": 4,
+  "unit_test": {
+    "title": "Putting things in order·配套练习",
+    "total_score": 350,
+    "time_minutes": 25,
+    "questions": [
+      {
+        "id": 40001,
+        "type": "choice",
+        "question": "在本单元的用法中，“its”表示什么？",
+        "options": [
+          "你的；你们的（单独使用）",
+          "他们的（后接名词）",
+          "我的（单独使用）",
+          "它的"
+        ],
+        "answer": "它的",
+        "explanation": "这里的 its 表示“它的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40002,
+        "type": "choice",
+        "question": "在本单元的用法中，“their”表示什么？",
+        "options": [
+          "我的（单独使用）",
+          "你的；你们的（单独使用）",
+          "他们的（后接名词）",
+          "它的"
+        ],
+        "answer": "他们的（后接名词）",
+        "explanation": "这里的 their 表示“他们的（后接名词）”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40003,
+        "type": "choice",
+        "question": "在本单元的用法中，“mine”表示什么？",
+        "options": [
+          "它的",
+          "我的（单独使用）",
+          "你的；你们的（单独使用）",
+          "他们的（后接名词）"
+        ],
+        "answer": "我的（单独使用）",
+        "explanation": "这里的 mine 表示“我的（单独使用）”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40004,
+        "type": "choice",
+        "question": "在本单元的用法中，“yours”表示什么？",
+        "options": [
+          "它的",
+          "我的（单独使用）",
+          "他们的（后接名词）",
+          "你的；你们的（单独使用）"
+        ],
+        "answer": "你的；你们的（单独使用）",
+        "explanation": "这里的 yours 表示“你的；你们的（单独使用）”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40005,
+        "type": "choice",
+        "question": "在本单元的用法中，“hers”表示什么？",
+        "options": [
+          "他们的（后接名词）",
+          "她的（单独使用）",
+          "我的（单独使用）",
+          "它的"
+        ],
+        "answer": "她的（单独使用）",
+        "explanation": "这里的 hers 表示“她的（单独使用）”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40006,
+        "type": "choice",
+        "question": "在本单元的用法中，“ours”表示什么？",
+        "options": [
+          "他们的（后接名词）",
+          "我们的（单独使用）",
+          "我的（单独使用）",
+          "它的"
+        ],
+        "answer": "我们的（单独使用）",
+        "explanation": "这里的 ours 表示“我们的（单独使用）”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40007,
+        "type": "choice",
+        "question": "在本单元的用法中，“theirs”表示什么？",
+        "options": [
+          "他们的（后接名词）",
+          "他们的（单独使用）",
+          "我的（单独使用）",
+          "它的"
+        ],
+        "answer": "他们的（单独使用）",
+        "explanation": "这里的 theirs 表示“他们的（单独使用）”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40008,
+        "type": "choice",
+        "question": "在本单元的用法中，“take care of”表示什么？",
+        "options": [
+          "他们的（后接名词）",
+          "它的",
+          "我的（单独使用）",
+          "照管；照顾"
+        ],
+        "answer": "照管；照顾",
+        "explanation": "这里的 take care of 表示“照管；照顾”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40009,
+        "type": "choice",
+        "question": "在本单元的用法中，“whose”表示什么？",
+        "options": [
+          "谁的",
+          "它的",
+          "我的（单独使用）",
+          "他们的（后接名词）"
+        ],
+        "answer": "谁的",
+        "explanation": "这里的 whose 表示“谁的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40010,
+        "type": "choice",
+        "question": "在本单元的用法中，“put ... in order”表示什么？",
+        "options": [
+          "他们的（后接名词）",
+          "它的",
+          "我的（单独使用）",
+          "把……整理好"
+        ],
+        "answer": "把……整理好",
+        "explanation": "这里的 put ... in order 表示“把……整理好”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40011,
+        "type": "choice",
+        "question": "在本单元的用法中，“photo”表示什么？",
+        "options": [
+          "照片",
+          "我的（单独使用）",
+          "它的",
+          "他们的（后接名词）"
+        ],
+        "answer": "照片",
+        "explanation": "这里的 photo 表示“照片”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40012,
+        "type": "choice",
+        "question": "在本单元的用法中，“best”表示什么？",
+        "options": [
+          "它的",
+          "他们的（后接名词）",
+          "我的（单独使用）",
+          "最好的"
+        ],
+        "answer": "最好的",
+        "explanation": "这里的 best 表示“最好的”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40013,
+        "type": "choice",
+        "question": "在本单元的用法中，“beside”表示什么？",
+        "options": [
+          "它的",
+          "我的（单独使用）",
+          "在……旁边",
+          "他们的（后接名词）"
+        ],
+        "answer": "在……旁边",
+        "explanation": "这里的 beside 表示“在……旁边”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40014,
+        "type": "choice",
+        "question": "在本单元的用法中，“him”表示什么？",
+        "options": [
+          "我的（单独使用）",
+          "他们的（后接名词）",
+          "它的",
+          "他（宾格）"
+        ],
+        "answer": "他（宾格）",
+        "explanation": "这里的 him 表示“他（宾格）”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40015,
+        "type": "choice",
+        "question": "在本单元的用法中，“cousin”表示什么？",
+        "options": [
+          "他们的（后接名词）",
+          "堂兄弟姐妹或表兄弟姐妹",
+          "它的",
+          "我的（单独使用）"
+        ],
+        "answer": "堂兄弟姐妹或表兄弟姐妹",
+        "explanation": "这里的 cousin 表示“堂兄弟姐妹或表兄弟姐妹”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40016,
+        "type": "choice",
+        "question": "在本单元的用法中，“behind”表示什么？",
+        "options": [
+          "他们的（后接名词）",
+          "在……后面",
+          "我的（单独使用）",
+          "它的"
+        ],
+        "answer": "在……后面",
+        "explanation": "这里的 behind 表示“在……后面”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40017,
+        "type": "choice",
+        "question": "在本单元的用法中，“twin”表示什么？",
+        "options": [
+          "他们的（后接名词）",
+          "我的（单独使用）",
+          "它的",
+          "双胞胎之一"
+        ],
+        "answer": "双胞胎之一",
+        "explanation": "这里的 twin 表示“双胞胎之一”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40018,
+        "type": "choice",
+        "question": "补全句子：This is my pencil. It is ____.",
+        "options": [
+          "I",
+          "mine",
+          "my",
+          "me"
+        ],
+        "answer": "mine",
+        "explanation": "mine 单独代替 my pencil，后面不再接名词。",
+        "knowledge_point": "物品归属与物主代词",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40019,
+        "type": "choice",
+        "question": "补全句子：These are their books. The books are ____.",
+        "options": [
+          "they",
+          "them",
+          "theirs",
+          "their"
+        ],
+        "answer": "theirs",
+        "explanation": "theirs 可以单独代替 their books。",
+        "knowledge_point": "物品归属与物主代词",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40020,
+        "type": "choice",
+        "question": "补全句子：This is ____ bag.（她的包）",
+        "options": [
+          "hers",
+          "she",
+          "mine",
+          "her"
+        ],
+        "answer": "her",
+        "explanation": "空格后有名词 bag，因此使用 her。",
+        "knowledge_point": "物品归属与物主代词",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40021,
+        "type": "choice",
+        "question": "补全句子：Is this your ruler? — Yes, it is ____.",
+        "options": [
+          "my",
+          "I",
+          "me",
+          "mine"
+        ],
+        "answer": "mine",
+        "explanation": "回答时用 mine 代替 my ruler。",
+        "knowledge_point": "物品归属与物主代词",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40022,
+        "type": "choice",
+        "question": "想问这个包是谁的，应说什么？",
+        "options": [
+          "What is your job?",
+          "Who bag is this?",
+          "Where do you work?",
+          "Whose bag is this?"
+        ],
+        "answer": "Whose bag is this?",
+        "explanation": "Whose 询问物品属于谁。",
+        "knowledge_point": "物品归属与物主代词",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40023,
+        "type": "choice",
+        "question": "选择正确表达“这只玩具是它的”的句子。",
+        "options": [
+          "This is its. toy.",
+          "This is it’s toy.",
+          "This is it toy.",
+          "This is its toy."
+        ],
+        "answer": "This is its toy.",
+        "explanation": "its 是物主代词；it’s 是 it is 的缩写。",
+        "knowledge_point": "物品归属与物主代词",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40024,
+        "type": "choice",
+        "question": "The girl beside him is my cousin. 女孩在哪里？",
+        "options": [
+          "在他旁边",
+          "在房间外",
+          "在他后面",
+          "在楼上"
+        ],
+        "answer": "在他旁边",
+        "explanation": "beside him 表示在他旁边。",
+        "knowledge_point": "位置、人物关系与整理",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40025,
+        "type": "choice",
+        "question": "补全句子：The boy is behind ____.（他）",
+        "options": [
+          "he",
+          "him",
+          "his",
+          "he’s"
+        ],
+        "answer": "him",
+        "explanation": "behind 是介词，后面使用宾格 him。",
+        "knowledge_point": "位置、人物关系与整理",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40026,
+        "type": "choice",
+        "question": "Please put your things in order. 要求你做什么？",
+        "options": [
+          "把所有物品扔掉",
+          "把物品整理好",
+          "找一份工作",
+          "去国外旅行"
+        ],
+        "answer": "把物品整理好",
+        "explanation": "put ... in order 表示把……整理好。",
+        "knowledge_point": "位置、人物关系与整理",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40027,
+        "type": "choice",
+        "question": "Please take care of your books. 意思是什么？",
+        "options": [
+          "请把书放在雨里",
+          "请保管好你的书",
+          "请不要再读书",
+          "请把你的书全送掉"
+        ],
+        "answer": "请保管好你的书",
+        "explanation": "take care of 表示照管、照顾。",
+        "knowledge_point": "位置、人物关系与整理",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40028,
+        "type": "choice",
+        "question": "They are twins. 说明这两个人是什么关系？",
+        "options": [
+          "双胞胎",
+          "同一座建筑",
+          "老师和学生",
+          "警察和医生"
+        ],
+        "answer": "双胞胎",
+        "explanation": "twins 是 twin 的复数，表示双胞胎。",
+        "knowledge_point": "位置、人物关系与整理",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40029,
+        "type": "choice",
+        "question": "This is our photo. It is ____. 选择正确词。",
+        "options": [
+          "us",
+          "ours",
+          "our",
+          "we"
+        ],
+        "answer": "ours",
+        "explanation": "ours 可单独代替 our photo。",
+        "knowledge_point": "位置、人物关系与整理",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40101,
+        "type": "choice",
+        "question": "哪组单词在本单元作为同组语音例词学习？",
+        "options": [
+          "hour, sour",
+          "hour, four",
+          "hour, your",
+          "sour, pour"
+        ],
+        "answer": "hour, sour",
+        "explanation": "正确选项是 hour, sour。our、hour、sour 中的字母组合可放在一起听读比较；four、pour、your 中的 our 是另一组。",
+        "knowledge_point": "our的不同读音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40102,
+        "type": "choice",
+        "question": "four 的 our 与哪个词中的 our 同组？",
+        "options": [
+          "sour",
+          "house",
+          "hour",
+          "pour"
+        ],
+        "answer": "pour",
+        "explanation": "正确选项是 pour。our、hour、sour 中的字母组合可放在一起听读比较；four、pour、your 中的 our 是另一组。",
+        "knowledge_point": "our的不同读音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40103,
+        "type": "choice",
+        "question": "your 的 our 与哪个词中的 our 同组？",
+        "options": [
+          "four",
+          "mouth",
+          "sour",
+          "hour"
+        ],
+        "answer": "four",
+        "explanation": "正确选项是 four。our、hour、sour 中的字母组合可放在一起听读比较；four、pour、your 中的 our 是另一组。",
+        "knowledge_point": "our的不同读音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40104,
+        "type": "choice",
+        "question": "哪个单词的开头 h 不发音？",
+        "options": [
+          "hour",
+          "house",
+          "hill",
+          "hotel"
+        ],
+        "answer": "hour",
+        "explanation": "正确选项是 hour。our、hour、sour 中的字母组合可放在一起听读比较；four、pour、your 中的 our 是另一组。",
+        "knowledge_point": "our的不同读音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40105,
+        "type": "choice",
+        "question": "sour 与哪一个单词属于本单元的同组例词？",
+        "options": [
+          "four",
+          "your",
+          "pour",
+          "hour"
+        ],
+        "answer": "hour",
+        "explanation": "正确选项是 hour。our、hour、sour 中的字母组合可放在一起听读比较；four、pour、your 中的 our 是另一组。",
+        "knowledge_point": "our的不同读音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 40106,
+        "type": "choice",
+        "question": "哪组单词中的 our 在本单元作为同组例词？",
+        "options": [
+          "your, hour, sour",
+          "four, pour, your",
+          "four, hour, sour",
+          "pour, hour, sour"
+        ],
+        "answer": "four, pour, your",
+        "explanation": "正确选项是 four, pour, your。our、hour、sour 中的字母组合可放在一起听读比较；four、pour、your 中的 our 是另一组。",
+        "knowledge_point": "our的不同读音",
+        "difficulty": 1,
+        "score": 10
+      }
+    ]
+  },
+  "exam": {
+    "title": "Putting things in order·单元挑战",
+    "total_score": 60,
+    "time_minutes": 10,
+    "questions": [
+      {
+        "id": 49001,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“它的”？",
+        "options": [
+          "their",
+          "mine",
+          "yours",
+          "its"
+        ],
+        "answer": "its",
+        "explanation": "its 对应“它的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 49002,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“他们的（后接名词）”？",
+        "options": [
+          "mine",
+          "their",
+          "its",
+          "yours"
+        ],
+        "answer": "their",
+        "explanation": "their 对应“他们的（后接名词）”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 49003,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“我的（单独使用）”？",
+        "options": [
+          "its",
+          "mine",
+          "their",
+          "yours"
+        ],
+        "answer": "mine",
+        "explanation": "mine 对应“我的（单独使用）”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 49004,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“你的；你们的（单独使用）”？",
+        "options": [
+          "mine",
+          "its",
+          "yours",
+          "their"
+        ],
+        "answer": "yours",
+        "explanation": "yours 对应“你的；你们的（单独使用）”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 49005,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“她的（单独使用）”？",
+        "options": [
+          "hers",
+          "their",
+          "mine",
+          "its"
+        ],
+        "answer": "hers",
+        "explanation": "hers 对应“她的（单独使用）”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 49006,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“我们的（单独使用）”？",
+        "options": [
+          "ours",
+          "its",
+          "their",
+          "mine"
+        ],
+        "answer": "ours",
+        "explanation": "ours 对应“我们的（单独使用）”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "单元词汇与短语（1）",
+      "core_concept": "its：它的；their：他们的（后接名词）；mine：我的（单独使用）；yours：你的；你们的（单独使用）；hers：她的（单独使用）；ours：我们的（单独使用）；theirs：他们的（单独使用）；take care of：照管；照顾；whose：谁的。",
+      "key_formula": "",
+      "tips": "先在语境中理解词义，再听读并辨认英文。",
+      "common_mistakes": [
+        "注意单词、短语的含义和使用场景，不按字母外形猜词义。"
+      ]
+    },
+    {
+      "point": "单元词汇与短语（2）",
+      "core_concept": "put ... in order：把……整理好；photo：照片；best：最好的；beside：在……旁边；him：他（宾格）；cousin：堂兄弟姐妹或表兄弟姐妹；behind：在……后面；twin：双胞胎之一。",
+      "key_formula": "",
+      "tips": "先在语境中理解词义，再听读并辨认英文。",
+      "common_mistakes": [
+        "注意单词、短语的含义和使用场景，不按字母外形猜词义。"
+      ]
+    },
+    {
+      "point": "物品归属与物主代词",
+      "core_concept": "my、your、her、our、their 后接名词；mine、yours、hers、ours、theirs 可单独代替“某人的物品”。",
+      "key_formula": "",
+      "tips": "their books 可以说成 theirs；不能说 mine book。his 可接名词或单独使用。",
+      "common_mistakes": [
+        "their books 可以说成 theirs；不能说 mine book。his 可接名词或单独使用。"
+      ]
+    },
+    {
+      "point": "位置、人物关系与整理",
+      "core_concept": "beside 表示在旁边，behind 表示在后面；用 take care of 和 put ... in order 表达照管与整理。",
+      "key_formula": "",
+      "tips": "him 是宾格，用在 beside、behind 等介词后；不要混淆 theirs 和 their。",
+      "common_mistakes": [
+        "him 是宾格，用在 beside、behind 等介词后；不要混淆 theirs 和 their。"
+      ]
+    },
+    {
+      "point": "our的不同读音",
+      "core_concept": "our、hour、sour 中的字母组合可放在一起听读比较；four、pour、your 中的 our 是另一组。",
+      "key_formula": "",
+      "tips": "注意 hour 中 h 不发音；our 的读法随口音和语境可能变化，要结合录音。",
+      "common_mistakes": [
+        "注意 hour 中 h 不发音；our 的读法随口音和语境可能变化，要结合录音。"
+      ]
+    }
+  ]
+}

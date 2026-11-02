@@ -33,7 +33,9 @@ def main():
         return json.loads(get(path))
 
     books = json.loads((ROOT / "content/editions/2026/catalog.json").read_text())["books"]
-    assert len(data("/data/index.json")["books"]) == 45 + len(books)
+    parallel = json.loads((ROOT / "content/editions/five-four/catalog.json").read_text())["books"]
+    jingtong = int((ROOT / "content/editions/jingtong/english-g5up-2026.json").is_file())
+    assert len(data("/data/index.json")["books"]) == 45 + len(books) + len(parallel) + jingtong
     for book in books:
         for book_id in (book["id"], book["legacyId"]):
             get(f"/book/{book_id}/")

@@ -1,0 +1,706 @@
+{
+  "textbook": "（根据2022年版课程标准修订）义务教育教科书·英语 五年级上册（精通·2026秋版）",
+  "unit": "Be yourself",
+  "unit_number": 6,
+  "unit_test": {
+    "title": "Be yourself·配套练习",
+    "total_score": 340,
+    "time_minutes": 25,
+    "questions": [
+      {
+        "id": 60001,
+        "type": "choice",
+        "question": "在本单元的用法中，“kind”表示什么？",
+        "options": [
+          "友善的；体贴的",
+          "可爱的",
+          "瘦的",
+          "文静的"
+        ],
+        "answer": "友善的；体贴的",
+        "explanation": "这里的 kind 表示“友善的；体贴的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60002,
+        "type": "choice",
+        "question": "在本单元的用法中，“lovely”表示什么？",
+        "options": [
+          "文静的",
+          "友善的；体贴的",
+          "可爱的",
+          "瘦的"
+        ],
+        "answer": "可爱的",
+        "explanation": "这里的 lovely 表示“可爱的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60003,
+        "type": "choice",
+        "question": "在本单元的用法中，“quiet”表示什么？",
+        "options": [
+          "瘦的",
+          "友善的；体贴的",
+          "文静的",
+          "可爱的"
+        ],
+        "answer": "文静的",
+        "explanation": "这里的 quiet 表示“文静的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60004,
+        "type": "choice",
+        "question": "在本单元的用法中，“thin”表示什么？",
+        "options": [
+          "文静的",
+          "可爱的",
+          "友善的；体贴的",
+          "瘦的"
+        ],
+        "answer": "瘦的",
+        "explanation": "这里的 thin 表示“瘦的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60005,
+        "type": "choice",
+        "question": "在本单元的用法中，“active”表示什么？",
+        "options": [
+          "可爱的",
+          "活跃的",
+          "文静的",
+          "友善的；体贴的"
+        ],
+        "answer": "活跃的",
+        "explanation": "这里的 active 表示“活跃的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60006,
+        "type": "choice",
+        "question": "在本单元的用法中，“strong”表示什么？",
+        "options": [
+          "友善的；体贴的",
+          "强壮的",
+          "可爱的",
+          "文静的"
+        ],
+        "answer": "强壮的",
+        "explanation": "这里的 strong 表示“强壮的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60007,
+        "type": "choice",
+        "question": "在本单元的用法中，“stronger”表示什么？",
+        "options": [
+          "可爱的",
+          "更强壮的",
+          "友善的；体贴的",
+          "文静的"
+        ],
+        "answer": "更强壮的",
+        "explanation": "这里的 stronger 表示“更强壮的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60008,
+        "type": "choice",
+        "question": "在本单元的用法中，“taller”表示什么？",
+        "options": [
+          "更高的",
+          "文静的",
+          "友善的；体贴的",
+          "可爱的"
+        ],
+        "answer": "更高的",
+        "explanation": "这里的 taller 表示“更高的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60009,
+        "type": "choice",
+        "question": "在本单元的用法中，“more”表示什么？",
+        "options": [
+          "友善的；体贴的",
+          "文静的",
+          "可爱的",
+          "更（构成比较级）"
+        ],
+        "answer": "更（构成比较级）",
+        "explanation": "这里的 more 表示“更（构成比较级）”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60010,
+        "type": "choice",
+        "question": "在本单元的用法中，“careful”表示什么？",
+        "options": [
+          "可爱的",
+          "细心的",
+          "友善的；体贴的",
+          "文静的"
+        ],
+        "answer": "细心的",
+        "explanation": "这里的 careful 表示“细心的”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60011,
+        "type": "choice",
+        "question": "在本单元的用法中，“popular”表示什么？",
+        "options": [
+          "文静的",
+          "友善的；体贴的",
+          "可爱的",
+          "受欢迎的"
+        ],
+        "answer": "受欢迎的",
+        "explanation": "这里的 popular 表示“受欢迎的”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60012,
+        "type": "choice",
+        "question": "在本单元的用法中，“hear”表示什么？",
+        "options": [
+          "友善的；体贴的",
+          "文静的",
+          "可爱的",
+          "听见"
+        ],
+        "answer": "听见",
+        "explanation": "这里的 hear 表示“听见”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60013,
+        "type": "choice",
+        "question": "在本单元的用法中，“everyone”表示什么？",
+        "options": [
+          "文静的",
+          "每个人",
+          "友善的；体贴的",
+          "可爱的"
+        ],
+        "answer": "每个人",
+        "explanation": "这里的 everyone 表示“每个人”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60014,
+        "type": "choice",
+        "question": "在本单元的用法中，“special”表示什么？",
+        "options": [
+          "特别的",
+          "文静的",
+          "友善的；体贴的",
+          "可爱的"
+        ],
+        "answer": "特别的",
+        "explanation": "这里的 special 表示“特别的”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60015,
+        "type": "choice",
+        "question": "在本单元的用法中，“a lot”表示什么？",
+        "options": [
+          "很多",
+          "可爱的",
+          "文静的",
+          "友善的；体贴的"
+        ],
+        "answer": "很多",
+        "explanation": "这里的 a lot 表示“很多”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60016,
+        "type": "choice",
+        "question": "在本单元的用法中，“Be yourself!”表示什么？",
+        "options": [
+          "做你自己！",
+          "文静的",
+          "可爱的",
+          "友善的；体贴的"
+        ],
+        "answer": "做你自己！",
+        "explanation": "这里的 Be yourself! 表示“做你自己！”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60017,
+        "type": "choice",
+        "question": "想问一个人的性格特点，应说什么？",
+        "options": [
+          "Whose bag is this?",
+          "Where does she work?",
+          "What does she like?",
+          "What is she like?"
+        ],
+        "answer": "What is she like?",
+        "explanation": "What is she like? 询问特点；What does she like? 询问喜好。",
+        "knowledge_point": "描述性格与外貌",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60018,
+        "type": "choice",
+        "question": "She is kind and helps everyone. 描述她怎样？",
+        "options": [
+          "想去银行工作",
+          "来自澳大利亚",
+          "很安静而不帮助人",
+          "友善并帮助大家"
+        ],
+        "answer": "友善并帮助大家",
+        "explanation": "kind 表示友善、体贴，helps everyone 表示帮助每个人。",
+        "knowledge_point": "描述性格与外貌",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60019,
+        "type": "choice",
+        "question": "He is quiet. 这里 quiet 的意思是什么？",
+        "options": [
+          "疲倦的",
+          "瘦的",
+          "出名的",
+          "文静的"
+        ],
+        "answer": "文静的",
+        "explanation": "quiet 描述文静的性格。",
+        "knowledge_point": "描述性格与外貌",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60020,
+        "type": "choice",
+        "question": "She is active in class. 这里 active 表示什么？",
+        "options": [
+          "建筑物",
+          "活跃的",
+          "纸张",
+          "安静的"
+        ],
+        "answer": "活跃的",
+        "explanation": "active 表示活跃的，in class 表示在课堂上。",
+        "knowledge_point": "描述性格与外貌",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60021,
+        "type": "choice",
+        "question": "Be yourself! 是怎样的鼓励？",
+        "options": [
+          "必须和所有人完全一样",
+          "不许尝试新事物",
+          "做你自己，欣赏自己的特点",
+          "只能比较身高"
+        ],
+        "answer": "做你自己，欣赏自己的特点",
+        "explanation": "Be yourself! 鼓励认识和接纳自己的特点。",
+        "knowledge_point": "描述性格与外貌",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60022,
+        "type": "choice",
+        "question": "Everyone is special. 这句话强调什么？",
+        "options": [
+          "所有人必须同一性格",
+          "没有人有优点",
+          "只有最高的人最好",
+          "每个人都有自己的独特之处"
+        ],
+        "answer": "每个人都有自己的独特之处",
+        "explanation": "everyone 是每个人，special 表示特别的。",
+        "knowledge_point": "描述性格与外貌",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60023,
+        "type": "choice",
+        "question": "补全句子：Ben is ____ than Tom.（更高）",
+        "options": [
+          "tall",
+          "more tall",
+          "tallest",
+          "taller"
+        ],
+        "answer": "taller",
+        "explanation": "比较两个人的身高用 taller than。",
+        "knowledge_point": "比较差异与认识自己",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60024,
+        "type": "choice",
+        "question": "strong 的比较级是什么？",
+        "options": [
+          "stronging",
+          "strongest",
+          "more strong",
+          "stronger"
+        ],
+        "answer": "stronger",
+        "explanation": "strong 的比较级在词尾加 er，构成 stronger。",
+        "knowledge_point": "比较差异与认识自己",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60025,
+        "type": "choice",
+        "question": "careful 的比较级应如何表达？",
+        "options": [
+          "most careful",
+          "carefuler",
+          "more careful",
+          "carefuling"
+        ],
+        "answer": "more careful",
+        "explanation": "careful 的比较级用 more careful。",
+        "knowledge_point": "比较差异与认识自己",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60026,
+        "type": "choice",
+        "question": "补全句子：Amy is ____ popular than before.",
+        "options": [
+          "popularer",
+          "many",
+          "muchest",
+          "more"
+        ],
+        "answer": "more",
+        "explanation": "popular 的比较级用 more popular。",
+        "knowledge_point": "比较差异与认识自己",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60027,
+        "type": "choice",
+        "question": "I hear you. 这里 hear 表示什么？",
+        "options": [
+          "工作",
+          "整理",
+          "睡觉",
+          "听见"
+        ],
+        "answer": "听见",
+        "explanation": "hear 表示听见，注意它和 here（这里）的区别。",
+        "knowledge_point": "比较差异与认识自己",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60028,
+        "type": "choice",
+        "question": "I learn a lot from my friends. a lot 在这里表示什么？",
+        "options": [
+          "很多",
+          "一张照片",
+          "一个国家",
+          "在旁边"
+        ],
+        "answer": "很多",
+        "explanation": "learn a lot 表示学到很多。",
+        "knowledge_point": "比较差异与认识自己",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60101,
+        "type": "choice",
+        "question": "lie 中 ie 的读音与哪个词中的 ie 相同？",
+        "options": [
+          "piece",
+          "pie",
+          "chief",
+          "field"
+        ],
+        "answer": "pie",
+        "explanation": "正确选项是 pie。lie、pie、tie 中 ie 的读音与字母 I 的名称音相同；diet、quiet、science 要注意相邻元音分音节。",
+        "knowledge_point": "ie及相邻元音的拼读",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60102,
+        "type": "choice",
+        "question": "tie 中 ie 的读音与哪个词中的 ie 相同？",
+        "options": [
+          "field",
+          "chief",
+          "lie",
+          "piece"
+        ],
+        "answer": "lie",
+        "explanation": "正确选项是 lie。lie、pie、tie 中 ie 的读音与字母 I 的名称音相同；diet、quiet、science 要注意相邻元音分音节。",
+        "knowledge_point": "ie及相邻元音的拼读",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60103,
+        "type": "choice",
+        "question": "哪组词中的 ie 都与 pie 的 ie 同音？",
+        "options": [
+          "piece, field",
+          "lie, tie",
+          "piece, chief",
+          "field, chief"
+        ],
+        "answer": "lie, tie",
+        "explanation": "正确选项是 lie, tie。lie、pie、tie 中 ie 的读音与字母 I 的名称音相同；diet、quiet、science 要注意相邻元音分音节。",
+        "knowledge_point": "ie及相邻元音的拼读",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60104,
+        "type": "choice",
+        "question": "哪个词表示“文静的”，通常读两个音节？",
+        "options": [
+          "quiet",
+          "quit",
+          "quick",
+          "quite"
+        ],
+        "answer": "quiet",
+        "explanation": "正确选项是 quiet。lie、pie、tie 中 ie 的读音与字母 I 的名称音相同；diet、quiet、science 要注意相邻元音分音节。",
+        "knowledge_point": "ie及相邻元音的拼读",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60105,
+        "type": "choice",
+        "question": "哪个词中的 ie 与 tie 的 ie 不同？",
+        "options": [
+          "piece",
+          "lie",
+          "die",
+          "pie"
+        ],
+        "answer": "piece",
+        "explanation": "正确选项是 piece。lie、pie、tie 中 ie 的读音与字母 I 的名称音相同；diet、quiet、science 要注意相邻元音分音节。",
+        "knowledge_point": "ie及相邻元音的拼读",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 60106,
+        "type": "choice",
+        "question": "拼读 science 时，开头 sci 部分的元音与哪个词的元音相同？",
+        "options": [
+          "four",
+          "tie",
+          "feet",
+          "head"
+        ],
+        "answer": "tie",
+        "explanation": "正确选项是 tie。lie、pie、tie 中 ie 的读音与字母 I 的名称音相同；diet、quiet、science 要注意相邻元音分音节。",
+        "knowledge_point": "ie及相邻元音的拼读",
+        "difficulty": 1,
+        "score": 10
+      }
+    ]
+  },
+  "exam": {
+    "title": "Be yourself·单元挑战",
+    "total_score": 60,
+    "time_minutes": 10,
+    "questions": [
+      {
+        "id": 69001,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“友善的；体贴的”？",
+        "options": [
+          "lovely",
+          "quiet",
+          "kind",
+          "thin"
+        ],
+        "answer": "kind",
+        "explanation": "kind 对应“友善的；体贴的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 69002,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“可爱的”？",
+        "options": [
+          "kind",
+          "quiet",
+          "lovely",
+          "thin"
+        ],
+        "answer": "lovely",
+        "explanation": "lovely 对应“可爱的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 69003,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“文静的”？",
+        "options": [
+          "thin",
+          "lovely",
+          "quiet",
+          "kind"
+        ],
+        "answer": "quiet",
+        "explanation": "quiet 对应“文静的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 69004,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“瘦的”？",
+        "options": [
+          "thin",
+          "lovely",
+          "kind",
+          "quiet"
+        ],
+        "answer": "thin",
+        "explanation": "thin 对应“瘦的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 69005,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“活跃的”？",
+        "options": [
+          "quiet",
+          "lovely",
+          "active",
+          "kind"
+        ],
+        "answer": "active",
+        "explanation": "active 对应“活跃的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 69006,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“强壮的”？",
+        "options": [
+          "lovely",
+          "strong",
+          "kind",
+          "quiet"
+        ],
+        "answer": "strong",
+        "explanation": "strong 对应“强壮的”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "单元词汇与短语（1）",
+      "core_concept": "kind：友善的；体贴的；lovely：可爱的；quiet：文静的；thin：瘦的；active：活跃的；strong：强壮的；stronger：更强壮的；taller：更高的。",
+      "key_formula": "",
+      "tips": "先在语境中理解词义，再听读并辨认英文。",
+      "common_mistakes": [
+        "注意单词、短语的含义和使用场景，不按字母外形猜词义。"
+      ]
+    },
+    {
+      "point": "单元词汇与短语（2）",
+      "core_concept": "more：更（构成比较级）；careful：细心的；popular：受欢迎的；hear：听见；everyone：每个人；special：特别的；a lot：很多；Be yourself!：做你自己！。",
+      "key_formula": "",
+      "tips": "先在语境中理解词义，再听读并辨认英文。",
+      "common_mistakes": [
+        "注意单词、短语的含义和使用场景，不按字母外形猜词义。"
+      ]
+    },
+    {
+      "point": "描述性格与外貌",
+      "core_concept": "用 What is ... like? 询问人物特点，用 kind、quiet、active、thin、strong 等描述。",
+      "key_formula": "",
+      "tips": "What is she like? 问特点；What does she like? 问喜好；不用高矮强弱评价人的价值。",
+      "common_mistakes": [
+        "What is she like? 问特点；What does she like? 问喜好；不用高矮强弱评价人的价值。"
+      ]
+    },
+    {
+      "point": "比较差异与认识自己",
+      "core_concept": "用 stronger、taller 比较强壮程度和身高，用 more careful、more popular 构成多音节形容词的比较级。",
+      "key_formula": "",
+      "tips": "careful 的比较级用 more careful；比较不同特征时不把外貌差异等同于优劣。",
+      "common_mistakes": [
+        "careful 的比较级用 more careful；比较不同特征时不把外貌差异等同于优劣。"
+      ]
+    },
+    {
+      "point": "ie及相邻元音的拼读",
+      "core_concept": "lie、pie、tie 中 ie 的读音与字母 I 的名称音相同；diet、quiet、science 要注意相邻元音分音节。",
+      "key_formula": "",
+      "tips": "quiet 不要看成 quite；听读时注意 quiet 的两个音节。",
+      "common_mistakes": [
+        "quiet 不要看成 quite；听读时注意 quiet 的两个音节。"
+      ]
+    }
+  ]
+}

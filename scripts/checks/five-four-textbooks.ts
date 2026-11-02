@@ -14,7 +14,7 @@ const books: Book[] = read(`${root}/data/index.json`).books;
 const parallel = books.filter(b => b.schoolSystem === '5-4');
 assert.equal(parallel.length, 26);
 assert.deepEqual(parallel.map(b => b.id).sort(), catalog.books.map((b: any) => b.id).sort());
-assert.equal(books.filter(b => !b.supersededBy && b.schoolSystem !== '5-4').length, 44);
+assert.equal(books.filter(b => !b.supersededBy && b.schoolSystem !== '5-4').length, 44 + (existsSync('content/editions/jingtong/english-g5up-2026.json') ? 1 : 0));
 const legacyIds = new Set(books.filter(b => b.schoolSystem !== '5-4').map(b => b.id));
 let lessons = 0, questions = 0, readings = 0;
 const audio = (value: string | undefined) => {

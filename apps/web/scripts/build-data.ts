@@ -39,6 +39,9 @@ const ROOT = path.resolve(__dirname, "..");
 const REPO_ROOT = path.resolve(ROOT, "..", "..");
 const OUTPUT_SRC = path.resolve(REPO_ROOT, "output");
 const PASSAGES_SRC = path.resolve(REPO_ROOT, "data", "passages");
+// Small reviewed word lists are versioned with the code; large reading packs
+// continue to come from the installed release resources.
+const BUNDLED_PASSAGES_SRC = path.resolve(REPO_ROOT, "content", "passages");
 const STORIES_SRC = path.resolve(REPO_ROOT, "data", "stories");
 const DATA_DST = path.resolve(ROOT, "public", "data");
 const AUDIO_ROOT = path.resolve(ROOT, "public", "audio");
@@ -235,108 +238,107 @@ async function loadPagesMapping(bookId: string): Promise<Map<string, PagesInfo>>
 
 async function buildPassages(): Promise<Set<string>> {
   const withPassages = new Set<string>();
-  if (!existsSync(PASSAGES_SRC)) {
-    console.log("  [跳过] data/passages/ 不存在，无课文听读数据");
-    return withPassages;
-  }
-  const subjectDirs = await fs.readdir(PASSAGES_SRC);
+  const sources = [PASSAGES_SRC, BUNDLED_PASSAGES_SRC].filter(root => existsSync(root));
   let totalBooks = 0;
   let totalPassages = 0;
   let totalSentences = 0;
   let audioHit = 0;
   let passageWithImage = 0;
 
-  for (const subject of subjectDirs) {
-    const subjectDir = path.join(PASSAGES_SRC, subject);
-    let stat;
-    try {
-      stat = await fs.stat(subjectDir);
-    } catch {
-      continue;
-    }
-    if (!stat.isDirectory()) continue;
-
-    const files = (await fs.readdir(subjectDir)).filter(
-      f => f.endsWith(".json") && !f.endsWith(".draft.json"),
-    );
-    for (const f of files) {
-      const srcPath = path.join(subjectDir, f);
-      let doc: {
-        bookId: string;
-        subject: SubjectId;
-        textbook: string;
-        passages: Array<{
-          id: string;
-          unitNumber: number | null;
-          lessonNumber: number;
-          title: string;
-          kind: Passage["kind"];
-          curriculumRole?: Passage["curriculumRole"];
-          author?: string | null;
-          language: "Chinese" | "English";
-          sentences: string[];
-          page_hint?: number | null;
-        }>;
-      };
+  for (const source of sources) {
+    for (const subject of await fs.readdir(source)) {
+      const subjectDir = path.join(source, subject);
+      let stat;
       try {
-        doc = JSON.parse(await fs.readFile(srcPath, "utf-8"));
-      } catch (e) {
-        console.warn(`  ⚠️  解析失败 ${f}: ${(e as Error).message}`);
+        stat = await fs.stat(subjectDir);
+      } catch {
         continue;
       }
+      if (!stat.isDirectory()) continue;
 
-      const bookId = doc.bookId;
-      if (!bookId || !Array.isArray(doc.passages) || doc.passages.length === 0) {
-        continue;
-      }
-
-      const pagesMap = await loadPagesMapping(bookId);
-
-      const enriched: Passage[] = doc.passages.map(p => {
-        const info = pagesMap.get(p.id) ?? { pdfPage: null, pages: [] };
-        const pageImages = info.pages.map(
-          n => `/textbook-pages/${bookId}/p${n}.jpg`,
-        );
-        if (pageImages.length > 0) passageWithImage++;
-        return {
-          id: p.id,
-          bookId,
-          unitNumber: p.unitNumber,
-          lessonNumber: p.lessonNumber,
-          title: p.title,
-          kind: p.kind,
-          curriculumRole: p.curriculumRole,
-          author: p.author ?? null,
-          language: p.language,
-          pageHint: p.page_hint ?? null,
-          pdfPage: info.pdfPage,
-          pageImages,
-          sentences: p.sentences.map(s => {
-            const audio = audioFor(s, /^chinese-g1(?:up|down)(?:-|$)/.test(bookId));
-            if (audio) audioHit++;
-            totalSentences++;
-            return { text: s, audio };
-          }),
-        };
-      });
-
-      const bookDir = path.join(DATA_DST, "books", bookId);
-      await fs.mkdir(bookDir, { recursive: true });
-      const out: BookPassages = {
-        bookId,
-        subject: doc.subject,
-        textbook: doc.textbook,
-        passages: enriched,
-      };
-      await fs.writeFile(
-        path.join(bookDir, "passages.json"),
-        JSON.stringify(out, null, 2),
-        "utf-8",
+      const files = (await fs.readdir(subjectDir)).filter(
+        f => f.endsWith(".json") && !f.endsWith(".draft.json"),
       );
+      for (const f of files) {
+        const srcPath = path.join(subjectDir, f);
+        let doc: {
+          bookId: string;
+          subject: SubjectId;
+          textbook: string;
+          passages: Array<{
+            id: string;
+            unitNumber: number | null;
+            lessonNumber: number;
+            title: string;
+            kind: Passage["kind"];
+            curriculumRole?: Passage["curriculumRole"];
+            author?: string | null;
+            language: "Chinese" | "English";
+            sentences: string[];
+            page_hint?: number | null;
+          }>;
+        };
+        try {
+          doc = JSON.parse(await fs.readFile(srcPath, "utf-8"));
+        } catch (e) {
+          console.warn(`  ⚠️  解析失败 ${f}: ${(e as Error).message}`);
+          continue;
+        }
 
-      withPassages.add(bookId);
-      totalBooks++;
-      totalPassages += enriched.length;
+        const bookId = doc.bookId;
+        if (!bookId || !Array.isArray(doc.passages) || doc.passages.length === 0) {
+          continue;
+        }
+        if (withPassages.has(bookId)) throw new Error(`Duplicate reading source: ${bookId}`);
+
+        const pagesMap = await loadPagesMapping(bookId);
+
+        const enriched: Passage[] = doc.passages.map(p => {
+          const info = pagesMap.get(p.id) ?? { pdfPage: null, pages: [] };
+          const pageImages = info.pages.map(
+            n => `/textbook-pages/${bookId}/p${n}.jpg`,
+          );
+          if (pageImages.length > 0) passageWithImage++;
+          return {
+            id: p.id,
+            bookId,
+            unitNumber: p.unitNumber,
+            lessonNumber: p.lessonNumber,
+            title: p.title,
+            kind: p.kind,
+            curriculumRole: p.curriculumRole,
+            author: p.author ?? null,
+            language: p.language,
+            pageHint: p.page_hint ?? null,
+            pdfPage: info.pdfPage,
+            pageImages,
+            sentences: p.sentences.map(s => {
+              const audio = audioFor(s, /^chinese-g1(?:up|down)(?:-|$)/.test(bookId));
+              if (audio) audioHit++;
+              totalSentences++;
+              return { text: s, audio };
+            }),
+          };
+        });
+
+        const bookDir = path.join(DATA_DST, "books", bookId);
+        await fs.mkdir(bookDir, { recursive: true });
+        const out: BookPassages = {
+          bookId,
+          subject: doc.subject,
+          textbook: doc.textbook,
+          passages: enriched,
+        };
+        await fs.writeFile(
+          path.join(bookDir, "passages.json"),
+          JSON.stringify(out, null, 2),
+          "utf-8",
+        );
+
+        withPassages.add(bookId);
+        totalBooks++;
+        totalPassages += enriched.length;
+      }
     }
   }
 
@@ -571,9 +573,10 @@ async function processTextbook(
   const bookId = outline.edition ? `${parsed.bookId}-${outline.edition}` : parsed.bookId;
   const editionSuffix = outline.editionLabel ? `（${outline.editionLabel}）` : "";
   if (outline.requiredPassageTitles?.length) {
-    const sourcePath = path.join(PASSAGES_SRC, subject.id, `${bookId}.json`);
-    if (!existsSync(sourcePath)) {
-      throw new Error(`Missing revised reading source: ${sourcePath}. Install the matching textbook resource pack.`);
+    const sourcePath = [PASSAGES_SRC, BUNDLED_PASSAGES_SRC]
+      .map(root => path.join(root, subject.id, `${bookId}.json`)).find(file => existsSync(file));
+    if (!sourcePath) {
+      throw new Error(`Missing revised reading source: ${bookId}. Install the matching textbook resource pack.`);
     }
     const readings = JSON.parse(await fs.readFile(sourcePath, "utf8")) as BookPassages;
     const titles = new Set(readings.passages.map(p => p.title));
