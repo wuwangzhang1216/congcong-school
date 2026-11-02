@@ -86,7 +86,9 @@ def main():
         raise ValueError(f'Exported routes omitted from deployment: {omitted_routes}')
     index = json.loads((args.destination/'data/index.json').read_text())
     active = [book for book in index['books'] if not book.get('supersededBy')]
-    assert len([book for book in active if book.get('schoolSystem','6-3') == '6-3']) == 44
+    parallel_jingtong = ROOT/'content/editions/jingtong/english-g5up-2026.json'
+    expected_six_three = 44 + int(parallel_jingtong.is_file())
+    assert len([book for book in active if book.get('schoolSystem','6-3') == '6-3']) == expected_six_three
     parallel_catalog = ROOT/'content/editions/five-four/catalog.json'
     expected_parallel = {book['id'] for book in json.loads(parallel_catalog.read_text())['books']} if parallel_catalog.is_file() else set()
     assert {book['id'] for book in active if book.get('schoolSystem') == '5-4'} == expected_parallel
