@@ -54,6 +54,7 @@ export default function GradeBooks({ books }: { books: Book[] }) {
                   {book.gradeName}{book.semesterName}
                   {book.editionLabel && <span className="ml-1 text-xs">（{book.editionLabel}）</span>}
                 </div>
+                {book.publisherLabel && <div className="text-sm font-bold text-ink-light mt-1">{book.publisherLabel}</div>}
                 <div className="text-sm text-ink-light mt-1">
                   {book.unitsCount} 单元{book.activitiesCount ? ` · ${book.activitiesCount} 个实践活动` : ""} · {book.lessonsCount} 节小课
                 </div>

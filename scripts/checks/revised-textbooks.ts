@@ -13,10 +13,11 @@ const read = (name: string) => JSON.parse(readFileSync(name, 'utf8'));
 const catalog = read('content/editions/2026/catalog.json');
 const index: {books: Book[]} = read(`${root}/data/index.json`);
 const current = index.books.filter(b => !b.supersededBy && b.schoolSystem !== '5-4');
+const jingtong = existsSync('content/editions/jingtong/english-g5up-2026.json') ? 1 : 0;
 const parallelFile = 'content/editions/five-four/catalog.json';
 const parallel = existsSync(parallelFile) ? read(parallelFile).books.length : 0;
-assert.equal(current.length, 44);
-assert.equal(index.books.length, 45 + catalog.books.length + parallel, '44 current six-three + retained legacy editions + parallel five-four');
+assert.equal(current.length, 44 + jingtong);
+assert.equal(index.books.length, 45 + catalog.books.length + parallel + jingtong, '44 current six-three + retained legacy editions + parallel five-four');
 let lessons = 0, questions = 0, readings = 0;
 const asset = (url: string) => assert.ok(existsSync(path.join(root, url.split('?')[0])), `Missing asset ${url}`);
 function checkLesson(lesson: Lesson, knowledgeRequired = true) {
