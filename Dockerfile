@@ -13,7 +13,13 @@ RUN npm ci --no-audit --no-fund
 # Keep the large, verified resource installation cached across UI changes.
 COPY scripts/install-release.py scripts/install-release.py
 ARG ASSETS_RELEASE=v1.8.3
-RUN python3 scripts/install-release.py --tag "$ASSETS_RELEASE"
+ARG ASSETS_DOWNLOAD_TIMEOUT=30
+ARG ASSETS_DOWNLOAD_ATTEMPTS=5
+RUN --mount=type=cache,id=china-study-release-downloads,target=/var/cache/china-study-assets,sharing=locked \
+    python3 scripts/install-release.py --tag "$ASSETS_RELEASE" \
+    --cache-dir /var/cache/china-study-assets \
+    --download-timeout "$ASSETS_DOWNLOAD_TIMEOUT" \
+    --download-attempts "$ASSETS_DOWNLOAD_ATTEMPTS"
 
 COPY packages/core packages/core
 COPY apps/web apps/web
