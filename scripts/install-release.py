@@ -2,12 +2,15 @@
 """Install or upgrade verified release resources, source, or a ready-to-serve site."""
 import argparse
 import hashlib
+import http.client
 import json
 import os
 import re
 import shutil
 import tarfile
 import tempfile
+import time
+import urllib.error
 import urllib.request
 import zipfile
 from pathlib import Path, PurePosixPath
@@ -29,6 +32,100 @@ def sha256(path):
         for chunk in iter(lambda: stream.read(4 * 1024 * 1024), b''):
             h.update(chunk)
     return h.hexdigest()
+
+
+class DownloadError(Exception):
+    """An incomplete or invalid HTTP response that can be retried."""
+
+
+def download_file(url, path, expected=None, timeout=30, attempts=5,
+                  retry_delay=1, progress_interval=5, reuse=True):
+    """Stream to a partial file; only publish complete, verified downloads.
+
+    Resume only fingerprinted resources. Metadata without a fingerprint is
+    always refreshed; an HTTP 200 ignoring Range safely replaces the partial.
+    """
+    partial = path.with_name(path.name + '.part')
+    if reuse and expected and matches_file(path, expected):
+        print(f'Using verified download cache: {path.name}', flush=True)
+        return
+    if not reuse:
+        partial.unlink(missing_ok=True)
+    for attempt in range(1, attempts + 1):
+        offset = partial.stat().st_size if expected and partial.exists() else 0
+        if expected and offset >= expected['bytes']:
+            if reuse and matches_file(partial, expected):
+                os.replace(partial, path)
+                return
+            partial.unlink()
+            offset = 0
+        print(f'Downloading {path.name} (attempt {attempt}/{attempts}, '
+              f'resume at {offset:,} bytes)…', flush=True)
+        request = urllib.request.Request(url, headers={'Range': f'bytes={offset}-'} if offset else {})
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                total = expected['bytes'] if expected else None
+                if response.status == 206:
+                    match = re.fullmatch(r'bytes (\d+)-(\d+)/(\d+)', response.headers.get('Content-Range', ''))
+                    if (not match or int(match[1]) != offset or int(match[2]) != int(match[3]) - 1
+                            or (total is not None and int(match[3]) != total)):
+                        partial.unlink(missing_ok=True)
+                        raise DownloadError('Invalid Content-Range; restarting download')
+                    total = int(match[3])
+                elif response.status == 200:
+                    offset = 0
+                else:
+                    raise DownloadError(f'Unexpected HTTP status: {response.status}')
+                length = response.headers.get('Content-Length')
+                if length is not None:
+                    response_total = offset + int(length)
+                    if total is not None and response_total != total:
+                        raise DownloadError(f'Unexpected Content-Length: {length}')
+                    total = response_total
+                received = offset
+                started = last_progress = time.monotonic()
+
+                def progress():
+                    size = f'{received:,}' + (f'/{total:,} bytes ({received / total:.1%})' if total else ' bytes')
+                    rate = (received - offset) / max(time.monotonic() - started, 0.001)
+                    print(f'  {path.name}: {size}; {rate / 1024:.0f} KiB/s', flush=True)
+
+                with partial.open('ab' if offset else 'wb') as output:
+                    # read1 returns available bytes instead of waiting for a
+                    # large buffer to fill, so even slow links report progress.
+                    while chunk := response.read1(64 * 1024):
+                        output.write(chunk)
+                        received += len(chunk)
+                        if total is not None and received > total:
+                            raise DownloadError('Download exceeds expected size')
+                        if time.monotonic() - last_progress >= progress_interval:
+                            progress()
+                            last_progress = time.monotonic()
+                if total is not None and received != total:
+                    raise DownloadError(f'Incomplete download: got {received:,} of {total:,} bytes')
+                progress()
+            if expected and not matches_file(partial, expected):
+                partial.unlink(missing_ok=True)
+                raise DownloadError('Size/SHA-256 mismatch; restarting download')
+            os.replace(partial, path)
+            return
+        except (OSError, urllib.error.URLError, http.client.HTTPException, DownloadError) as error:
+            retryable = True
+            if isinstance(error, urllib.error.HTTPError):
+                if error.code == 416:
+                    partial.unlink(missing_ok=True)
+                elif error.code not in (408, 429, 500, 502, 503, 504):
+                    retryable = False
+                error.close()
+            if not retryable or attempt == attempts:
+                raise RuntimeError(
+                    f'Download failed for {path.name} after {attempt} attempts: {error}. '
+                    f'URL: {url}. Check access to GitHub release assets; rerun to resume '
+                    'with --cache-dir, or use --archives-dir for an offline install.'
+                ) from error
+            delay = min(retry_delay * 2 ** (attempt - 1), 10)
+            print(f'Retry {path.name} in {delay:g}s: {error}', flush=True)
+            time.sleep(delay)
 
 
 def safe_name(name):
@@ -199,12 +296,18 @@ def main():
     parser.add_argument('--root', type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument('--mode', choices=['source', 'static'], default='source')
     parser.add_argument('--with-source', action='store_true', help='Also replace source files; back up local edits first')
-    parser.add_argument('--archives-dir', type=Path, help='Use already downloaded archives and manifest')
+    cache_options = parser.add_mutually_exclusive_group()
+    cache_options.add_argument('--archives-dir', type=Path, help='Use already downloaded archives and manifest (offline)')
+    cache_options.add_argument('--cache-dir', type=Path, help='Keep verified downloads and partial files here for subsequent runs')
+    parser.add_argument('--download-timeout', type=float, default=30, help='Connection/read timeout in seconds (default: 30)')
+    parser.add_argument('--download-attempts', type=int, default=5, help='Maximum attempts per download (default: 5)')
     parser.add_argument('--verify-only', action='store_true', help='Verify installed files against the inventory without downloading packages or writing')
     parser.add_argument('--full-download', action='store_true', help='Download and reinstall all selected packages, even if local files match')
     parser.add_argument('--dry-run', action='store_true', help='Check local files and show required packages without installing')
     parser.add_argument('--asset-kind', action='append', help='Install only selected resource kinds (for example source-data for CI)')
     args = parser.parse_args()
+    if not 0 < args.download_timeout < float('inf') or args.download_attempts < 1:
+        parser.error('--download-timeout must be positive and finite; --download-attempts must be at least 1')
     safe_name(args.tag)
     if args.tag == 'latest':
         with urllib.request.urlopen('https://api.github.com/repos/wuwangzhang1216/ChinaTextbookStudyFree/releases/latest', timeout=60) as response:
@@ -216,13 +319,17 @@ def main():
     root = args.root.resolve()
     with tempfile.TemporaryDirectory(prefix='china-study-assets-') as temporary:
         cache = args.archives_dir.resolve() if args.archives_dir else Path(temporary)
+        if args.cache_dir:
+            cache = args.cache_dir.resolve() / args.tag
+            cache.mkdir(parents=True, exist_ok=True)
         base = f'{RELEASE_ROOT}/{args.tag}'
 
-        def download(name, location=None):
+        def download(name, location=None, expected=None):
             safe_name(name)
             if not args.archives_dir:
-                print(f'Downloading {name}…', flush=True)
-                urllib.request.urlretrieve((location or base) + '/' + name, cache / name)
+                download_file((location or base) + '/' + name, cache / name, expected,
+                              timeout=args.download_timeout, attempts=args.download_attempts,
+                              reuse=not args.full_download)
 
         download('manifest.json')
         manifest = json.loads((cache / 'manifest.json').read_text(encoding='utf-8'))
@@ -236,7 +343,7 @@ def main():
             if set(args.asset_kind) != {asset.get('kind') for asset, _ in selected}:
                 raise ValueError('Requested asset kind is absent or unavailable in this installation mode')
         if manifest['schema_version'] == 2:
-            download(manifest['file_inventory']['name'])
+            download(manifest['file_inventory']['name'], expected=manifest['file_inventory'])
         inventory = read_inventory(cache, manifest, selected)
         if args.verify_only:
             if inventory is None:
@@ -262,7 +369,7 @@ def main():
         # Check every required package before extracting or changing any installed file.
         for item, _ in pending:
             name = item['name']
-            download(name, asset_base(manifest, args.tag, item))
+            download(name, asset_base(manifest, args.tag, item), expected=item)
             path = cache / name
             if path.stat().st_size != item['bytes'] or sha256(path) != item['sha256']:
                 raise ValueError(f'Size/SHA-256 mismatch: {name}')

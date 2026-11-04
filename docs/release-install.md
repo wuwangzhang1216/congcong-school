@@ -68,6 +68,20 @@ python3 -m http.server 8080 --directory apps/web/out
 
 `web-source.zip` 同时提供匹配源码，可单独解压到新目录；ZIP 内直接是仓库文件，没有额外顶层目录。源码构建复用包内音频和已校验的转换缓存，不调用在线 TTS。构建会再次检查音频；缓存不匹配时重新转换，而不是信任旧音频。生成数据会应用已验证的版本化音频地址，避免浏览器复用旧 GPT 语音。
 
+## 下载进度、重试与续传
+
+使用仓库当前安装器时，在线下载每约 5 秒输出已接收字节数、百分比（服务器或清单提供总大小时）和速度。默认连接/读取超时为 30 秒，每个文件最多尝试 5 次，并在尝试之间短暂退避；`--download-timeout` 和 `--download-attempts` 可调整这些值。`files.jsonl` 本身也可能超过 100 MB，下载该清单时会同样显示进度、重试和校验。
+
+需要在退出后继续下载时，指定可写的持久缓存目录：
+
+```sh
+python3 install-release.py --tag v1.8.3 --mode static --root ChinaStudyFree-site --cache-dir /path/to/download-cache
+```
+
+失败后重跑同一命令即可使用保留的 `.part` 断点；已完成的文件只有大小和 SHA-256 均与目标清单一致才会复用。服务器忽略续传请求时从头下载，校验失败时丢弃坏文件再重试。缓存按 tag 分目录保存；`manifest.json` 每次重新获取，避免复用过期元数据。`--full-download` 会重新下载所有所选包并安装，跳过已完成的下载缓存。
+
+`--cache-dir` 用于在线下载，不能与离线 `--archives-dir` 同时使用。省略时仍会在同一次运行中重试和续传，但临时下载文件会在退出后清理。下载重试耗尽后会明确报错，保持安装目录不变；持续无法访问 GitHub 时可使用下方离线流程。Docker 构建自动启用持久下载缓存，详见 [Docker 下载排查](docker.md#下载缓慢中断或看起来卡住issue-65)。
+
 ## 离线安装与完整校验
 
 在[下载导航](https://github.com/wuwangzhang1216/congcong-school/releases/download/v1.8.3/DOWNLOADS.md)选择“现成静态网站”或“源码与完整资源”，只下载该模式列出的包至同一目录，另下载安装器、`manifest.json` 与 `files.jsonl`。Web 安装不需要170个iOS逐册包。

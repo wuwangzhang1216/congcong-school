@@ -6,6 +6,7 @@ on:
       - 'packages/core/**'
       - 'scripts/checks/**'
       - 'scripts/install-release.py'
+      - 'Dockerfile'
       - 'scripts/release-download-guide.py'
       - 'output/**/quizzes/**'
       - 'output/**/outlines/**'
@@ -32,6 +33,7 @@ jobs:
       - run: npm run check:visual-controls
       - name: Release installer and platform grouping
         run: |
+          python3 scripts/checks/release-download.py
           python3 scripts/checks/release-installer.py
           python3 scripts/checks/release-v2.py
           python3 scripts/checks/release-organization.py

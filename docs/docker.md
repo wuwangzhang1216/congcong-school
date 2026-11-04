@@ -19,6 +19,29 @@ docker compose up -d --no-build --wait --wait-timeout 120
 
 镜像包含四科题库、课文、故事、配图、原音频及 Web MP3；运行阶段只有 Nginx，无需业务后端或数据库。代码、构建工具和环境密钥不进入运行镜像。
 
+## 下载缓慢、中断或看起来卡住（issue #65）
+
+`Downloading files.jsonl` 是在下载逐文件校验清单；v1.8.3 的清单约 114 MB，随后还有大型资源包。旧安装器只打印文件名，网络中断时可能等待很久后报 `ContentTooShortError`。请先获取当前 `main` 中的安装器和 Dockerfile，再重新构建；无需修改资源版本或先停止现有容器。
+
+```sh
+git pull --ff-only origin main
+docker compose --progress plain build --build-arg ASSETS_RELEASE=v1.8.3
+```
+
+新版安装器每约 5 秒输出已下载字节数、百分比和速度；连接或读取连续 30 秒无响应会触发重试，每个文件最多尝试 5 次。传输中断后使用 HTTP Range 续传；服务器不支持 Range 时安全地从头下载。下载完成仍须通过清单规定的大小和 SHA-256 校验，才会解压安装。
+
+Docker 使用 BuildKit 下载缓存保留已校验文件和 `.part` 断点；构建失败后，在同一 builder 上重跑原命令即可继续。无需使用 `--no-cache`，也不要清理 builder 缓存；下载缓存独立于普通构建层，并按资源版本隔离。缓存会占用额外磁盘空间，Docker 清理构建缓存后需重新下载。[缓存挂载说明](https://docs.docker.com/build/cache/optimize/#use-cache-mounts)
+
+若网络需要更长超时或更多重试，可以调整：
+
+```sh
+docker compose --progress plain build --build-arg ASSETS_RELEASE=v1.8.3 --build-arg ASSETS_DOWNLOAD_TIMEOUT=60 --build-arg ASSETS_DOWNLOAD_ATTEMPTS=8
+```
+
+持续失败时，日志会给出出错附件、下载地址和失败原因。请检查 Docker 构建环境到 GitHub Release 附件服务器的连接及代理配置；宿主机浏览器能访问不代表构建容器也能访问。GitHub 完全不可达时，可参考[离线安装](release-install.md#离线安装与完整校验)，在联网环境下载同版本资源，在本机完成生产构建后使用本文的 `prebuilt` 目标打包。
+
+`Docker Compose is configured to build using Bake, but buildx isn't installed` 是构建工具配置提示；issue #65 的实际失败发生在附件下载不完整。新版缓存挂载需要 BuildKit，建议安装与 Docker 版本匹配的 [Buildx 插件](https://docs.docker.com/build/install-buildx/)；可用 `docker buildx version` 检查。
+
 ## 从旧版升级
 
 升级前备份自定义代码，在原项目根目录执行以下命令，并保留原来的 `.env`、Compose 项目名和访问协议、域名/IP、端口；如原先使用 `-p`、`-f` 等参数，以下每条 `docker compose` 命令都沿用这些参数。构建完成后再替换容器，浏览器学习记录继续保存在同一地址下。无需先停止旧容器；构建成功后由 Compose 替换为新镜像。`--build-arg` 明确选择新版材料，即使旧 `.env` 中还配置了其他 `ASSETS_RELEASE` 也会使用本版。

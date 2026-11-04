@@ -99,10 +99,14 @@ with tempfile.TemporaryDirectory() as temporary:
     original['assets'][0]['release_tag'] = 'fixture-old'
     (cache/'manifest.json').write_text(json.dumps(original))
     urls = []
-    def retrieve(url, destination):
+    def retrieve(request, timeout):
+        url = request.full_url
         urls.append(url)
-        shutil.copyfile(cache/url.rsplit('/', 1)[1], destination)
-    with patch.object(sys, 'argv', ['installer', '--tag', 'fixture', '--mode', 'static', '--root', str(tmp/'remote-install')]), patch.object(installer.urllib.request, 'urlretrieve', retrieve):
+        response = (cache / url.rsplit('/', 1)[1]).open('rb')
+        response.status = 200
+        response.headers = {'Content-Length': str((cache / url.rsplit('/', 1)[1]).stat().st_size)}
+        return response
+    with patch.object(sys, 'argv', ['installer', '--tag', 'fixture', '--mode', 'static', '--root', str(tmp/'remote-install')]), patch.object(installer.urllib.request, 'urlopen', retrieve):
         installer.main()
     assert any('/fixture-old/'+assets[0]['name'] in url for url in urls)
     assert any('/fixture-new/web-app.zip' in url for url in urls)
@@ -148,11 +152,16 @@ with tempfile.TemporaryDirectory() as temporary:
     # release URLs are requested, rather than merely checking installed output.
     def online(target, mode='static', extra=()):
         requested = []
-        def retrieve(url, destination):
+        def retrieve(request, timeout):
+            url = request.full_url
             requested.append(url)
-            shutil.copyfile(cache / url.rsplit('/', 1)[1], destination)
+            path = cache / url.rsplit('/', 1)[1]
+            response = path.open('rb')
+            response.status = 200
+            response.headers = {'Content-Length': str(path.stat().st_size)}
+            return response
         argv = ['install-release.py', '--tag', 'fixture', '--root', str(target), '--mode', mode, *extra]
-        with patch.object(sys, 'argv', argv), patch.object(installer.urllib.request, 'urlretrieve', retrieve):
+        with patch.object(sys, 'argv', argv), patch.object(installer.urllib.request, 'urlopen', retrieve):
             installer.main()
         return requested
 
@@ -172,6 +181,22 @@ with tempfile.TemporaryDirectory() as temporary:
                                          ['audio-web-part01.zip', 'audio-original-part02.zip']]
     assert online(upgrade, extra=['--verify-only']) == metadata
     assert online(source, mode='source', extra=['--with-source']) == metadata
+    # Download cache survives a fresh install in another root, but never trusts
+    # stale metadata or a corrupt cached archive. Full download bypasses it.
+    download_cache = tmp / 'download-cache'
+    cached_target = tmp / 'cached-target'
+    cache_args = ['--cache-dir', str(download_cache)]
+    all_downloads = metadata + [installer.RELEASE_ROOT + '/fixture/' + a['name']
+                                for a, _ in installer.install_plan(json.loads((cache / 'manifest.json').read_text()), 'static')]
+    assert online(cached_target, extra=cache_args) == all_downloads
+    shutil.rmtree(cached_target)
+    assert online(cached_target, extra=cache_args) == metadata[:1]
+    corrupt_cache = download_cache / 'fixture/audio-web-part01.zip'
+    corrupt_cache.write_bytes(b'x' * corrupt_cache.stat().st_size)
+    shutil.rmtree(cached_target)
+    assert online(cached_target, extra=cache_args) == metadata[:1] + [installer.RELEASE_ROOT + '/fixture/audio-web-part01.zip']
+    assert online(cached_target, extra=cache_args + ['--full-download']) == all_downloads
+    run(tmp / 'conflicting-cache-options', extra=cache_args, success=False)
     # Incremental preflight also verifies all required packages before writing.
     (upgrade / 'audio/aa/1.mp3').write_bytes(b'bad web 1')
     (upgrade / 'audio/aa/2.mp3').unlink()
