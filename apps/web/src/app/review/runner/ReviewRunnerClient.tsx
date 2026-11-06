@@ -465,23 +465,22 @@ export function ReviewRunnerClient() {
       {/* 题目区 */}
       <div className="lesson-body flex flex-col items-center justify-start">
         <div className="w-full max-w-md lg:max-w-2xl">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={`${current.key}-${solvedCount}-${queue.length}`}
-              initial={{ x: 12, y: 4, opacity: 0 }}
-              animate={{ x: 0, y: 0, opacity: 1 }}
-              exit={{ x: -12, y: 0, opacity: 0 }}
-              transition={uiMotion.enter}
-            >
-              <QuestionRenderer
-                question={current.question}
-                answer={answer}
-                phase={phase}
-                isCorrect={isCorrect}
-                onChange={handleAnswerChange}
-              />
-            </motion.div>
-          </AnimatePresence>
+          {/* Mount the next question immediately. Nested option animations can
+              keep an exiting question mounted and block a waiting transition. */}
+          <motion.div
+            key={`${current.key}-${solvedCount}-${queue.length}`}
+            initial={prefersReduced ? false : { x: 12, y: 4, opacity: 0 }}
+            animate={{ x: 0, y: 0, opacity: 1 }}
+            transition={uiMotion.enter}
+          >
+            <QuestionRenderer
+              question={current.question}
+              answer={answer}
+              phase={phase}
+              isCorrect={isCorrect}
+              onChange={handleAnswerChange}
+            />
+          </motion.div>
         </div>
       </div>
 
