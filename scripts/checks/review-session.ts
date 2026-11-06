@@ -107,3 +107,19 @@ assert.deepEqual(
   parseReviewSession(JSON.stringify(editionRound), "due"), editionRound,
   "current textbook editions retain review sessions across refresh",
 );
+
+const fiveFourId = "g1up-54-qingdao-u101-kp1";
+const fiveFourItem = { ...item, key: `${fiveFourId}:1`, lessonId: fiveFourId };
+const mixedRound = {
+  ...newReviewSession([fiveFourItem, editionItem], "due"),
+  pending: [editionItem.key],
+  solved: 1,
+  answer: "18",
+  phase: "checked" as const,
+  isCorrect: true,
+  attempts: [[fiveFourItem.key, true], [editionItem.key, true]] as [string, boolean][],
+};
+const mixedSaved = parseReviewSession(JSON.stringify(mixedRound), "due");
+assert(mixedSaved, "a completed Five-Four question must not invalidate the saved round");
+assert.deepEqual(restoreReviewSession(mixedSaved, [fiveFourItem, editionItem]), mixedRound,
+  "refresh preserves the queue, solved count, feedback and first attempts in a mixed-edition round");
