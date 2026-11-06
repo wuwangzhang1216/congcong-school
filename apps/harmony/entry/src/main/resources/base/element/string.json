@@ -1,0 +1,8 @@
+{
+  "string": [
+    { "name": "app_name", "value": "聪聪学堂" },
+    { "name": "module_desc", "value": "小学全科离线学习" },
+    { "name": "EntryAbility_desc", "value": "聪聪学堂学习应用" },
+    { "name": "microphone_permission_reason", "value": "跟读课文时用于录制本地朗读音频，不会上传。" }
+  ]
+}

@@ -298,6 +298,10 @@ open ChinaTextbookStudy.xcodeproj
 
 更多上架相关细节见 [`apps/mobile/APPSTORE.md`](apps/mobile/APPSTORE.md)。
 
+### HarmonyOS 实验适配
+
+基于 PR #8 的 ArkTS + ArkWeb 离线适配已对齐当前资源格式，提供版本绑定、MP3 分包和主机回归。**仍待 API 23 SDK 构建及手机/平板/2in1 验收，尚未发布 HAP。** 准备资源、构建入口与验证边界见 [HarmonyOS 说明](apps/harmony/README.md)。
+
 ### 5. （可选）运行数据生成 Pipeline
 
 本次新增26册的版次、目录、来源与审校范围见[五四制核对报告](docs/five-four-2026-10-27/README.md)；原题库恢复的历史记录见[旧版审计](docs/content-audit-v1.4.3.md)。语文课外阅读的历史难度校准与修订流程见 [内容质量审计与升级说明](https://github.com/wuwangzhang1216/ChinaTextbookStudyFree/blob/codex/publish-tested-web/docs/content-quality-review.md)。
