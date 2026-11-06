@@ -45,13 +45,10 @@ export async function loadReviewLessons(
 ): Promise<LessonMap> {
   const lessons = await Promise.all(
     [...new Set(entries.map((entry) => entry.lessonId))].map(async (id) => {
-      if (
-        !/^(?:(?:chinese|english|science)-)?g[1-6](?:up|down)(?:-\d{4})?-u\d+-(?:kp\d+|exam)$/.test(
-          id,
-        )
-      )
-        throw new Error("Invalid lesson id");
-      const book = id.split("-u")[0];
+      // Edition suffixes belong to the book slug. Read the lesson suffix from
+      // the end so new editions can load while URLs stay within /data/books/.
+      const book = /^([a-z0-9]+(?:-[a-z0-9]+)*)-u\d+-(?:kp\d+|exam)$/.exec(id)?.[1];
+      if (!book) throw new Error("Invalid lesson id");
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), timeoutMs);
       try {
