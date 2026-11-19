@@ -1,10 +1,10 @@
 """Small real ZIP fixtures for release alignment, reference integrity and failure isolation."""
 import hashlib
 import importlib.util
+import io
 import json
 from pathlib import Path
 import tempfile
-import shutil
 from unittest.mock import patch
 import unittest
 import zipfile
@@ -12,6 +12,8 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[2]
 spec = importlib.util.spec_from_file_location('harmony', ROOT/'scripts/package-harmony-release.py')
 harmony = importlib.util.module_from_spec(spec);spec.loader.exec_module(harmony)
+fetcher_spec = importlib.util.spec_from_file_location('fetcher', ROOT/'scripts/fetch-harmony-resources.py')
+fetcher = importlib.util.module_from_spec(fetcher_spec);fetcher_spec.loader.exec_module(fetcher)
 sha = lambda raw: hashlib.sha256(raw).hexdigest()
 
 class Packaging(unittest.TestCase):
@@ -87,27 +89,44 @@ class Packaging(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'private-IP'):self.prepare('http://public.example:8787')
         m=self.prepare('http://192.168.1.20:8787');self.assertTrue(m['allowInsecureHttp'])
         self.assertTrue(json.loads((self.out/'manifest.json').read_text())['packages'][0]['url'].startswith('http://192.168.1.20:8787/'))
-    def test_fetcher_reuses_verified_archives_and_original_release_tags(self):
-        spec=importlib.util.spec_from_file_location('fetcher',ROOT/'scripts/fetch-harmony-resources.py')
-        fetcher=importlib.util.module_from_spec(spec);spec.loader.exec_module(fetcher)
-        target=self.root/'cache';urls=[]
-        def retrieve(url,dest):
-            urls.append(url);shutil.copy2(self.archives/url.rsplit('/',1)[1],dest)
-        with patch.object(fetcher.urllib.request,'urlretrieve',retrieve):
-            self.assertEqual(fetcher.fetch('v1.8.2',target),4)
-            self.assertTrue(any('/v1.8.0-web-resources/audio-web-part01.zip' in url for url in urls))
-            urls.clear();fetcher.fetch('v1.8.2',target)
-            self.assertEqual(len(urls),1)  # Refresh manifest; reuse verified inventory and ZIPs.
-    def test_fetch_corruption_keeps_existing_file_and_removes_partial(self):
-        spec=importlib.util.spec_from_file_location('fetcher',ROOT/'scripts/fetch-harmony-resources.py')
-        fetcher=importlib.util.module_from_spec(spec);spec.loader.exec_module(fetcher)
+    def mock_fetch(self, requests, corrupt=None):
+        def open_archive(request, *, timeout):
+            url = request.full_url
+            range_header = request.get_header('Range')
+            requests.append((url, range_header, timeout))
+            name = url.rsplit('/', 1)[1]
+            payload = (self.archives / name).read_bytes()
+            if name == corrupt:
+                payload = b'x' * len(payload)
+            start = int(range_header.removeprefix('bytes=').removesuffix('-')) if range_header else 0
+            response = io.BytesIO(payload[start:])
+            response.status = 206 if start else 200
+            response.headers = {'Content-Length': str(len(payload) - start)}
+            if start:
+                response.headers['Content-Range'] = f'bytes {start}-{len(payload) - 1}/{len(payload)}'
+            return response
+
+        return patch.object(fetcher.installer.urllib.request, 'urlopen', open_archive)
+
+    def test_fetch_resumes_archives_at_original_release_tags_and_reuses_verified_cache(self):
+        target = self.root/'cache'
+        target.mkdir()
+        requests = []
+        name = 'audio-web-part01.zip'
+        (target / (name + '.part')).write_bytes((self.archives / name).read_bytes()[:12])
+        with self.mock_fetch(requests):
+            self.assertEqual(fetcher.fetch('v1.8.2', target, timeout=60), 4)
+            self.assertIn((f'{fetcher.installer.RELEASE_ROOT}/v1.8.0-web-resources/{name}', 'bytes=12-', 60), requests)
+            self.assertEqual((target / name).read_bytes(), (self.archives / name).read_bytes())
+            requests.clear()
+            fetcher.fetch('v1.8.2', target)
+            self.assertEqual(requests, [(f'{fetcher.installer.RELEASE_ROOT}/v1.8.2/manifest.json', None, 30)])
+
+    def test_fetch_corruption_keeps_existing_file_and_removes_invalid_partial(self):
         target=self.root/'cache';target.mkdir();(target/'data.zip').write_bytes(b'previous')
-        def retrieve(url,dest):
-            name=url.rsplit('/',1)[1]
-            if name=='data.zip':Path(dest).write_bytes(b'corrupt')
-            else:shutil.copy2(self.archives/name,dest)
-        with patch.object(fetcher.urllib.request,'urlretrieve',retrieve):
-            with self.assertRaisesRegex(ValueError,'mismatch'):fetcher.fetch('v1.8.2',target)
+        with self.mock_fetch([], corrupt='data.zip'):
+            with self.assertRaisesRegex(RuntimeError,'mismatch'):
+                fetcher.fetch('v1.8.2', target, attempts=1)
         self.assertEqual((target/'data.zip').read_bytes(),b'previous')
         self.assertFalse(list(target.glob('*.part')))
     def test_extra_data_cannot_leak_into_release(self):

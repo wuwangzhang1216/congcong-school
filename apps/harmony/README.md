@@ -2,11 +2,11 @@
 
 ArkTS 安装页 + ArkWeb 离线网站，基于当前 main 移植 PR #8。当前适配目标仍为 HarmonyOS API 23，设备类型为 phone、tablet、2in1；**主机回归通过不代表 SDK 编译、HAP 安装或真机播放通过**。本分支尚未发布 HAP。
 
-页面、课程数据与媒体必须由同一个经过验证的 Release 输入生成。当前已用 v1.8.2 的 84 册完整站点验证资源生成流程。不要再使用原 PR 的 v1.2.0 四包、开发者私有 IP 或“约 2 GB / 3.4 GB 空间”的历史配置。
+页面、课程数据与媒体必须由同一个经过验证的 Release 输入生成。当前资源基线为 v1.8.3，包含 85 册教材和新增的人教精通五年级上册英语。
 
 ## 结构和版本绑定
 
-- `scripts/fetch-harmony-resources.py`：只缓存 MP3、JSON、配图与课本原页 ZIP、发布清单及逐文件清单；支持每附件 `release_tag`，复用原发布页，不重复下载已校验的缓存。
+- `scripts/fetch-harmony-resources.py` 只缓存 MP3、JSON、配图与课本原页 ZIP、发布清单及逐文件清单。它按每个附件的 `release_tag` 查找原发布页，并复用已校验的缓存。
 - `scripts/package-harmony-release.py`：校验归档 SHA、ZIP 路径/成员/逐文件 SHA、静态 JSON 与媒体引用、HTML/JS/RSC 音频引用后生成页面壳和专用计划。失败保留旧页面壳。
 - HAP 的 `rawfile/site/`：包含网页、内嵌计划、逐包文件清单和计划 SHA。课程数据、MP3 和图片在 App 私有目录，不塞入 HAP。
 - Worker：按计划下载多个独立 ZIP，大小与 SHA 校验后解压，再逐文件验证；完成标记使用临时文件和重命名。重试核验已有文件并只修复失效包，不仅检查标记是否存在。
@@ -16,15 +16,15 @@ ArkTS 安装页 + ArkWeb 离线网站，基于当前 main 移植 PR #8。当前�
 
 ## 准备资源与页面
 
-需要 Node.js 22、Python 3.9+。以下命令在仓库根目录执行。原发布资源很大，请先确认磁盘和网络；v1.8.2 鸿蒙所选 13 包约 13.4 GB，设备计算最低空间约 16.1 GB，建议至少预留 20 GB，电脑还需容纳缓存和构建产物。
+需要 Node.js 22、Python 3.9+。以下命令在仓库根目录执行。v1.8.3 鸿蒙所选 14 包约 13.4 GB，设备计算最低空间约 16.1 GB，建议至少预留 20 GB。电脑还需容纳缓存和构建产物。
 
 ```sh
 npm ci
-npm run harmony:fetch-assets -- --tag v1.8.2 --directory deploy-output/release-v182
+npm run harmony:fetch-assets -- --tag v1.8.3 --directory deploy-output/release-v183
 
 # 安装本版已经生成、验证过的 JSON 与媒体；保留缓存 ZIP 供打包审计。
-python3 scripts/install-release.py --tag v1.8.2 \
-  --archives-dir deploy-output/release-v182 \
+python3 scripts/install-release.py --tag v1.8.3 \
+  --archives-dir deploy-output/release-v183 \
   --asset-kind audio-web --asset-kind data \
   --asset-kind story-images --asset-kind textbook-pages
 
@@ -32,11 +32,13 @@ python3 scripts/install-release.py --tag v1.8.2 \
 npm exec --workspace=china-study-free -- next build
 
 npm run harmony:prepare-web -- \
-  --site apps/web/out --archives deploy-output/release-v182 \
-  --output deploy-output/harmony-v182-assets
+  --site apps/web/out --archives deploy-output/release-v183 \
+  --output deploy-output/harmony-v183-assets
 ```
 
 Windows 的 Python 命令可换成 `py -3`。`npm run harmony:*` 的 Python 入口自动选择对应命令。
+
+资源下载默认使用 30 秒连接和读取超时，每个文件最多尝试 5 次。中断后可在同一缓存目录重跑下载命令。服务器支持 Range 时从断点续传，下载完成后校验大小和 SHA-256。可用 `--download-timeout` 和 `--download-attempts` 调整默认值。
 
 不要在这套流程中用 `npm run build` 重新生成题库，再混搭旧 Release 的 data.zip：`generatedAt`、版本化音频、教材数据发生任何字节变化都会被校验拒绝。修改教材数据时应先发布匹配的资源，再生成 Harmony 计划。Web 代码可以更新，但其所有资源引用仍须由所选 Release 提供。
 
@@ -53,18 +55,18 @@ Windows 的 Python 命令可换成 `py -3`。`npm run harmony:*` 的 Python 入�
 
 ```sh
 npm run harmony:prepare-web -- \
-  --site apps/web/out --archives deploy-output/release-v182 \
-  --output deploy-output/harmony-v182-lan-assets \
+  --site apps/web/out --archives deploy-output/release-v183 \
+  --output deploy-output/harmony-v183-lan-assets \
   --mirror http://192.168.1.20:8787
 
-npm run harmony:assets-server -- --directory deploy-output/harmony-v182-lan-assets
+npm run harmony:assets-server -- --directory deploy-output/harmony-v183-lan-assets
 ```
 
 替换为自己的实际地址。HTTP 仅允许 RFC1918、回环或链路本地 IPv4；公网镜像必须为 HTTPS。测试服务器启动时校验所有归档和清单，只开放计划内文件，拒绝目录浏览、路径穿越、符号链接和写入请求。不要将测试服务暴露到公网；归档必须放在 `deploy-output/`，不能放进 Web `public/`。
 
 ## SDK 构建与签名
 
-安装官方 DevEco Studio / Command Line Tools 和 HarmonyOS API 23 SDK，确保 `hvigorw` 可执行。设置本机 SDK 路径，先在 DevEco 同步 `apps/harmony/` 工程；项目已经声明安装 Worker 的构建入口。
+安装 DevEco Studio 6.1.0 或配套 Command Line Tools（含 HarmonyOS API 23 SDK），确保 `hvigorw` 可执行。设置本机 SDK 路径并在 DevEco 同步 `apps/harmony/` 工程。下载需要登录华为账号。 [API 23 工具版本](https://developer.huawei.com/consumer/en/doc/harmonyos-releases/deveco-studio-new-features-610/) · [官方下载中心](https://developer.huawei.com/consumer/en/download/deveco-studio)
 
 ```sh
 npm run harmony:build
