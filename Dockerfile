@@ -34,7 +34,7 @@ COPY scripts/run-python.mjs scripts/run-python.mjs
 RUN npm run build
 
 FROM nginx:stable-alpine AS runtime
-COPY docker/nginx.conf /etc/nginx/nginx.conf
+COPY --chmod=0644 docker/nginx.conf /etc/nginx/nginx.conf
 COPY LICENSE /usr/share/nginx/html/LICENSE.txt
 USER nginx
 EXPOSE 8080
