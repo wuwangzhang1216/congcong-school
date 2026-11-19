@@ -7,6 +7,7 @@ on:
       - 'scripts/checks/**'
       - 'scripts/install-release.py'
       - 'Dockerfile'
+      - 'docker/**'
       - 'scripts/release-download-guide.py'
       - 'output/**/quizzes/**'
       - 'output/**/outlines/**'
@@ -31,6 +32,18 @@ jobs:
       - run: npm run type-check
       - run: npm run check:web-experience
       - run: npm run check:visual-controls
+      - name: Docker startup with restrictive source permissions
+        run: |
+          fixture=$(mktemp -d)
+          mkdir "$fixture/docker"
+          install -m 0600 docker/nginx.conf "$fixture/docker/nginx.conf"
+          cp LICENSE "$fixture/"
+          image=$(docker build --quiet --target runtime --file Dockerfile "$fixture")
+          docker run --rm "$image" sh -ec '
+            test "$(id -u)" -ne 0
+            nginx
+            test "$(wget -qO- http://127.0.0.1:8080/healthz)" = ok
+          '
       - name: Release installer and platform grouping
         run: |
           python3 scripts/checks/release-download.py
