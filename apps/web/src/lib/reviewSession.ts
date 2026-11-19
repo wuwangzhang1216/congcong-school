@@ -1,6 +1,7 @@
 import { learnerSessionStorage } from "./learnerProfiles";
 import { lessonContentKey } from "@cstf/core/content";
 import type { ReviewItem } from "./prepareReview";
+import { reviewLessonBookId } from "./reviewContent";
 export interface ReviewStats {
   total: number;
   correct: number;
@@ -69,9 +70,7 @@ export function parseReviewSession(
           typeof item.lessonTitle !== "string" ||
           typeof item.scheduled !== "boolean" ||
           !Number.isInteger(item.question?.id) ||
-          !/^(?:(?:chinese|english|science)-)?g[1-6](?:up|down)(?:-\d{4})?-u\d+-(?:kp\d+|exam)$/.test(
-            item.lessonId,
-          ) ||
+          !reviewLessonBookId(item.lessonId) ||
           item.key !== `${item.lessonId}:${item.question.id}`,
       )
     )

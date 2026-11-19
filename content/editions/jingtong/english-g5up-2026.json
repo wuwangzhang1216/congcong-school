@@ -1,0 +1,733 @@
+{
+  "bookId": "english-g5up-jingtong-2026",
+  "edition": "jingtong-2026",
+  "publisherLabel": "人教版（精通）",
+  "editionLabel": "精通·2026秋版",
+  "sourceId": "0d53b423-e9d3-63ae-9a22-0bce900d3b97",
+  "sourceUrl": "https://basic.smartedu.cn/tchMaterial/detail?contentType=assets_document&contentId=0d53b423-e9d3-63ae-9a22-0bce900d3b97",
+  "sourceTitle": "（根据2022年版课程标准修订）义务教育教科书·英语 五年级上册",
+  "sourceEdition": "2022课标修订版 · 苗兴伟主编",
+  "note": "2026秋版为应用选书标识；官方词汇附录86—88页与字母索引89—91页核对。中文释义为学习用简释。白体词仅要求在语境中理解，不增加默写要求。",
+  "units": [
+    {
+      "number": 1,
+      "title": "Around the world",
+      "start": 2,
+      "end": 13,
+      "vocabulary": [
+        {
+          "english": "France",
+          "chinese": "法国",
+          "firstPage": 4,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "the UK",
+          "chinese": "英国",
+          "firstPage": 4,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "Australia",
+          "chinese": "澳大利亚",
+          "firstPage": 6,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "Brazil",
+          "chinese": "巴西",
+          "firstPage": 6,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "Egypt",
+          "chinese": "埃及",
+          "firstPage": 6,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "world",
+          "chinese": "世界",
+          "firstPage": 2,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "classmate",
+          "chinese": "同班同学",
+          "firstPage": 4,
+          "requirement": "understand",
+          "standardLevel2": false
+        },
+        {
+          "english": "country",
+          "chinese": "国家",
+          "firstPage": 4,
+          "requirement": "understand",
+          "standardLevel2": false
+        },
+        {
+          "english": "famous",
+          "chinese": "著名的",
+          "firstPage": 6,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "building",
+          "chinese": "建筑物",
+          "firstPage": 6,
+          "requirement": "understand",
+          "standardLevel2": false
+        },
+        {
+          "english": "lake",
+          "chinese": "湖",
+          "firstPage": 8,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "sailing boat",
+          "chinese": "帆船",
+          "firstPage": 8,
+          "requirement": "understand",
+          "standardLevel2": false
+        },
+        {
+          "english": "sea",
+          "chinese": "海",
+          "firstPage": 8,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "place",
+          "chinese": "地方；位置",
+          "firstPage": 8,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "show",
+          "chinese": "演出",
+          "firstPage": 8,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "wild",
+          "chinese": "野生的",
+          "firstPage": 8,
+          "requirement": "understand",
+          "standardLevel2": false
+        },
+        {
+          "english": "hill",
+          "chinese": "小山",
+          "firstPage": 8,
+          "requirement": "use",
+          "standardLevel2": true
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Jobs",
+      "start": 14,
+      "end": 25,
+      "vocabulary": [
+        {
+          "english": "farmer",
+          "chinese": "农民",
+          "firstPage": 16,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "teacher",
+          "chinese": "教师",
+          "firstPage": 16,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "reporter",
+          "chinese": "记者",
+          "firstPage": 16,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "worker",
+          "chinese": "工人",
+          "firstPage": 16,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "writer",
+          "chinese": "作家",
+          "firstPage": 16,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "doctor",
+          "chinese": "医生",
+          "firstPage": 18,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "driver",
+          "chinese": "司机",
+          "firstPage": 18,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "nurse",
+          "chinese": "护士",
+          "firstPage": 18,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "police officer",
+          "chinese": "警察",
+          "firstPage": 18,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "job",
+          "chinese": "工作；职业",
+          "firstPage": 14,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "like",
+          "chinese": "像……那样",
+          "firstPage": 20,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "people",
+          "chinese": "人们",
+          "firstPage": 20,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "those",
+          "chinese": "那些",
+          "firstPage": 20,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "must",
+          "chinese": "必须",
+          "firstPage": 20,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "hard",
+          "chinese": "努力地",
+          "firstPage": 20,
+          "requirement": "use",
+          "standardLevel2": true
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Workplaces",
+      "start": 26,
+      "end": 37,
+      "vocabulary": [
+        {
+          "english": "bank",
+          "chinese": "银行",
+          "firstPage": 28,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "hotel",
+          "chinese": "旅馆",
+          "firstPage": 28,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "police station",
+          "chinese": "警察局",
+          "firstPage": 28,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "TV station",
+          "chinese": "电视台",
+          "firstPage": 28,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "fire station",
+          "chinese": "消防站",
+          "firstPage": 30,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "factory",
+          "chinese": "工厂",
+          "firstPage": 30,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "farm",
+          "chinese": "农场",
+          "firstPage": 30,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "hospital",
+          "chinese": "医院",
+          "firstPage": 30,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "Ms",
+          "chinese": "女士（不指明婚姻状况）",
+          "firstPage": 28,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "please",
+          "chinese": "请",
+          "firstPage": 30,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "sleep",
+          "chinese": "睡觉",
+          "firstPage": 30,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "woman",
+          "chinese": "女人",
+          "firstPage": 32,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "middle",
+          "chinese": "中间的；中间",
+          "firstPage": 32,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "middle school",
+          "chinese": "中学",
+          "firstPage": 32,
+          "requirement": "understand",
+          "standardLevel2": false
+        },
+        {
+          "english": "Nice to see you!",
+          "chinese": "很高兴再次见到你！",
+          "firstPage": 28,
+          "requirement": "understand",
+          "standardLevel2": false
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Putting things in order",
+      "start": 42,
+      "end": 53,
+      "vocabulary": [
+        {
+          "english": "its",
+          "chinese": "它的",
+          "firstPage": 44,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "their",
+          "chinese": "他们的（后接名词）",
+          "firstPage": 44,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "mine",
+          "chinese": "我的（单独使用）",
+          "firstPage": 46,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "yours",
+          "chinese": "你的；你们的（单独使用）",
+          "firstPage": 46,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "hers",
+          "chinese": "她的（单独使用）",
+          "firstPage": 46,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "ours",
+          "chinese": "我们的（单独使用）",
+          "firstPage": 46,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "theirs",
+          "chinese": "他们的（单独使用）",
+          "firstPage": 46,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "take care of",
+          "chinese": "照管；照顾",
+          "firstPage": 44,
+          "requirement": "understand",
+          "standardLevel2": false
+        },
+        {
+          "english": "whose",
+          "chinese": "谁的",
+          "firstPage": 46,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "put ... in order",
+          "chinese": "把……整理好",
+          "firstPage": 46,
+          "requirement": "understand",
+          "standardLevel2": false
+        },
+        {
+          "english": "photo",
+          "chinese": "照片",
+          "firstPage": 48,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "best",
+          "chinese": "最好的",
+          "firstPage": 48,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "beside",
+          "chinese": "在……旁边",
+          "firstPage": 48,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "him",
+          "chinese": "他（宾格）",
+          "firstPage": 48,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "cousin",
+          "chinese": "堂兄弟姐妹或表兄弟姐妹",
+          "firstPage": 48,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "behind",
+          "chinese": "在……后面",
+          "firstPage": 48,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "twin",
+          "chinese": "双胞胎之一",
+          "firstPage": 48,
+          "requirement": "understand",
+          "standardLevel2": false
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "A tidy house",
+      "start": 54,
+      "end": 65,
+      "vocabulary": [
+        {
+          "english": "bedroom",
+          "chinese": "卧室",
+          "firstPage": 56,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "kitchen",
+          "chinese": "厨房",
+          "firstPage": 56,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "living room",
+          "chinese": "客厅",
+          "firstPage": 56,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "study",
+          "chinese": "书房",
+          "firstPage": 56,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "toilet",
+          "chinese": "卫生间",
+          "firstPage": 56,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "bathroom",
+          "chinese": "浴室；洗手间",
+          "firstPage": 58,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "table",
+          "chinese": "桌子",
+          "firstPage": 58,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "dish",
+          "chinese": "餐具",
+          "firstPage": 58,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "do the dishes",
+          "chinese": "洗餐具",
+          "firstPage": 58,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "tidy",
+          "chinese": "整洁的；使整洁",
+          "firstPage": 54,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "put away",
+          "chinese": "把……收拾起来",
+          "firstPage": 56,
+          "requirement": "understand",
+          "standardLevel2": false
+        },
+        {
+          "english": "paper",
+          "chinese": "纸",
+          "firstPage": 56,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "always",
+          "chinese": "总是",
+          "firstPage": 56,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "keep",
+          "chinese": "保持",
+          "firstPage": 56,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "tired",
+          "chinese": "疲倦的",
+          "firstPage": 60,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "What a mess!",
+          "chinese": "真乱啊！",
+          "firstPage": 56,
+          "requirement": "understand",
+          "standardLevel2": false
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Be yourself",
+      "start": 66,
+      "end": 77,
+      "vocabulary": [
+        {
+          "english": "kind",
+          "chinese": "友善的；体贴的",
+          "firstPage": 68,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "lovely",
+          "chinese": "可爱的",
+          "firstPage": 68,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "quiet",
+          "chinese": "文静的",
+          "firstPage": 68,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "thin",
+          "chinese": "瘦的",
+          "firstPage": 68,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "active",
+          "chinese": "活跃的",
+          "firstPage": 68,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "strong",
+          "chinese": "强壮的",
+          "firstPage": 68,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "stronger",
+          "chinese": "更强壮的",
+          "firstPage": 70,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "taller",
+          "chinese": "更高的",
+          "firstPage": 70,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "more",
+          "chinese": "更（构成比较级）",
+          "firstPage": 70,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "careful",
+          "chinese": "细心的",
+          "firstPage": 70,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "popular",
+          "chinese": "受欢迎的",
+          "firstPage": 70,
+          "requirement": "use",
+          "standardLevel2": false
+        },
+        {
+          "english": "hear",
+          "chinese": "听见",
+          "firstPage": 68,
+          "requirement": "use",
+          "standardLevel2": true
+        },
+        {
+          "english": "everyone",
+          "chinese": "每个人",
+          "firstPage": 70,
+          "requirement": "understand",
+          "standardLevel2": false
+        },
+        {
+          "english": "special",
+          "chinese": "特别的",
+          "firstPage": 70,
+          "requirement": "understand",
+          "standardLevel2": false
+        },
+        {
+          "english": "a lot",
+          "chinese": "很多",
+          "firstPage": 72,
+          "requirement": "understand",
+          "standardLevel2": false
+        },
+        {
+          "english": "Be yourself!",
+          "chinese": "做你自己！",
+          "firstPage": 66,
+          "requirement": "understand",
+          "standardLevel2": false
+        }
+      ]
+    }
+  ]
+}

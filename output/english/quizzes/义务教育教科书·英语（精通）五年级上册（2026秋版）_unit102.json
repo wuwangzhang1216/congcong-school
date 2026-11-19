@@ -1,0 +1,119 @@
+{
+  "textbook": "（根据2022年版课程标准修订）义务教育教科书·英语 五年级上册（精通·2026秋版）",
+  "unit": "Revision 2",
+  "unit_number": 102,
+  "unit_test": {
+    "title": "Revision 2",
+    "total_score": 60,
+    "time_minutes": 10,
+    "questions": [
+      {
+        "id": 1020001,
+        "type": "choice",
+        "question": "综合复习：选择正确表达“这只玩具是它的”的句子。",
+        "options": [
+          "This is it’s toy.",
+          "This is its. toy.",
+          "This is its toy.",
+          "This is it toy."
+        ],
+        "answer": "This is its toy.",
+        "explanation": "its 是物主代词；it’s 是 it is 的缩写。",
+        "knowledge_point": "Revision 2·综合运用",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 1020002,
+        "type": "choice",
+        "question": "综合复习：This is our photo. It is ____. 选择正确词。",
+        "options": [
+          "ours",
+          "we",
+          "our",
+          "us"
+        ],
+        "answer": "ours",
+        "explanation": "ours 可单独代替 our photo。",
+        "knowledge_point": "Revision 2·综合运用",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 1020003,
+        "type": "choice",
+        "question": "综合复习：Which room do you sleep in? 选择最合适的房间。",
+        "options": [
+          "TV station",
+          "factory",
+          "bedroom",
+          "bank"
+        ],
+        "answer": "bedroom",
+        "explanation": "bedroom 是卧室，通常在卧室睡觉。",
+        "knowledge_point": "Revision 2·综合运用",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 1020004,
+        "type": "choice",
+        "question": "综合复习：I am tired after cleaning. 这里 tired 的意思是什么？",
+        "options": [
+          "高兴见到你",
+          "疲倦的",
+          "更高的",
+          "整洁的"
+        ],
+        "answer": "疲倦的",
+        "explanation": "tired 描述疲倦的状态。",
+        "knowledge_point": "Revision 2·综合运用",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 1020005,
+        "type": "choice",
+        "question": "综合复习：Everyone is special. 这句话强调什么？",
+        "options": [
+          "每个人都有自己的独特之处",
+          "所有人必须同一性格",
+          "只有最高的人最好",
+          "没有人有优点"
+        ],
+        "answer": "每个人都有自己的独特之处",
+        "explanation": "everyone 是每个人，special 表示特别的。",
+        "knowledge_point": "Revision 2·综合运用",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 1020006,
+        "type": "choice",
+        "question": "综合复习：I learn a lot from my friends. a lot 在这里表示什么？",
+        "options": [
+          "一张照片",
+          "在旁边",
+          "很多",
+          "一个国家"
+        ],
+        "answer": "很多",
+        "explanation": "learn a lot 表示学到很多。",
+        "knowledge_point": "Revision 2·综合运用",
+        "difficulty": 1,
+        "score": 10
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "Revision 2·综合运用",
+      "core_concept": "结合情境复习物品归属、家务与人物特点。",
+      "key_formula": "",
+      "tips": "先判断问题问的是人物、地点、职业还是物品归属，再选择回答。",
+      "common_mistakes": [
+        "不要只凭一个熟悉的单词作答，要读完整句话。"
+      ]
+    }
+  ]
+}

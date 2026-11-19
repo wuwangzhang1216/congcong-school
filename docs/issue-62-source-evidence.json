@@ -1,0 +1,611 @@
+{
+  "checkedOn": "2026-11-01",
+  "issue": 62,
+  "bookId": "english-g5up-jingtong-2026",
+  "sourceId": "0d53b423-e9d3-63ae-9a22-0bce900d3b97",
+  "sourceTitle": "（根据2022年版课程标准修订）义务教育教科书•英语 五年级上册",
+  "officialUpdatedAt": "2026-08-26T09:15:22.067+0800",
+  "catalogRecordSha256": "1ea3a6b71956edab337bbeca7419c2523397d0340ee252f199bc1a36e6934743",
+  "catalogProvenance": "Previously downloaded official tch_material part_103.json; current detail endpoint returned HTTP 403. Versioned public page images fetched successfully.",
+  "printedPageOffset": 5,
+  "visualReviewPhysicalPages": [
+    6,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96
+  ],
+  "ocrCoverage": "98 pages; aids unit-goal checks, not a character-by-character transcription or answer source",
+  "pages": [
+    {
+      "physicalPage": 1,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/1.jpg",
+      "bytes": 900568,
+      "sha256": "2fe8c5b43612b5de1abe327e09e9bbe55e1494ee6673d9b28b0a1b35133546de"
+    },
+    {
+      "physicalPage": 2,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/2.jpg",
+      "bytes": 365112,
+      "sha256": "a2a5a55f4f71a6316d9bc8b954c887038faca6eba4bf58c5c4c3a0e9b701a7c4"
+    },
+    {
+      "physicalPage": 3,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/3.jpg",
+      "bytes": 224924,
+      "sha256": "87a6581e6321e9e2c62198885d4baba02710b8fd3e1b8b35504575450fdcca86"
+    },
+    {
+      "physicalPage": 4,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/4.jpg",
+      "bytes": 641172,
+      "sha256": "7c685dc3ad32d3439ecda69dd314fb3b81e4c4c8b0a532b6897df7c649133d14"
+    },
+    {
+      "physicalPage": 5,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/5.jpg",
+      "bytes": 669495,
+      "sha256": "b7385d6ff41845d2df84006913e3b434cb25bba529e636e79e58b1965ae067dd"
+    },
+    {
+      "physicalPage": 6,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/6.jpg",
+      "bytes": 491578,
+      "sha256": "635b40bfe1abb0218ed56b78acc6b9566fc61b2551c735f8a09101a33fa4f665"
+    },
+    {
+      "physicalPage": 7,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/7.jpg",
+      "bytes": 1656676,
+      "sha256": "3d00d1909bfad41fac5920288e77a7227b5a9cc3dda88e10749c7fa9d2be1dcb"
+    },
+    {
+      "physicalPage": 8,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/8.jpg",
+      "bytes": 1360482,
+      "sha256": "21210a0a86dd337bc66de1eb1661f157d9f6acb6143bbd67e25be1b30dd0feb0"
+    },
+    {
+      "physicalPage": 9,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/9.jpg",
+      "bytes": 634677,
+      "sha256": "56c533fc2e34c0d3a7c821171da916ae925cfa3b0eb7299adce2d9e99b7f61fa"
+    },
+    {
+      "physicalPage": 10,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/10.jpg",
+      "bytes": 411136,
+      "sha256": "ad9de9def35cec26d300046efab007f38d58fe0ae915202adfdb41071fd414e7"
+    },
+    {
+      "physicalPage": 11,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/11.jpg",
+      "bytes": 678085,
+      "sha256": "319aa1ff9fa426fb377a80832414740ea81c85944e454e5934aff79a004cf297"
+    },
+    {
+      "physicalPage": 12,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/12.jpg",
+      "bytes": 612444,
+      "sha256": "5c84cac8fdf5afcd080b33f9a1e92c032ac6587b02f999e16721c7999591a098"
+    },
+    {
+      "physicalPage": 13,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/13.jpg",
+      "bytes": 624329,
+      "sha256": "7fb2e7eb1655debacc213c5221372a92ec42862f6f8b0a2b7cfad64583e61265"
+    },
+    {
+      "physicalPage": 14,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/14.jpg",
+      "bytes": 500437,
+      "sha256": "8a7f788aac9c27255e2d3e5fa0608f5a27b5b9056ad4d4682feb2c0a9d306220"
+    },
+    {
+      "physicalPage": 15,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/15.jpg",
+      "bytes": 660214,
+      "sha256": "50096cae9a2dfc44d8ee9a37231a8c16f9301f7a0a9295f783c8194738a4cd09"
+    },
+    {
+      "physicalPage": 16,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/16.jpg",
+      "bytes": 651598,
+      "sha256": "3106369e93dc20482c3acfc56aae9cfd44aba36d3dd934b9aa234debde1960fa"
+    },
+    {
+      "physicalPage": 17,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/17.jpg",
+      "bytes": 774002,
+      "sha256": "6d93fa6f0813cf39aa69a0205a47416b27c59bc691747f726386002eb7005e52"
+    },
+    {
+      "physicalPage": 18,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/18.jpg",
+      "bytes": 607692,
+      "sha256": "f3ee1c647e8b75512f7dff9691fe8bb453ca263fd137bf5a29b1453ab116a9ab"
+    },
+    {
+      "physicalPage": 19,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/19.jpg",
+      "bytes": 964236,
+      "sha256": "84a97fe6357e6b5b454f654f2106afb0dd4d09482ea5a5ca57f296f52f2fcf55"
+    },
+    {
+      "physicalPage": 20,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/20.jpg",
+      "bytes": 1205968,
+      "sha256": "e1ae1a5c9b628fcfbd9216ebb8eeb4ec2d39a02334fa677ca4aa76cad51f09df"
+    },
+    {
+      "physicalPage": 21,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/21.jpg",
+      "bytes": 628967,
+      "sha256": "8ccb687366ed2652bb55134114d097043f34c6377b0a5a7a5bf96fcc1182704e"
+    },
+    {
+      "physicalPage": 22,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/22.jpg",
+      "bytes": 416377,
+      "sha256": "70a184790fb725d28061e43a8ee9f4443f7ded5d62e2fcdc8fb246045b40a94a"
+    },
+    {
+      "physicalPage": 23,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/23.jpg",
+      "bytes": 608902,
+      "sha256": "c36305339b990dc2872a365febf68748b064b9a39561589dd9719db060158303"
+    },
+    {
+      "physicalPage": 24,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/24.jpg",
+      "bytes": 537934,
+      "sha256": "819eb1803c044fabae6c99c6b2e3f05f2df540798c4182767e3dc69f70c305ea"
+    },
+    {
+      "physicalPage": 25,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/25.jpg",
+      "bytes": 596364,
+      "sha256": "74145f37448007742fcb9d917c25febe107cd9d946c729d85daf382f486436d4"
+    },
+    {
+      "physicalPage": 26,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/26.jpg",
+      "bytes": 565985,
+      "sha256": "028ce2861a877926343a15235dfb94f9bec55100fb3b68d27353a58e015ac11f"
+    },
+    {
+      "physicalPage": 27,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/27.jpg",
+      "bytes": 697921,
+      "sha256": "72fd85ccd40e1118eeb149ad7f95cb21d2e150464de302c8c1592147cfabc3e0"
+    },
+    {
+      "physicalPage": 28,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/28.jpg",
+      "bytes": 674272,
+      "sha256": "c18f86c9e8a7ef4fe00da79e5a5732d51b252611b9e4cc22d46151068cc4acea"
+    },
+    {
+      "physicalPage": 29,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/29.jpg",
+      "bytes": 703315,
+      "sha256": "9712bcea52905f8b5e6b1c91626e32f8ae47bbc97130331384ca8c81aa95e6d9"
+    },
+    {
+      "physicalPage": 30,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/30.jpg",
+      "bytes": 548026,
+      "sha256": "9f2933d99e06baed37b1729c262775504f709a3af80087ae31e5c6fe8f1f4bd4"
+    },
+    {
+      "physicalPage": 31,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/31.jpg",
+      "bytes": 1391076,
+      "sha256": "9ab7a841a36e519ec2b94612b43b3ca8e87efbb24d93c7b4fbf74698e782b80b"
+    },
+    {
+      "physicalPage": 32,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/32.jpg",
+      "bytes": 1141250,
+      "sha256": "9885a07a1258841d216f0a0f16fb98353bdc68979bbdc81006333133bbc6ad90"
+    },
+    {
+      "physicalPage": 33,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/33.jpg",
+      "bytes": 540310,
+      "sha256": "e57be4a821c8e01b0f33907ccff9a4e0bd9c06311b3d108b04383e579603ef25"
+    },
+    {
+      "physicalPage": 34,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/34.jpg",
+      "bytes": 651924,
+      "sha256": "cf3f3a491b21eb7af7c3bda00becd34455ad444ed66191413b21c43582dd8b7a"
+    },
+    {
+      "physicalPage": 35,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/35.jpg",
+      "bytes": 564933,
+      "sha256": "5697f840595cbf76ab601b5e346e29dd2376369896a28098a5d6c4949541a3b3"
+    },
+    {
+      "physicalPage": 36,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/36.jpg",
+      "bytes": 504698,
+      "sha256": "7c831dee07cc3645892e3f0178c478008e5eb4e7ef8588427914307af2d1f4e6"
+    },
+    {
+      "physicalPage": 37,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/37.jpg",
+      "bytes": 677935,
+      "sha256": "557d9df98dfb0a1e0e541ac2c2351ca43092cf80f1a191b86fb686d73398c493"
+    },
+    {
+      "physicalPage": 38,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/38.jpg",
+      "bytes": 484603,
+      "sha256": "a143e2f3ecb54877a1b1392d66cd68cc013f9d81a9ac32dfb8c6989af0d93adc"
+    },
+    {
+      "physicalPage": 39,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/39.jpg",
+      "bytes": 541724,
+      "sha256": "aeefde83ce06952484ed199a3212786e374b727e09b6d8f0f9f1e6e0e6a84060"
+    },
+    {
+      "physicalPage": 40,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/40.jpg",
+      "bytes": 742107,
+      "sha256": "8107b4fb6a90c5f2f1fe878da8de72bfaa00192edd24041df8a0a9ce47879c95"
+    },
+    {
+      "physicalPage": 41,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/41.jpg",
+      "bytes": 696875,
+      "sha256": "315c7a2d023bd4dba3fe304b67f0c63c0f8c8c9c21484dad7c47b12f2998e195"
+    },
+    {
+      "physicalPage": 42,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/42.jpg",
+      "bytes": 545918,
+      "sha256": "57c74c0de8109c8003c26b19679d904d3b22f478d669b9ddcacb5f26f47f9c13"
+    },
+    {
+      "physicalPage": 43,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/43.jpg",
+      "bytes": 551903,
+      "sha256": "b692596ebf6e2a8cb909b661b4501523e8a7c2f54f9445a4501fb46ab9ee94f8"
+    },
+    {
+      "physicalPage": 44,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/44.jpg",
+      "bytes": 591011,
+      "sha256": "c9dbcda6f63664298618a0b4c3b06e821980345d0e6a3fbcfad8ad707f546a12"
+    },
+    {
+      "physicalPage": 45,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/45.jpg",
+      "bytes": 513986,
+      "sha256": "8ca85539e498bbf5aef8518ee77c8a93be1a9366e37356cca2e40c4c54ae2bb3"
+    },
+    {
+      "physicalPage": 46,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/46.jpg",
+      "bytes": 334948,
+      "sha256": "879a8b8782623f4337eb0e693e6d61ea0e0fba93277768dab27d78fb605202a6"
+    },
+    {
+      "physicalPage": 47,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/47.jpg",
+      "bytes": 918536,
+      "sha256": "ded6a6b9874f445b0b8b9eadde68bfebd4c98f8e0de5bdb921d53e65705f8f15"
+    },
+    {
+      "physicalPage": 48,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/48.jpg",
+      "bytes": 999247,
+      "sha256": "b1edbe2bca07570dc6aef24f80ddab08d564587ba6bf505dca589f974d61f8f7"
+    },
+    {
+      "physicalPage": 49,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/49.jpg",
+      "bytes": 662623,
+      "sha256": "83cba283c231187a91b9b0ee5fcfd2c45890a39c8a9a65a1a067e71d2f1b9679"
+    },
+    {
+      "physicalPage": 50,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/50.jpg",
+      "bytes": 433719,
+      "sha256": "bd97f911de4a0848c5e5a08453167d87112a43dfcc8246cdfdef43b9ac19fa36"
+    },
+    {
+      "physicalPage": 51,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/51.jpg",
+      "bytes": 715337,
+      "sha256": "45f0beebe014416caefe17a47a76a62148ee957b1447e5ba49649dabb6ced68a"
+    },
+    {
+      "physicalPage": 52,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/52.jpg",
+      "bytes": 586894,
+      "sha256": "19b9e3741a312659b75ccf54a44ba033bd1cf1ee30db2a63e3be63bf0eb98dde"
+    },
+    {
+      "physicalPage": 53,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/53.jpg",
+      "bytes": 493739,
+      "sha256": "089ab0f835973b83ad391ebd57ae00f2638f2983f48aa58fc73b28bcc7ac6828"
+    },
+    {
+      "physicalPage": 54,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/54.jpg",
+      "bytes": 443920,
+      "sha256": "ce7df04af6d223418da8dba6595b84ccd4ea7719e020446f50828a183e6eeded"
+    },
+    {
+      "physicalPage": 55,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/55.jpg",
+      "bytes": 613865,
+      "sha256": "3691bab68fefe9f2afd7a38d1ac9ab5595653a65ce0b5d176501fd5ef913ee01"
+    },
+    {
+      "physicalPage": 56,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/56.jpg",
+      "bytes": 741951,
+      "sha256": "07884a4fea827ba608216e05770fdea7dfe473442fbe07425711cbfafdedaecc"
+    },
+    {
+      "physicalPage": 57,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/57.jpg",
+      "bytes": 752581,
+      "sha256": "0efc53ec2897af13ca4e8b4d87e81c39fae8e6adcaa554028444e7569cba3283"
+    },
+    {
+      "physicalPage": 58,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/58.jpg",
+      "bytes": 648633,
+      "sha256": "98435a0bade05c2657f4f0252ffd27098faf0f08d172d542edd0836f5ad5bb48"
+    },
+    {
+      "physicalPage": 59,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/59.jpg",
+      "bytes": 1024187,
+      "sha256": "4e6cd623e65c548b5436427b1a241ec152e0e34f426ccbdd10316a825645be97"
+    },
+    {
+      "physicalPage": 60,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/60.jpg",
+      "bytes": 1176112,
+      "sha256": "7f0a11c0ac28f810680aa0f5c55f27794207d9f103f1d25e319b7b27d3f2be09"
+    },
+    {
+      "physicalPage": 61,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/61.jpg",
+      "bytes": 648941,
+      "sha256": "639cd5ca63597bb098a15181b8c7794be0dbbc370a23df0fcaafd2b9b00436a8"
+    },
+    {
+      "physicalPage": 62,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/62.jpg",
+      "bytes": 531992,
+      "sha256": "179cdca874d45e377bfeaf0b35d7662db5c7143eb1a0814a4d41b609bbf6a0bd"
+    },
+    {
+      "physicalPage": 63,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/63.jpg",
+      "bytes": 606878,
+      "sha256": "657539ad9f72996bde232404a5faed80349b33cbc982bc24f1debe8732379c9f"
+    },
+    {
+      "physicalPage": 64,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/64.jpg",
+      "bytes": 487947,
+      "sha256": "067223f6671944acb2ff6310bf07eb2fc4ade1be010ec279a2a98d131a1d9adc"
+    },
+    {
+      "physicalPage": 65,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/65.jpg",
+      "bytes": 678353,
+      "sha256": "09966f9cd90e5e6f358e4f4eed80ae0327d1e5e601900207740a4dbf5155b8a4"
+    },
+    {
+      "physicalPage": 66,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/66.jpg",
+      "bytes": 393486,
+      "sha256": "2d194ccc3ae0de83cd2a60d27b6341e56ed1c513b4e37e4264cbe9bc6bf54f13"
+    },
+    {
+      "physicalPage": 67,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/67.jpg",
+      "bytes": 565067,
+      "sha256": "6cfeceb66bd76f7cb7c3572842b8a73861293332844d964f5709b0aacd8ff6a6"
+    },
+    {
+      "physicalPage": 68,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/68.jpg",
+      "bytes": 696847,
+      "sha256": "c08d4908b45755f6aa82148c53cb2cc4bc2bb40a20c68802204d16417f4384c8"
+    },
+    {
+      "physicalPage": 69,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/69.jpg",
+      "bytes": 696795,
+      "sha256": "f5d68f44b060c5200eebfaa39613d3610f196282acbc80268f1564d03568f225"
+    },
+    {
+      "physicalPage": 70,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/70.jpg",
+      "bytes": 624064,
+      "sha256": "7fa9487d5f5151f7d8d64712c7f9218bc2cdc50123d8f40c7697e25a17808a57"
+    },
+    {
+      "physicalPage": 71,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/71.jpg",
+      "bytes": 855608,
+      "sha256": "4fa3f14dd086ab32384bb3a784d97fea673f36534d0978179fcecf8392907cea"
+    },
+    {
+      "physicalPage": 72,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/72.jpg",
+      "bytes": 921612,
+      "sha256": "8005f3acce742a96b9a58515bb0b1a8eeb8a2eb2a2784e6e11469d730b4d9564"
+    },
+    {
+      "physicalPage": 73,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/73.jpg",
+      "bytes": 555107,
+      "sha256": "40fd7a0c175a26b3a58ec007ec69717c867d1a58699b04da4918dad5721d9136"
+    },
+    {
+      "physicalPage": 74,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/74.jpg",
+      "bytes": 391615,
+      "sha256": "6bc1bfb4f3884cbc0eeb4967bdf06504f9cd30fca57418b9d880b404b2636217"
+    },
+    {
+      "physicalPage": 75,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/75.jpg",
+      "bytes": 583969,
+      "sha256": "a5e69e675bb361432677b13ce7490aa1dccf144cfe46aa0fd33b5acbcd0cef2b"
+    },
+    {
+      "physicalPage": 76,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/76.jpg",
+      "bytes": 521802,
+      "sha256": "020fb9c019d80a1c129f8dcd435329794e85a8f4f2f60dd08c8abe1b13a6842d"
+    },
+    {
+      "physicalPage": 77,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/77.jpg",
+      "bytes": 577269,
+      "sha256": "78931881c56af661f5e29fbc92b6a3435b9d11d9c147338802c0156d32ca625b"
+    },
+    {
+      "physicalPage": 78,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/78.jpg",
+      "bytes": 428509,
+      "sha256": "0e693bde9b00cb5d043ba9c3abaf72ab3d2646822b5d99160beab3a18a449722"
+    },
+    {
+      "physicalPage": 79,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/79.jpg",
+      "bytes": 569658,
+      "sha256": "eeb841cc34fece8ce5fac53251a9c477c668f866e716ba45f82a6a02d104b116"
+    },
+    {
+      "physicalPage": 80,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/80.jpg",
+      "bytes": 607583,
+      "sha256": "39874efb2012d5880a6c69939cde779f790d6e15e2bbcd2ce6bf3860ba257fd2"
+    },
+    {
+      "physicalPage": 81,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/81.jpg",
+      "bytes": 689799,
+      "sha256": "4682386df60ece839a1692fc34ee8e2ebfc925e112163369444c5324919e8444"
+    },
+    {
+      "physicalPage": 82,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/82.jpg",
+      "bytes": 549131,
+      "sha256": "64e5558765577a1b6a08c9a853afcc8ca4ac946391ce645cfeaa1beb95b02666"
+    },
+    {
+      "physicalPage": 83,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/83.jpg",
+      "bytes": 487930,
+      "sha256": "efbdc294ebad3da1060d4549efba9346980f9b2945d3362e95d9ea0cdd3580b8"
+    },
+    {
+      "physicalPage": 84,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/84.jpg",
+      "bytes": 529438,
+      "sha256": "8aea6f98f9b3e1b9948adff0501b0cda0783c9dcea77251b4555b70343e7be15"
+    },
+    {
+      "physicalPage": 85,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/85.jpg",
+      "bytes": 453335,
+      "sha256": "4e9dfd8e639fec5d4795dbe3fc18bbba250243009cd432c3aa87cc1eee0d0a18"
+    },
+    {
+      "physicalPage": 86,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/86.jpg",
+      "bytes": 337577,
+      "sha256": "1f5c2698270e60605b08b109a23899b83ba820283dc0de56f49a53125faf60e1"
+    },
+    {
+      "physicalPage": 87,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/87.jpg",
+      "bytes": 629368,
+      "sha256": "93b4cd921b448ad29c50dcd1b75cb5f2667be196949dc6cfa4b40a138256d2ac"
+    },
+    {
+      "physicalPage": 88,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/88.jpg",
+      "bytes": 677132,
+      "sha256": "de4cc19cd82654ccbe6719a40c916fd86d703cd7c03504921819ec7820adedfa"
+    },
+    {
+      "physicalPage": 89,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/89.jpg",
+      "bytes": 639879,
+      "sha256": "9fe840fc5d66ef304fbfc5d9468365f1618f2032465c5e4a0642243d9fe524ce"
+    },
+    {
+      "physicalPage": 90,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/90.jpg",
+      "bytes": 650882,
+      "sha256": "31e8b79ff598fd2b29ec61f93e0163e7eadafad545ffc8fffc9b87a9897de3f7"
+    },
+    {
+      "physicalPage": 91,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/91.jpg",
+      "bytes": 700591,
+      "sha256": "bac50c24e044bfb809d2a40fa3556ec79ef9a3760b615e12d7a63ea9fe2dfa3e"
+    },
+    {
+      "physicalPage": 92,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/92.jpg",
+      "bytes": 694552,
+      "sha256": "69920337e484840ddb148a5136a08bfeaaf0745e77220c3654a0ad28e795e9f5"
+    },
+    {
+      "physicalPage": 93,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/93.jpg",
+      "bytes": 375914,
+      "sha256": "b3191c367225914e77930975c11b976863abcf96682d465aade7d0fe6c0f824d"
+    },
+    {
+      "physicalPage": 94,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/94.jpg",
+      "bytes": 648336,
+      "sha256": "4c68bf930bf8698fd989e930054bbe8f973984f59b6ebc45bc2ba63bb4326374"
+    },
+    {
+      "physicalPage": 95,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/95.jpg",
+      "bytes": 562239,
+      "sha256": "66972b62698c203a87320ceb11dc786ab79a7793b93b884dbcade5e0d6374d5a"
+    },
+    {
+      "physicalPage": 96,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/96.jpg",
+      "bytes": 549193,
+      "sha256": "df8ba55b60631174ddf7771fd8c8000a59c573c6f01aea524f423175a11cc0a7"
+    },
+    {
+      "physicalPage": 97,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/97.jpg",
+      "bytes": 574725,
+      "sha256": "2b0464326ea2e310bb67cf3620fb65e31f0f2ba677bd87bc120d4adff2ab5693"
+    },
+    {
+      "physicalPage": 98,
+      "url": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/0d53b423-e9d3-63ae-9a22-0bce900d3b97.t/zh-CN/1787706860903/transcode/image/98.jpg",
+      "bytes": 473126,
+      "sha256": "2eef1894063298a422471fce426395bb0bc946478a871b36d53d09359fd9860f"
+    }
+  ]
+}

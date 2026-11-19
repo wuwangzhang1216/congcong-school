@@ -6,6 +6,8 @@ on:
       - 'apps/web/**'
       - 'packages/core/**'
       - 'output/**'
+      - 'content/editions/jingtong/**'
+      - 'content/passages/**'
       - 'scripts/checks/**'
       - 'scripts/quiz/**'
       - 'scripts/editions/**'
@@ -35,6 +37,7 @@ jobs:
           python3 -m pip install edge-tts==7.3.1
           python3 -m unittest discover -s scripts/tts -p 'test_*pinyin*.py'
           python3 -m unittest discover -s scripts/tts -p 'test_edge_tts_batch.py'
+          python3 -m unittest discover -s scripts/tts -p 'test_bundled_passages.py'
       - name: Learning state, rewards and media transport regressions
         run: |
           npx tsx scripts/checks/lesson-resume.ts
@@ -48,6 +51,7 @@ jobs:
           npx tsx scripts/checks/question-drafts.ts
           npx tsx scripts/checks/content-math.ts
           npx tsx scripts/checks/math-speech.ts
+          npx tsx scripts/checks/jingtong-textbook.ts
           python scripts/checks/textbook-editions.py
           python scripts/checks/five-four-import.py
           npx tsx --tsconfig apps/web/tsconfig.json scripts/checks/ux-rewards.ts

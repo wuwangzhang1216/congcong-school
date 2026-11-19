@@ -1,0 +1,690 @@
+{
+  "textbook": "（根据2022年版课程标准修订）义务教育教科书·英语 五年级上册（精通·2026秋版）",
+  "unit": "Jobs",
+  "unit_number": 2,
+  "unit_test": {
+    "title": "Jobs·配套练习",
+    "total_score": 330,
+    "time_minutes": 25,
+    "questions": [
+      {
+        "id": 20001,
+        "type": "choice",
+        "question": "在本单元的用法中，“farmer”表示什么？",
+        "options": [
+          "农民",
+          "工人",
+          "教师",
+          "记者"
+        ],
+        "answer": "农民",
+        "explanation": "这里的 farmer 表示“农民”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20002,
+        "type": "choice",
+        "question": "在本单元的用法中，“teacher”表示什么？",
+        "options": [
+          "教师",
+          "工人",
+          "记者",
+          "农民"
+        ],
+        "answer": "教师",
+        "explanation": "这里的 teacher 表示“教师”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20003,
+        "type": "choice",
+        "question": "在本单元的用法中，“reporter”表示什么？",
+        "options": [
+          "教师",
+          "工人",
+          "农民",
+          "记者"
+        ],
+        "answer": "记者",
+        "explanation": "这里的 reporter 表示“记者”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20004,
+        "type": "choice",
+        "question": "在本单元的用法中，“worker”表示什么？",
+        "options": [
+          "农民",
+          "工人",
+          "教师",
+          "记者"
+        ],
+        "answer": "工人",
+        "explanation": "这里的 worker 表示“工人”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20005,
+        "type": "choice",
+        "question": "在本单元的用法中，“writer”表示什么？",
+        "options": [
+          "记者",
+          "作家",
+          "农民",
+          "教师"
+        ],
+        "answer": "作家",
+        "explanation": "这里的 writer 表示“作家”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20006,
+        "type": "choice",
+        "question": "在本单元的用法中，“doctor”表示什么？",
+        "options": [
+          "农民",
+          "医生",
+          "记者",
+          "教师"
+        ],
+        "answer": "医生",
+        "explanation": "这里的 doctor 表示“医生”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20007,
+        "type": "choice",
+        "question": "在本单元的用法中，“driver”表示什么？",
+        "options": [
+          "教师",
+          "农民",
+          "司机",
+          "记者"
+        ],
+        "answer": "司机",
+        "explanation": "这里的 driver 表示“司机”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20008,
+        "type": "choice",
+        "question": "在本单元的用法中，“nurse”表示什么？",
+        "options": [
+          "记者",
+          "农民",
+          "护士",
+          "教师"
+        ],
+        "answer": "护士",
+        "explanation": "这里的 nurse 表示“护士”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20009,
+        "type": "choice",
+        "question": "在本单元的用法中，“police officer”表示什么？",
+        "options": [
+          "警察",
+          "记者",
+          "教师",
+          "农民"
+        ],
+        "answer": "警察",
+        "explanation": "这里的 police officer 表示“警察”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20010,
+        "type": "choice",
+        "question": "在本单元的用法中，“job”表示什么？",
+        "options": [
+          "记者",
+          "工作；职业",
+          "农民",
+          "教师"
+        ],
+        "answer": "工作；职业",
+        "explanation": "这里的 job 表示“工作；职业”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20011,
+        "type": "choice",
+        "question": "在本单元的用法中，“like”表示什么？",
+        "options": [
+          "农民",
+          "像……那样",
+          "记者",
+          "教师"
+        ],
+        "answer": "像……那样",
+        "explanation": "这里的 like 表示“像……那样”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20012,
+        "type": "choice",
+        "question": "在本单元的用法中，“people”表示什么？",
+        "options": [
+          "农民",
+          "记者",
+          "人们",
+          "教师"
+        ],
+        "answer": "人们",
+        "explanation": "这里的 people 表示“人们”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20013,
+        "type": "choice",
+        "question": "在本单元的用法中，“those”表示什么？",
+        "options": [
+          "教师",
+          "那些",
+          "农民",
+          "记者"
+        ],
+        "answer": "那些",
+        "explanation": "这里的 those 表示“那些”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20014,
+        "type": "choice",
+        "question": "在本单元的用法中，“must”表示什么？",
+        "options": [
+          "必须",
+          "记者",
+          "教师",
+          "农民"
+        ],
+        "answer": "必须",
+        "explanation": "这里的 must 表示“必须”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20015,
+        "type": "choice",
+        "question": "在本单元的用法中，“hard”表示什么？",
+        "options": [
+          "农民",
+          "教师",
+          "努力地",
+          "记者"
+        ],
+        "answer": "努力地",
+        "explanation": "这里的 hard 表示“努力地”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20016,
+        "type": "choice",
+        "question": "想问朋友爸爸的职业，应该说什么？",
+        "options": [
+          "Whose bag is it?",
+          "What is your father’s job?",
+          "Are you from Egypt?",
+          "Where is your pencil?"
+        ],
+        "answer": "What is your father’s job?",
+        "explanation": "What is your father’s job? 询问爸爸从事什么职业。",
+        "knowledge_point": "询问与介绍职业",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20017,
+        "type": "choice",
+        "question": "Leo 的妈妈是作家，哪句介绍正确？",
+        "options": [
+          "She is a write.",
+          "She is a writer.",
+          "She is writer a.",
+          "She are a writer."
+        ],
+        "answer": "She is a writer.",
+        "explanation": "作家是 writer；She 后使用 is，单个职业前用 a。",
+        "knowledge_point": "询问与介绍职业",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20018,
+        "type": "choice",
+        "question": "补全问答：Is she a reporter? — Yes, ____.",
+        "options": [
+          "she am",
+          "she is",
+          "she do",
+          "she are"
+        ],
+        "answer": "she is",
+        "explanation": "以 Is she 开头的一般疑问句，肯定回答用 Yes, she is。",
+        "knowledge_point": "询问与介绍职业",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20019,
+        "type": "choice",
+        "question": "He is a driver. 这里介绍的是什么？",
+        "options": [
+          "身高",
+          "物品归属",
+          "国籍",
+          "职业"
+        ],
+        "answer": "职业",
+        "explanation": "driver 是司机，句子介绍他的职业。",
+        "knowledge_point": "询问与介绍职业",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20020,
+        "type": "choice",
+        "question": "补全句子：My mother ____ a nurse.",
+        "options": [
+          "am",
+          "be",
+          "is",
+          "are"
+        ],
+        "answer": "is",
+        "explanation": "My mother 是第三人称单数，使用 is。",
+        "knowledge_point": "询问与介绍职业",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20021,
+        "type": "choice",
+        "question": "你的爸爸是工人，应该怎样介绍？",
+        "options": [
+          "My father is a work.",
+          "My father is a worker.",
+          "My father are a worker.",
+          "My father is a factory."
+        ],
+        "answer": "My father is a worker.",
+        "explanation": "worker 表示工人，factory 表示工厂。",
+        "knowledge_point": "询问与介绍职业",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20022,
+        "type": "choice",
+        "question": "你长大想当医生，应该说什么？",
+        "options": [
+          "I want be a doctor.",
+          "I am want doctor.",
+          "I want to be a doctor.",
+          "I want a hospital be."
+        ],
+        "answer": "I want to be a doctor.",
+        "explanation": "want to be a doctor 表示想成为一名医生。",
+        "knowledge_point": "表达理想与努力",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20023,
+        "type": "choice",
+        "question": "补全句子：I want ____ a teacher.",
+        "options": [
+          "to be",
+          "being to",
+          "to am",
+          "be"
+        ],
+        "answer": "to be",
+        "explanation": "want 后使用 to be 表达想成为。",
+        "knowledge_point": "表达理想与努力",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20024,
+        "type": "choice",
+        "question": "补全句子：We must ____ hard.",
+        "options": [
+          "studies",
+          "studying",
+          "to study",
+          "study"
+        ],
+        "answer": "study",
+        "explanation": "情态动词 must 后面用动词原形 study。",
+        "knowledge_point": "表达理想与努力",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20025,
+        "type": "choice",
+        "question": "I want to be a farmer. 中的 farmer 是什么职业？",
+        "options": [
+          "记者",
+          "作家",
+          "司机",
+          "农民"
+        ],
+        "answer": "农民",
+        "explanation": "farmer 是农民，句子表达职业理想。",
+        "knowledge_point": "表达理想与努力",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20026,
+        "type": "choice",
+        "question": "Nina 想照顾病人，哪个职业最符合这个目标？",
+        "options": [
+          "writer",
+          "farmer",
+          "nurse",
+          "driver"
+        ],
+        "answer": "nurse",
+        "explanation": "nurse 表示护士，照顾病人是护士的工作之一。",
+        "knowledge_point": "表达理想与努力",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20027,
+        "type": "choice",
+        "question": "选择正确表达“我想像妈妈一样当记者”的句子。",
+        "options": [
+          "I want to reporter be my mother.",
+          "I want to be a report.",
+          "I want to be a reporter like my mother.",
+          "I wants to be a reporter."
+        ],
+        "answer": "I want to be a reporter like my mother.",
+        "explanation": "want to be 表达理想；like my mother 表示像妈妈一样。",
+        "knowledge_point": "表达理想与努力",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20101,
+        "type": "choice",
+        "question": "哪个单词含有与 worker 相同的词尾 er？",
+        "options": [
+          "writer",
+          "sailor",
+          "doctor",
+          "actor"
+        ],
+        "answer": "writer",
+        "explanation": "正确选项是 writer。farmer、worker、writer 的词尾 er，以及 actor、doctor、sailor 的词尾 or，通常在非重读音节中弱读。",
+        "knowledge_point": "职业词尾er、or的读音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20102,
+        "type": "choice",
+        "question": "哪个单词含有与 actor 相同的词尾 or？",
+        "options": [
+          "writer",
+          "farmer",
+          "doctor",
+          "worker"
+        ],
+        "answer": "doctor",
+        "explanation": "正确选项是 doctor。farmer、worker、writer 的词尾 er，以及 actor、doctor、sailor 的词尾 or，通常在非重读音节中弱读。",
+        "knowledge_point": "职业词尾er、or的读音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20103,
+        "type": "choice",
+        "question": "哪组职业词都以 er 结尾？",
+        "options": [
+          "sailor, doctor",
+          "doctor, actor",
+          "farmer, writer",
+          "actor, farmer"
+        ],
+        "answer": "farmer, writer",
+        "explanation": "正确选项是 farmer, writer。farmer、worker、writer 的词尾 er，以及 actor、doctor、sailor 的词尾 or，通常在非重读音节中弱读。",
+        "knowledge_point": "职业词尾er、or的读音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20104,
+        "type": "choice",
+        "question": "哪组职业词都以 or 结尾？",
+        "options": [
+          "farmer, writer",
+          "doctor, sailor",
+          "writer, worker",
+          "farmer, worker"
+        ],
+        "answer": "doctor, sailor",
+        "explanation": "正确选项是 doctor, sailor。farmer、worker、writer 的词尾 er，以及 actor、doctor、sailor 的词尾 or，通常在非重读音节中弱读。",
+        "knowledge_point": "职业词尾er、or的读音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20105,
+        "type": "choice",
+        "question": "观察 farmer 的拼写，末尾两个字母是什么？",
+        "options": [
+          "er",
+          "ir",
+          "or",
+          "ar"
+        ],
+        "answer": "er",
+        "explanation": "正确选项是 er。farmer、worker、writer 的词尾 er，以及 actor、doctor、sailor 的词尾 or，通常在非重读音节中弱读。",
+        "knowledge_point": "职业词尾er、or的读音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 20106,
+        "type": "choice",
+        "question": "观察 sailor 的拼写，末尾两个字母是什么？",
+        "options": [
+          "ir",
+          "er",
+          "or",
+          "ar"
+        ],
+        "answer": "or",
+        "explanation": "正确选项是 or。farmer、worker、writer 的词尾 er，以及 actor、doctor、sailor 的词尾 or，通常在非重读音节中弱读。",
+        "knowledge_point": "职业词尾er、or的读音",
+        "difficulty": 1,
+        "score": 10
+      }
+    ]
+  },
+  "exam": {
+    "title": "Jobs·单元挑战",
+    "total_score": 60,
+    "time_minutes": 10,
+    "questions": [
+      {
+        "id": 29001,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“农民”？",
+        "options": [
+          "reporter",
+          "farmer",
+          "worker",
+          "teacher"
+        ],
+        "answer": "farmer",
+        "explanation": "farmer 对应“农民”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 29002,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“教师”？",
+        "options": [
+          "teacher",
+          "reporter",
+          "farmer",
+          "worker"
+        ],
+        "answer": "teacher",
+        "explanation": "teacher 对应“教师”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 29003,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“记者”？",
+        "options": [
+          "worker",
+          "teacher",
+          "reporter",
+          "farmer"
+        ],
+        "answer": "reporter",
+        "explanation": "reporter 对应“记者”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 29004,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“工人”？",
+        "options": [
+          "reporter",
+          "worker",
+          "farmer",
+          "teacher"
+        ],
+        "answer": "worker",
+        "explanation": "worker 对应“工人”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 29005,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“作家”？",
+        "options": [
+          "farmer",
+          "writer",
+          "teacher",
+          "reporter"
+        ],
+        "answer": "writer",
+        "explanation": "writer 对应“作家”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 29006,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“医生”？",
+        "options": [
+          "doctor",
+          "teacher",
+          "farmer",
+          "reporter"
+        ],
+        "answer": "doctor",
+        "explanation": "doctor 对应“医生”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "单元词汇与短语（1）",
+      "core_concept": "farmer：农民；teacher：教师；reporter：记者；worker：工人；writer：作家；doctor：医生；driver：司机；nurse：护士。",
+      "key_formula": "",
+      "tips": "先在语境中理解词义，再听读并辨认英文。",
+      "common_mistakes": [
+        "注意单词、短语的含义和使用场景，不按字母外形猜词义。"
+      ]
+    },
+    {
+      "point": "单元词汇与短语（2）",
+      "core_concept": "police officer：警察；job：工作；职业；like：像……那样；people：人们；those：那些；must：必须；hard：努力地。",
+      "key_formula": "",
+      "tips": "先在语境中理解词义，再听读并辨认英文。",
+      "common_mistakes": [
+        "注意单词、短语的含义和使用场景，不按字母外形猜词义。"
+      ]
+    },
+    {
+      "point": "询问与介绍职业",
+      "core_concept": "用 What is ... job? 询问职业，用 He is a ... 或 She is a ... 回答。",
+      "key_formula": "",
+      "tips": "单个职业名词通常带 a 或 an；职业与工作地点不同。",
+      "common_mistakes": [
+        "单个职业名词通常带 a 或 an；职业与工作地点不同。"
+      ]
+    },
+    {
+      "point": "表达理想与努力",
+      "core_concept": "用 I want to be a ... 表达未来想从事的职业；must 后接动词原形，说明必须做的事。",
+      "key_formula": "",
+      "tips": "want to be 表示想成为，不要漏掉 to 或 be；must 后不用 studies。",
+      "common_mistakes": [
+        "want to be 表示想成为，不要漏掉 to 或 be；must 后不用 studies。"
+      ]
+    },
+    {
+      "point": "职业词尾er、or的读音",
+      "core_concept": "farmer、worker、writer 的词尾 er，以及 actor、doctor、sailor 的词尾 or，通常在非重读音节中弱读。",
+      "key_formula": "",
+      "tips": "词尾的弱读音与单词重读音节不同；注意不同口音中的卷舌差异。",
+      "common_mistakes": [
+        "词尾的弱读音与单词重读音节不同；注意不同口音中的卷舌差异。"
+      ]
+    }
+  ]
+}

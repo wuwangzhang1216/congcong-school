@@ -1,0 +1,706 @@
+{
+  "textbook": "（根据2022年版课程标准修订）义务教育教科书·英语 五年级上册（精通·2026秋版）",
+  "unit": "A tidy house",
+  "unit_number": 5,
+  "unit_test": {
+    "title": "A tidy house·配套练习",
+    "total_score": 340,
+    "time_minutes": 25,
+    "questions": [
+      {
+        "id": 50001,
+        "type": "choice",
+        "question": "在本单元的用法中，“bedroom”表示什么？",
+        "options": [
+          "厨房",
+          "书房",
+          "卧室",
+          "客厅"
+        ],
+        "answer": "卧室",
+        "explanation": "这里的 bedroom 表示“卧室”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50002,
+        "type": "choice",
+        "question": "在本单元的用法中，“kitchen”表示什么？",
+        "options": [
+          "客厅",
+          "卧室",
+          "厨房",
+          "书房"
+        ],
+        "answer": "厨房",
+        "explanation": "这里的 kitchen 表示“厨房”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50003,
+        "type": "choice",
+        "question": "在本单元的用法中，“living room”表示什么？",
+        "options": [
+          "厨房",
+          "客厅",
+          "书房",
+          "卧室"
+        ],
+        "answer": "客厅",
+        "explanation": "这里的 living room 表示“客厅”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50004,
+        "type": "choice",
+        "question": "在本单元的用法中，“study”表示什么？",
+        "options": [
+          "书房",
+          "卧室",
+          "厨房",
+          "客厅"
+        ],
+        "answer": "书房",
+        "explanation": "这里的 study 表示“书房”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50005,
+        "type": "choice",
+        "question": "在本单元的用法中，“toilet”表示什么？",
+        "options": [
+          "卧室",
+          "卫生间",
+          "厨房",
+          "客厅"
+        ],
+        "answer": "卫生间",
+        "explanation": "这里的 toilet 表示“卫生间”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50006,
+        "type": "choice",
+        "question": "在本单元的用法中，“bathroom”表示什么？",
+        "options": [
+          "浴室；洗手间",
+          "厨房",
+          "客厅",
+          "卧室"
+        ],
+        "answer": "浴室；洗手间",
+        "explanation": "这里的 bathroom 表示“浴室；洗手间”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50007,
+        "type": "choice",
+        "question": "在本单元的用法中，“table”表示什么？",
+        "options": [
+          "客厅",
+          "卧室",
+          "桌子",
+          "厨房"
+        ],
+        "answer": "桌子",
+        "explanation": "这里的 table 表示“桌子”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50008,
+        "type": "choice",
+        "question": "在本单元的用法中，“dish”表示什么？",
+        "options": [
+          "餐具",
+          "客厅",
+          "卧室",
+          "厨房"
+        ],
+        "answer": "餐具",
+        "explanation": "这里的 dish 表示“餐具”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50009,
+        "type": "choice",
+        "question": "在本单元的用法中，“do the dishes”表示什么？",
+        "options": [
+          "洗餐具",
+          "客厅",
+          "卧室",
+          "厨房"
+        ],
+        "answer": "洗餐具",
+        "explanation": "这里的 do the dishes 表示“洗餐具”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50010,
+        "type": "choice",
+        "question": "在本单元的用法中，“tidy”表示什么？",
+        "options": [
+          "卧室",
+          "客厅",
+          "整洁的；使整洁",
+          "厨房"
+        ],
+        "answer": "整洁的；使整洁",
+        "explanation": "这里的 tidy 表示“整洁的；使整洁”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50011,
+        "type": "choice",
+        "question": "在本单元的用法中，“put away”表示什么？",
+        "options": [
+          "把……收拾起来",
+          "卧室",
+          "厨房",
+          "客厅"
+        ],
+        "answer": "把……收拾起来",
+        "explanation": "这里的 put away 表示“把……收拾起来”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50012,
+        "type": "choice",
+        "question": "在本单元的用法中，“paper”表示什么？",
+        "options": [
+          "卧室",
+          "纸",
+          "厨房",
+          "客厅"
+        ],
+        "answer": "纸",
+        "explanation": "这里的 paper 表示“纸”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50013,
+        "type": "choice",
+        "question": "在本单元的用法中，“always”表示什么？",
+        "options": [
+          "总是",
+          "厨房",
+          "卧室",
+          "客厅"
+        ],
+        "answer": "总是",
+        "explanation": "这里的 always 表示“总是”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50014,
+        "type": "choice",
+        "question": "在本单元的用法中，“keep”表示什么？",
+        "options": [
+          "客厅",
+          "厨房",
+          "保持",
+          "卧室"
+        ],
+        "answer": "保持",
+        "explanation": "这里的 keep 表示“保持”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50015,
+        "type": "choice",
+        "question": "在本单元的用法中，“tired”表示什么？",
+        "options": [
+          "厨房",
+          "疲倦的",
+          "客厅",
+          "卧室"
+        ],
+        "answer": "疲倦的",
+        "explanation": "这里的 tired 表示“疲倦的”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50016,
+        "type": "choice",
+        "question": "在本单元的用法中，“What a mess!”表示什么？",
+        "options": [
+          "厨房",
+          "真乱啊！",
+          "客厅",
+          "卧室"
+        ],
+        "answer": "真乱啊！",
+        "explanation": "这里的 What a mess! 表示“真乱啊！”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50017,
+        "type": "choice",
+        "question": "Dad is cooking in the kitchen. Dad 在哪里？",
+        "options": [
+          "客厅",
+          "厨房",
+          "卧室",
+          "书房"
+        ],
+        "answer": "厨房",
+        "explanation": "kitchen 是厨房，句子说爸爸在厨房做饭。",
+        "knowledge_point": "房间与家务表达",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50018,
+        "type": "choice",
+        "question": "I read books in the study. 这里 study 的意思是什么？",
+        "options": [
+          "书房",
+          "工厂",
+          "学习（动作）",
+          "餐具"
+        ],
+        "answer": "书房",
+        "explanation": "in the study 中 study 是房间名词，表示书房。",
+        "knowledge_point": "房间与家务表达",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50019,
+        "type": "choice",
+        "question": "用哪个词组表示“洗餐具”？",
+        "options": [
+          "do the dishes",
+          "watch a show",
+          "go to bed",
+          "take a photo"
+        ],
+        "answer": "do the dishes",
+        "explanation": "do the dishes 表示洗餐具。",
+        "knowledge_point": "房间与家务表达",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50020,
+        "type": "choice",
+        "question": "补全句子：Please clean the ____.（桌子）",
+        "options": [
+          "table",
+          "always",
+          "keep",
+          "tired"
+        ],
+        "answer": "table",
+        "explanation": "table 是桌子，clean the table 表示擦桌子。",
+        "knowledge_point": "房间与家务表达",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50021,
+        "type": "choice",
+        "question": "妈妈在洗餐具，哪句话正确？",
+        "options": [
+          "My mother is do dishes.",
+          "My mother is a dish.",
+          "My mother is doing the dishes.",
+          "My mother dishes doing is."
+        ],
+        "answer": "My mother is doing the dishes.",
+        "explanation": "be doing 表示正在做，doing the dishes 表示正在洗餐具。",
+        "knowledge_point": "房间与家务表达",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50022,
+        "type": "choice",
+        "question": "Which room do you sleep in? 选择最合适的房间。",
+        "options": [
+          "factory",
+          "bank",
+          "TV station",
+          "bedroom"
+        ],
+        "answer": "bedroom",
+        "explanation": "bedroom 是卧室，通常在卧室睡觉。",
+        "knowledge_point": "房间与家务表达",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50023,
+        "type": "choice",
+        "question": "想请家人帮助整理书房，哪句话合适？",
+        "options": [
+          "What is your father’s job?",
+          "Where are you from?",
+          "Whose study yours?",
+          "Can you help me tidy the study?"
+        ],
+        "answer": "Can you help me tidy the study?",
+        "explanation": "Can you help me ...? 用来礼貌请求帮助。",
+        "knowledge_point": "请求帮助与保持整洁",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50024,
+        "type": "choice",
+        "question": "补全句子：You should ____ your room.",
+        "options": [
+          "tidies",
+          "tidy",
+          "tidying",
+          "to tidy"
+        ],
+        "answer": "tidy",
+        "explanation": "should 后面用动词原形 tidy。",
+        "knowledge_point": "请求帮助与保持整洁",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50025,
+        "type": "choice",
+        "question": "Please put your books away. 要你做什么？",
+        "options": [
+          "把书借给医生",
+          "把书都画上画",
+          "把书收拾起来",
+          "给书拍张照片"
+        ],
+        "answer": "把书收拾起来",
+        "explanation": "put ... away 表示把……收拾起来。",
+        "knowledge_point": "请求帮助与保持整洁",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50026,
+        "type": "choice",
+        "question": "We should always keep our home tidy. 这里 always 表示什么？",
+        "options": [
+          "昨天",
+          "总是",
+          "从不",
+          "偶尔"
+        ],
+        "answer": "总是",
+        "explanation": "always 表示总是，强调保持整洁的习惯。",
+        "knowledge_point": "请求帮助与保持整洁",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50027,
+        "type": "choice",
+        "question": "家人请你帮忙，而你愿意帮忙，怎样回应合适？",
+        "options": [
+          "I am from Egypt.",
+          "Sure. What can I do?",
+          "Whose pencil is it?",
+          "Where is France?"
+        ],
+        "answer": "Sure. What can I do?",
+        "explanation": "Sure 表示愿意，接着询问可以做什么很合适。",
+        "knowledge_point": "请求帮助与保持整洁",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50028,
+        "type": "choice",
+        "question": "I am tired after cleaning. 这里 tired 的意思是什么？",
+        "options": [
+          "高兴见到你",
+          "疲倦的",
+          "更高的",
+          "整洁的"
+        ],
+        "answer": "疲倦的",
+        "explanation": "tired 描述疲倦的状态。",
+        "knowledge_point": "请求帮助与保持整洁",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50101,
+        "type": "choice",
+        "question": "feet 中 ee 的读音与哪个词中的 ea 相同？",
+        "options": [
+          "steak",
+          "head",
+          "bread",
+          "seat"
+        ],
+        "answer": "seat",
+        "explanation": "正确选项是 seat。bee、feet、meet 中的 ee，与 seat、clean、peach 中的 ea 有相同的长元音。",
+        "knowledge_point": "ee、ea的长元音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50102,
+        "type": "choice",
+        "question": "bee 的元音与哪个词的元音相同？",
+        "options": [
+          "bet",
+          "meet",
+          "best",
+          "bed"
+        ],
+        "answer": "meet",
+        "explanation": "正确选项是 meet。bee、feet、meet 中的 ee，与 seat、clean、peach 中的 ea 有相同的长元音。",
+        "knowledge_point": "ee、ea的长元音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50103,
+        "type": "choice",
+        "question": "clean 中 ea 的读音与哪个词中的 ea 相同？",
+        "options": [
+          "steak",
+          "head",
+          "bread",
+          "peach"
+        ],
+        "answer": "peach",
+        "explanation": "正确选项是 peach。bee、feet、meet 中的 ee，与 seat、clean、peach 中的 ea 有相同的长元音。",
+        "knowledge_point": "ee、ea的长元音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50104,
+        "type": "choice",
+        "question": "哪组单词中都有与 feet 相同的长元音？",
+        "options": [
+          "bread, steak",
+          "bread, head",
+          "head, steak",
+          "meet, seat"
+        ],
+        "answer": "meet, seat",
+        "explanation": "正确选项是 meet, seat。bee、feet、meet 中的 ee，与 seat、clean、peach 中的 ea 有相同的长元音。",
+        "knowledge_point": "ee、ea的长元音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50105,
+        "type": "choice",
+        "question": "哪个词的 ea 与 peach 的 ea 不同？",
+        "options": [
+          "bread",
+          "tea",
+          "seat",
+          "clean"
+        ],
+        "answer": "bread",
+        "explanation": "正确选项是 bread。bee、feet、meet 中的 ee，与 seat、clean、peach 中的 ea 有相同的长元音。",
+        "knowledge_point": "ee、ea的长元音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 50106,
+        "type": "choice",
+        "question": "哪个单词含有本单元学习的 ee 组合？",
+        "options": [
+          "peach",
+          "seat",
+          "feet",
+          "clean"
+        ],
+        "answer": "feet",
+        "explanation": "正确选项是 feet。bee、feet、meet 中的 ee，与 seat、clean、peach 中的 ea 有相同的长元音。",
+        "knowledge_point": "ee、ea的长元音",
+        "difficulty": 1,
+        "score": 10
+      }
+    ]
+  },
+  "exam": {
+    "title": "A tidy house·单元挑战",
+    "total_score": 60,
+    "time_minutes": 10,
+    "questions": [
+      {
+        "id": 59001,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“卧室”？",
+        "options": [
+          "kitchen",
+          "bedroom",
+          "living room",
+          "study"
+        ],
+        "answer": "bedroom",
+        "explanation": "bedroom 对应“卧室”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 59002,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“厨房”？",
+        "options": [
+          "kitchen",
+          "bedroom",
+          "living room",
+          "study"
+        ],
+        "answer": "kitchen",
+        "explanation": "kitchen 对应“厨房”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 59003,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“客厅”？",
+        "options": [
+          "living room",
+          "study",
+          "bedroom",
+          "kitchen"
+        ],
+        "answer": "living room",
+        "explanation": "living room 对应“客厅”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 59004,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“书房”？",
+        "options": [
+          "living room",
+          "kitchen",
+          "bedroom",
+          "study"
+        ],
+        "answer": "study",
+        "explanation": "study 对应“书房”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 59005,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“卫生间”？",
+        "options": [
+          "toilet",
+          "bedroom",
+          "kitchen",
+          "living room"
+        ],
+        "answer": "toilet",
+        "explanation": "toilet 对应“卫生间”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 59006,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“浴室；洗手间”？",
+        "options": [
+          "living room",
+          "kitchen",
+          "bedroom",
+          "bathroom"
+        ],
+        "answer": "bathroom",
+        "explanation": "bathroom 对应“浴室；洗手间”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "单元词汇与短语（1）",
+      "core_concept": "bedroom：卧室；kitchen：厨房；living room：客厅；study：书房；toilet：卫生间；bathroom：浴室；洗手间；table：桌子；dish：餐具。",
+      "key_formula": "",
+      "tips": "先在语境中理解词义，再听读并辨认英文。",
+      "common_mistakes": [
+        "注意单词、短语的含义和使用场景，不按字母外形猜词义。"
+      ]
+    },
+    {
+      "point": "单元词汇与短语（2）",
+      "core_concept": "do the dishes：洗餐具；tidy：整洁的；使整洁；put away：把……收拾起来；paper：纸；always：总是；keep：保持；tired：疲倦的；What a mess!：真乱啊！。",
+      "key_formula": "",
+      "tips": "先在语境中理解词义，再听读并辨认英文。",
+      "common_mistakes": [
+        "注意单词、短语的含义和使用场景，不按字母外形猜词义。"
+      ]
+    },
+    {
+      "point": "房间与家务表达",
+      "core_concept": "区分 bedroom、kitchen、living room、study、toilet 和 bathroom；用 do the dishes 表达洗餐具。",
+      "key_formula": "",
+      "tips": "study 在本单元可作名词“书房”，不同于表示“学习”的动词 study。",
+      "common_mistakes": [
+        "study 在本单元可作名词“书房”，不同于表示“学习”的动词 study。"
+      ]
+    },
+    {
+      "point": "请求帮助与保持整洁",
+      "core_concept": "用 Can you help me ...? 礼貌请求帮助；用 should 加动词原形表达建议，用 put away 表示收拾起来。",
+      "key_formula": "",
+      "tips": "always 表示总是；keep ... tidy 表示保持整洁；should 后不用 tidies。",
+      "common_mistakes": [
+        "always 表示总是；keep ... tidy 表示保持整洁；should 后不用 tidies。"
+      ]
+    },
+    {
+      "point": "ee、ea的长元音",
+      "core_concept": "bee、feet、meet 中的 ee，与 seat、clean、peach 中的 ea 有相同的长元音。",
+      "key_formula": "",
+      "tips": "不是所有 ea 都同音，例如 bread 的 ea 与 clean 不同。",
+      "common_mistakes": [
+        "不是所有 ea 都同音，例如 bread 的 ea 与 clean 不同。"
+      ]
+    }
+  ]
+}

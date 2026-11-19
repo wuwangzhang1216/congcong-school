@@ -1,0 +1,323 @@
+{
+  "textbook": "（根据2022年版课程标准修订）义务教育教科书·英语 五年级上册（精通·2026秋版）",
+  "publisherLabel": "人教版（精通）",
+  "sourceEdition": "2022课标修订版 · 苗兴伟主编",
+  "edition": "jingtong-2026",
+  "editionLabel": "精通·2026秋版",
+  "units": [
+    {
+      "unit_number": 1,
+      "title": "Around the world",
+      "knowledge_points": [
+        {
+          "name": "单元词汇与短语（1）",
+          "description": "在本单元主题情境中理解与运用单元词汇与短语（1）",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "单元词汇与短语（2）",
+          "description": "在本单元主题情境中理解与运用单元词汇与短语（2）",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "介绍来自哪里",
+          "description": "在本单元主题情境中理解与运用介绍来自哪里",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "介绍地点与特色",
+          "description": "在本单元主题情境中理解与运用介绍地点与特色",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "ou、ow的读音",
+          "description": "在 cloud、house、mouth 中，ou 发相同的双元音；flower、shower、tower 中的 ow 也有这个读音。",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "title": "Jobs",
+      "knowledge_points": [
+        {
+          "name": "单元词汇与短语（1）",
+          "description": "在本单元主题情境中理解与运用单元词汇与短语（1）",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "单元词汇与短语（2）",
+          "description": "在本单元主题情境中理解与运用单元词汇与短语（2）",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "询问与介绍职业",
+          "description": "在本单元主题情境中理解与运用询问与介绍职业",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "表达理想与努力",
+          "description": "在本单元主题情境中理解与运用表达理想与努力",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "职业词尾er、or的读音",
+          "description": "farmer、worker、writer 的词尾 er，以及 actor、doctor、sailor 的词尾 or，通常在非重读音节中弱读。",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "title": "Workplaces",
+      "knowledge_points": [
+        {
+          "name": "单元词汇与短语（1）",
+          "description": "在本单元主题情境中理解与运用单元词汇与短语（1）",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "单元词汇与短语（2）",
+          "description": "在本单元主题情境中理解与运用单元词汇与短语（2）",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "询问工作与学习地点",
+          "description": "在本单元主题情境中理解与运用询问工作与学习地点",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "职业与工作场所",
+          "description": "在本单元主题情境中理解与运用职业与工作场所",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "词尾y的两种读音",
+          "description": "cry、fly、shy 的词尾 y 与字母 I 的名称音相同；baby、factory、happy 的词尾 y 发另一种较短的音。",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 101,
+      "title": "Revision 1",
+      "label": "综合复习",
+      "knowledge_points": [
+        {
+          "name": "Revision 1·综合运用",
+          "description": "在新情境中复习前面三个单元的语言知识",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "title": "Putting things in order",
+      "knowledge_points": [
+        {
+          "name": "单元词汇与短语（1）",
+          "description": "在本单元主题情境中理解与运用单元词汇与短语（1）",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "单元词汇与短语（2）",
+          "description": "在本单元主题情境中理解与运用单元词汇与短语（2）",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "物品归属与物主代词",
+          "description": "在本单元主题情境中理解与运用物品归属与物主代词",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "位置、人物关系与整理",
+          "description": "在本单元主题情境中理解与运用位置、人物关系与整理",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "our的不同读音",
+          "description": "our、hour、sour 中的字母组合可放在一起听读比较；four、pour、your 中的 our 是另一组。",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "title": "A tidy house",
+      "knowledge_points": [
+        {
+          "name": "单元词汇与短语（1）",
+          "description": "在本单元主题情境中理解与运用单元词汇与短语（1）",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "单元词汇与短语（2）",
+          "description": "在本单元主题情境中理解与运用单元词汇与短语（2）",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "房间与家务表达",
+          "description": "在本单元主题情境中理解与运用房间与家务表达",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "请求帮助与保持整洁",
+          "description": "在本单元主题情境中理解与运用请求帮助与保持整洁",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "ee、ea的长元音",
+          "description": "bee、feet、meet 中的 ee，与 seat、clean、peach 中的 ea 有相同的长元音。",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "title": "Be yourself",
+      "knowledge_points": [
+        {
+          "name": "单元词汇与短语（1）",
+          "description": "在本单元主题情境中理解与运用单元词汇与短语（1）",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "单元词汇与短语（2）",
+          "description": "在本单元主题情境中理解与运用单元词汇与短语（2）",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "描述性格与外貌",
+          "description": "在本单元主题情境中理解与运用描述性格与外貌",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "比较差异与认识自己",
+          "description": "在本单元主题情境中理解与运用比较差异与认识自己",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        },
+        {
+          "name": "ie及相邻元音的拼读",
+          "description": "lie、pie、tie 中 ie 的读音与字母 I 的名称音相同；diet、quiet、science 要注意相邻元音分音节。",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 102,
+      "title": "Revision 2",
+      "label": "综合复习",
+      "knowledge_points": [
+        {
+          "name": "Revision 2·综合运用",
+          "description": "在新情境中复习前面三个单元的语言知识",
+          "difficulty": 1,
+          "question_types": [
+            "choice"
+          ]
+        }
+      ]
+    }
+  ],
+  "requiredPassageTitles": [
+    "Unit 1 Around the world · 单元词汇",
+    "Unit 2 Jobs · 单元词汇",
+    "Unit 3 Workplaces · 单元词汇",
+    "Unit 4 Putting things in order · 单元词汇",
+    "Unit 5 A tidy house · 单元词汇",
+    "Unit 6 Be yourself · 单元词汇"
+  ]
+}

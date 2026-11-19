@@ -44,8 +44,8 @@ process.off('unhandledRejection', unhandled);
 // cache. Content-addressed app assets can stay cached across the transition.
 const upgradeHandlers = new Map();
 const cacheContents = new Map([
-  ['ctsf-data-v3-chinese-g5up-edge-v1.6.0', new Response('old catalog: 58')],
-  ['ctsf-shell-v3-chinese-g5up-edge-v1.6.0', new Response('old shell')],
+  ['ctsf-data-v3-five-four-v1.8.0', new Response('old catalog: 84')],
+  ['ctsf-shell-v3-numeric-input-v1.8.2', new Response('old shell')],
   ['ctsf-static-v3', new Response('existing hashed asset')],
 ]);
 let claimed = false;
@@ -63,7 +63,7 @@ runInNewContext(readFileSync(new URL('../../apps/web/public/sw.js', import.meta.
       put: async (_, response) => { cacheContents.set(name, response); },
     }),
   },
-  fetch: async () => new Response('new catalog: 84'),
+  fetch: async () => new Response('new catalog: 85'),
   URL, Response,
 });
 let activation;
@@ -71,7 +71,7 @@ upgradeHandlers.get('activate')({ waitUntil: p => { activation = p; } });
 await activation;
 assert.equal(claimed, true);
 assert.equal(cacheContents.has('ctsf-static-v3'), true);
-assert.equal(cacheContents.has('ctsf-data-v3-chinese-g5up-edge-v1.6.0'), false);
+assert.equal(cacheContents.has('ctsf-data-v3-five-four-v1.8.0'), false);
 upgradeHandlers.get('fetch')({ request: new Request('https://classroom.example/data/index.json'), respondWith: p => { result = p; } });
-assert.equal(await (await result).text(), 'new catalog: 84');
+assert.equal(await (await result).text(), 'new catalog: 85');
 console.log('PASS: byte ranges bypass cache; data refreshes; review loads are fresh; quota errors handled; upgrade replaces the old catalog while preserving hashed assets.');

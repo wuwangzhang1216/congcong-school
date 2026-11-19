@@ -1,0 +1,690 @@
+{
+  "textbook": "（根据2022年版课程标准修订）义务教育教科书·英语 五年级上册（精通·2026秋版）",
+  "unit": "Workplaces",
+  "unit_number": 3,
+  "unit_test": {
+    "title": "Workplaces·配套练习",
+    "total_score": 330,
+    "time_minutes": 25,
+    "questions": [
+      {
+        "id": 30001,
+        "type": "choice",
+        "question": "在本单元的用法中，“bank”表示什么？",
+        "options": [
+          "银行",
+          "旅馆",
+          "电视台",
+          "警察局"
+        ],
+        "answer": "银行",
+        "explanation": "这里的 bank 表示“银行”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30002,
+        "type": "choice",
+        "question": "在本单元的用法中，“hotel”表示什么？",
+        "options": [
+          "银行",
+          "警察局",
+          "电视台",
+          "旅馆"
+        ],
+        "answer": "旅馆",
+        "explanation": "这里的 hotel 表示“旅馆”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30003,
+        "type": "choice",
+        "question": "在本单元的用法中，“police station”表示什么？",
+        "options": [
+          "电视台",
+          "旅馆",
+          "警察局",
+          "银行"
+        ],
+        "answer": "警察局",
+        "explanation": "这里的 police station 表示“警察局”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30004,
+        "type": "choice",
+        "question": "在本单元的用法中，“TV station”表示什么？",
+        "options": [
+          "警察局",
+          "电视台",
+          "旅馆",
+          "银行"
+        ],
+        "answer": "电视台",
+        "explanation": "这里的 TV station 表示“电视台”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30005,
+        "type": "choice",
+        "question": "在本单元的用法中，“fire station”表示什么？",
+        "options": [
+          "消防站",
+          "旅馆",
+          "警察局",
+          "银行"
+        ],
+        "answer": "消防站",
+        "explanation": "这里的 fire station 表示“消防站”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30006,
+        "type": "choice",
+        "question": "在本单元的用法中，“factory”表示什么？",
+        "options": [
+          "银行",
+          "旅馆",
+          "工厂",
+          "警察局"
+        ],
+        "answer": "工厂",
+        "explanation": "这里的 factory 表示“工厂”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30007,
+        "type": "choice",
+        "question": "在本单元的用法中，“farm”表示什么？",
+        "options": [
+          "农场",
+          "警察局",
+          "旅馆",
+          "银行"
+        ],
+        "answer": "农场",
+        "explanation": "这里的 farm 表示“农场”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30008,
+        "type": "choice",
+        "question": "在本单元的用法中，“hospital”表示什么？",
+        "options": [
+          "银行",
+          "警察局",
+          "医院",
+          "旅馆"
+        ],
+        "answer": "医院",
+        "explanation": "这里的 hospital 表示“医院”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30009,
+        "type": "choice",
+        "question": "在本单元的用法中，“Ms”表示什么？",
+        "options": [
+          "警察局",
+          "银行",
+          "女士（不指明婚姻状况）",
+          "旅馆"
+        ],
+        "answer": "女士（不指明婚姻状况）",
+        "explanation": "这里的 Ms 表示“女士（不指明婚姻状况）”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30010,
+        "type": "choice",
+        "question": "在本单元的用法中，“please”表示什么？",
+        "options": [
+          "请",
+          "旅馆",
+          "银行",
+          "警察局"
+        ],
+        "answer": "请",
+        "explanation": "这里的 please 表示“请”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30011,
+        "type": "choice",
+        "question": "在本单元的用法中，“sleep”表示什么？",
+        "options": [
+          "银行",
+          "旅馆",
+          "睡觉",
+          "警察局"
+        ],
+        "answer": "睡觉",
+        "explanation": "这里的 sleep 表示“睡觉”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30012,
+        "type": "choice",
+        "question": "在本单元的用法中，“woman”表示什么？",
+        "options": [
+          "旅馆",
+          "警察局",
+          "银行",
+          "女人"
+        ],
+        "answer": "女人",
+        "explanation": "这里的 woman 表示“女人”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30013,
+        "type": "choice",
+        "question": "在本单元的用法中，“middle”表示什么？",
+        "options": [
+          "旅馆",
+          "警察局",
+          "中间的；中间",
+          "银行"
+        ],
+        "answer": "中间的；中间",
+        "explanation": "这里的 middle 表示“中间的；中间”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30014,
+        "type": "choice",
+        "question": "在本单元的用法中，“middle school”表示什么？",
+        "options": [
+          "银行",
+          "旅馆",
+          "警察局",
+          "中学"
+        ],
+        "answer": "中学",
+        "explanation": "这里的 middle school 表示“中学”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30015,
+        "type": "choice",
+        "question": "在本单元的用法中，“Nice to see you!”表示什么？",
+        "options": [
+          "银行",
+          "很高兴再次见到你！",
+          "旅馆",
+          "警察局"
+        ],
+        "answer": "很高兴再次见到你！",
+        "explanation": "这里的 Nice to see you! 表示“很高兴再次见到你！”。",
+        "knowledge_point": "单元词汇与短语（2）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30016,
+        "type": "choice",
+        "question": "想问对方在哪里工作，应该说什么？",
+        "options": [
+          "Where do you work?",
+          "Whose book is this?",
+          "Where are you from?",
+          "What is your job?"
+        ],
+        "answer": "Where do you work?",
+        "explanation": "Where do you work? 询问工作地点。",
+        "knowledge_point": "询问工作与学习地点",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30017,
+        "type": "choice",
+        "question": "想问对方在哪里学习，应该说什么？",
+        "options": [
+          "What do you want to be?",
+          "Where do you study?",
+          "Is this yours?",
+          "Who is stronger?"
+        ],
+        "answer": "Where do you study?",
+        "explanation": "Where do you study? 询问学习地点。",
+        "knowledge_point": "询问工作与学习地点",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30018,
+        "type": "choice",
+        "question": "补全句子：I work at a ____.（银行）",
+        "options": [
+          "driver",
+          "country",
+          "bank",
+          "farmer"
+        ],
+        "answer": "bank",
+        "explanation": "bank 是银行，表示工作地点。",
+        "knowledge_point": "询问工作与学习地点",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30019,
+        "type": "choice",
+        "question": "I study at a middle school. 说明什么？",
+        "options": [
+          "我想当记者",
+          "我来自英国",
+          "我在一所医院工作",
+          "我在一所中学学习"
+        ],
+        "answer": "我在一所中学学习",
+        "explanation": "study 表示学习，middle school 表示中学。",
+        "knowledge_point": "询问工作与学习地点",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30020,
+        "type": "choice",
+        "question": "再次见到熟悉的老师，哪句话合适？",
+        "options": [
+          "What a mess!",
+          "Nice to see you!",
+          "Put it away!",
+          "Whose teacher is it?"
+        ],
+        "answer": "Nice to see you!",
+        "explanation": "Nice to see you! 可用于再次见到熟悉的人时问好。",
+        "knowledge_point": "询问工作与学习地点",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30021,
+        "type": "choice",
+        "question": "Ms Chen 是对陈老师的称呼。Ms 有什么含义？",
+        "options": [
+          "女士，不指明婚姻状况",
+          "只用于男性",
+          "只用于已婚女性",
+          "只用于未婚女性"
+        ],
+        "answer": "女士，不指明婚姻状况",
+        "explanation": "Ms 不说明女性是否结婚，可用于姓氏前。",
+        "knowledge_point": "询问工作与学习地点",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30022,
+        "type": "choice",
+        "question": "补全句子：The farmer works on a ____.",
+        "options": [
+          "farmer",
+          "job",
+          "farm",
+          "nurse"
+        ],
+        "answer": "farm",
+        "explanation": "farmer 是农民，farm 是农场；on a farm 表示在农场。",
+        "knowledge_point": "职业与工作场所",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30023,
+        "type": "choice",
+        "question": "Uncle Lin is a worker. He works in a ____.",
+        "options": [
+          "writer",
+          "doctor",
+          "worker",
+          "factory"
+        ],
+        "answer": "factory",
+        "explanation": "factory 是工厂，可用于描述工人的工作场所。",
+        "knowledge_point": "职业与工作场所",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30024,
+        "type": "choice",
+        "question": "A police officer works at a police station. 哪部分表示场所？",
+        "options": [
+          "works",
+          "police station",
+          "officer",
+          "police officer"
+        ],
+        "answer": "police station",
+        "explanation": "police station 是警察局，police officer 是警察。",
+        "knowledge_point": "职业与工作场所",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30025,
+        "type": "choice",
+        "question": "选择正确表达“她在一家旅馆工作”的句子。",
+        "options": [
+          "She works at a hotel.",
+          "She is a hotel.",
+          "She work at a hotel.",
+          "She works a hotel at."
+        ],
+        "answer": "She works at a hotel.",
+        "explanation": "She 是第三人称单数，使用 works；at a hotel 表示地点。",
+        "knowledge_point": "职业与工作场所",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30026,
+        "type": "choice",
+        "question": "The doctor works at a hospital. 医生在哪里工作？",
+        "options": [
+          "农场",
+          "医院",
+          "银行",
+          "电视台"
+        ],
+        "answer": "医院",
+        "explanation": "hospital 表示医院，句子说明医生在医院工作。",
+        "knowledge_point": "职业与工作场所",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30027,
+        "type": "choice",
+        "question": "想确认对方是否在电视台工作，哪句合适？",
+        "options": [
+          "Do you work at a TV station?",
+          "Whose TV station you?",
+          "Is you work at TV?",
+          "Are you a TV station?"
+        ],
+        "answer": "Do you work at a TV station?",
+        "explanation": "Do you work at ...? 可用于确认工作地点。",
+        "knowledge_point": "职业与工作场所",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30101,
+        "type": "choice",
+        "question": "cry 中 y 的读音与哪个词的 y 相同？",
+        "options": [
+          "fly",
+          "baby",
+          "happy",
+          "factory"
+        ],
+        "answer": "fly",
+        "explanation": "正确选项是 fly。cry、fly、shy 的词尾 y 与字母 I 的名称音相同；baby、factory、happy 的词尾 y 发另一种较短的音。",
+        "knowledge_point": "词尾y的两种读音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30102,
+        "type": "choice",
+        "question": "shy 中 y 的读音与哪个词的 y 相同？",
+        "options": [
+          "happy",
+          "cry",
+          "baby",
+          "factory"
+        ],
+        "answer": "cry",
+        "explanation": "正确选项是 cry。cry、fly、shy 的词尾 y 与字母 I 的名称音相同；baby、factory、happy 的词尾 y 发另一种较短的音。",
+        "knowledge_point": "词尾y的两种读音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30103,
+        "type": "choice",
+        "question": "baby 中词尾 y 的读音与哪个词的词尾 y 相同？",
+        "options": [
+          "shy",
+          "cry",
+          "fly",
+          "happy"
+        ],
+        "answer": "happy",
+        "explanation": "正确选项是 happy。cry、fly、shy 的词尾 y 与字母 I 的名称音相同；baby、factory、happy 的词尾 y 发另一种较短的音。",
+        "knowledge_point": "词尾y的两种读音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30104,
+        "type": "choice",
+        "question": "factory 中词尾 y 的读音与哪个词的词尾 y 相同？",
+        "options": [
+          "cry",
+          "shy",
+          "fly",
+          "baby"
+        ],
+        "answer": "baby",
+        "explanation": "正确选项是 baby。cry、fly、shy 的词尾 y 与字母 I 的名称音相同；baby、factory、happy 的词尾 y 发另一种较短的音。",
+        "knowledge_point": "词尾y的两种读音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30105,
+        "type": "choice",
+        "question": "哪组单词的词尾 y 都与 fly 的 y 同音？",
+        "options": [
+          "happy, factory",
+          "cry, shy",
+          "baby, factory",
+          "baby, happy"
+        ],
+        "answer": "cry, shy",
+        "explanation": "正确选项是 cry, shy。cry、fly、shy 的词尾 y 与字母 I 的名称音相同；baby、factory、happy 的词尾 y 发另一种较短的音。",
+        "knowledge_point": "词尾y的两种读音",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 30106,
+        "type": "choice",
+        "question": "哪个词的词尾 y 与 happy 的 y 不同？",
+        "options": [
+          "city",
+          "factory",
+          "shy",
+          "baby"
+        ],
+        "answer": "shy",
+        "explanation": "正确选项是 shy。cry、fly、shy 的词尾 y 与字母 I 的名称音相同；baby、factory、happy 的词尾 y 发另一种较短的音。",
+        "knowledge_point": "词尾y的两种读音",
+        "difficulty": 1,
+        "score": 10
+      }
+    ]
+  },
+  "exam": {
+    "title": "Workplaces·单元挑战",
+    "total_score": 60,
+    "time_minutes": 10,
+    "questions": [
+      {
+        "id": 39001,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“银行”？",
+        "options": [
+          "TV station",
+          "hotel",
+          "bank",
+          "police station"
+        ],
+        "answer": "bank",
+        "explanation": "bank 对应“银行”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 39002,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“旅馆”？",
+        "options": [
+          "TV station",
+          "bank",
+          "police station",
+          "hotel"
+        ],
+        "answer": "hotel",
+        "explanation": "hotel 对应“旅馆”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 39003,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“警察局”？",
+        "options": [
+          "police station",
+          "hotel",
+          "TV station",
+          "bank"
+        ],
+        "answer": "police station",
+        "explanation": "police station 对应“警察局”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 39004,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“电视台”？",
+        "options": [
+          "police station",
+          "hotel",
+          "bank",
+          "TV station"
+        ],
+        "answer": "TV station",
+        "explanation": "TV station 对应“电视台”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 39005,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“消防站”？",
+        "options": [
+          "bank",
+          "hotel",
+          "police station",
+          "fire station"
+        ],
+        "answer": "fire station",
+        "explanation": "fire station 对应“消防站”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 39006,
+        "type": "choice",
+        "question": "单元挑战：哪个英文词语对应“工厂”？",
+        "options": [
+          "factory",
+          "hotel",
+          "police station",
+          "bank"
+        ],
+        "answer": "factory",
+        "explanation": "factory 对应“工厂”。",
+        "knowledge_point": "单元词汇与短语（1）",
+        "difficulty": 1,
+        "score": 10
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "单元词汇与短语（1）",
+      "core_concept": "bank：银行；hotel：旅馆；police station：警察局；TV station：电视台；fire station：消防站；factory：工厂；farm：农场；hospital：医院。",
+      "key_formula": "",
+      "tips": "先在语境中理解词义，再听读并辨认英文。",
+      "common_mistakes": [
+        "注意单词、短语的含义和使用场景，不按字母外形猜词义。"
+      ]
+    },
+    {
+      "point": "单元词汇与短语（2）",
+      "core_concept": "Ms：女士（不指明婚姻状况）；please：请；sleep：睡觉；woman：女人；middle：中间的；中间；middle school：中学；Nice to see you!：很高兴再次见到你！。",
+      "key_formula": "",
+      "tips": "先在语境中理解词义，再听读并辨认英文。",
+      "common_mistakes": [
+        "注意单词、短语的含义和使用场景，不按字母外形猜词义。"
+      ]
+    },
+    {
+      "point": "询问工作与学习地点",
+      "core_concept": "用 Where do you work? 询问工作地点，用 Where do you study? 询问学习地点。",
+      "key_formula": "",
+      "tips": "work 表示工作，study 在这里表示学习；不要把地点回答成职业。",
+      "common_mistakes": [
+        "work 表示工作，study 在这里表示学习；不要把地点回答成职业。"
+      ]
+    },
+    {
+      "point": "职业与工作场所",
+      "core_concept": "根据上下文区分职业与场所，并用完整句子描述人物在哪里工作。",
+      "key_formula": "",
+      "tips": "farmer 是职业，farm 是场所；worker 是职业，factory 是场所。",
+      "common_mistakes": [
+        "farmer 是职业，farm 是场所；worker 是职业，factory 是场所。"
+      ]
+    },
+    {
+      "point": "词尾y的两种读音",
+      "core_concept": "cry、fly、shy 的词尾 y 与字母 I 的名称音相同；baby、factory、happy 的词尾 y 发另一种较短的音。",
+      "key_formula": "",
+      "tips": "不要把每个词尾 y 都读成同一种音。",
+      "common_mistakes": [
+        "不要把每个词尾 y 都读成同一种音。"
+      ]
+    }
+  ]
+}

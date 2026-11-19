@@ -34,6 +34,7 @@ from pinyin_speech import pinyin_speech, identity as pinyin_identity, audio_rel 
 ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = ROOT / "output"
 PASSAGES_DIR = ROOT / "data" / "passages"
+BUNDLED_PASSAGES_DIR = ROOT / "content" / "passages"
 STORIES_DIR = ROOT / "data" / "stories"
 MANIFEST_PATH = Path(__file__).resolve().parent / "manifest.json"
 
@@ -274,8 +275,9 @@ def collect():
     # 课文原文（语文/英语）—— data/passages/{subject}/{bookId}.json
     # 只收最终版（.json），不收草稿（.draft.json）
     # ---------------------------------------------------------
-    if PASSAGES_DIR.exists():
-        for passages_file in sorted(PASSAGES_DIR.rglob("*.json")):
+    passage_books = set()
+    for passages_dir in (PASSAGES_DIR, BUNDLED_PASSAGES_DIR):
+        for passages_file in sorted(passages_dir.rglob("*.json")):
             if passages_file.name.endswith(".draft.json"):
                 continue
             try:
@@ -285,6 +287,10 @@ def collect():
                 continue
 
             subject = pdoc.get("subject") or passages_file.parent.name
+            book_id = pdoc.get("bookId")
+            if book_id in passage_books:
+                raise ValueError(f"Duplicate reading source: {book_id}")
+            passage_books.add(book_id)
             grade = pdoc.get("grade") or parse_grade(passages_file.stem) or 3
 
             for passage in pdoc.get("passages") or []:

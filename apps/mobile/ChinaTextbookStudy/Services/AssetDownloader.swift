@@ -4,13 +4,6 @@ import ZIPFoundation
 
 // MARK: - Manifest models
 
-/// Per-bundle metadata (data zip OR audio zip).
-struct ManifestBundle: Codable, Hashable {
-    let name: String
-    let bytes: Int64
-    let sha256: String
-}
-
 /// One entry per book in `ios-manifest.json`.
 struct ManifestEntry: Codable, Hashable, Identifiable {
     let bookId: String
@@ -61,7 +54,7 @@ final class AssetDownloader: ObservableObject {
 
     /// GitHub Release base URL. Update this when cutting a new iOS asset tag.
     /// The script outputs files like `audio-ios-<bookId>.zip` + `data-<bookId>.zip` + `ios-manifest.json`.
-    var releaseBaseURL = URL(string: "https://github.com/wuwangzhang1216/congcong-school/releases/download/v1.8.0-ios-resources")!
+    var releaseBaseURL = URL(string: "https://github.com/wuwangzhang1216/congcong-school/releases/download/v1.8.3-ios-resources")!
 
     @Published private(set) var manifest: IosManifest?
     @Published private(set) var bookProgress: [String: Double] = [:]   // bookId → 0...1
@@ -283,7 +276,7 @@ final class AssetDownloader: ObservableObject {
         weight: Double,
         bookId: String
     ) async throws {
-        let url = releaseBaseURL.appendingPathComponent(bundle.name)
+        let url = try bundle.downloadURL(relativeTo: releaseBaseURL)
         let (tempURL, resp) = try await session.download(from: url) { [weak self] received, expected in
             guard let self else { return }
             // expected may be -1 on chunked responses; fall back to manifest bytes

@@ -1,0 +1,119 @@
+{
+  "textbook": "（根据2022年版课程标准修订）义务教育教科书·英语 五年级上册（精通·2026秋版）",
+  "unit": "Revision 1",
+  "unit_number": 101,
+  "unit_test": {
+    "title": "Revision 1",
+    "total_score": 60,
+    "time_minutes": 10,
+    "questions": [
+      {
+        "id": 1010001,
+        "type": "choice",
+        "question": "综合复习：哪个词组可以接在 I am from 后面表示国家？",
+        "options": [
+          "doctor",
+          "a job",
+          "my pencil",
+          "Egypt"
+        ],
+        "answer": "Egypt",
+        "explanation": "Egypt 是国家名，表示埃及。",
+        "knowledge_point": "Revision 1·综合运用",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 1010002,
+        "type": "choice",
+        "question": "综合复习：选择正确表达“它以古老建筑闻名”的句子。",
+        "options": [
+          "It is from its old buildings.",
+          "It is famous its old buildings.",
+          "It is famous for its old buildings.",
+          "It are famous for its old buildings."
+        ],
+        "answer": "It is famous for its old buildings.",
+        "explanation": "主语 It 使用 is，famous for 后说明特色。",
+        "knowledge_point": "Revision 1·综合运用",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 1010003,
+        "type": "choice",
+        "question": "综合复习：你的爸爸是工人，应该怎样介绍？",
+        "options": [
+          "My father is a work.",
+          "My father is a worker.",
+          "My father is a factory.",
+          "My father are a worker."
+        ],
+        "answer": "My father is a worker.",
+        "explanation": "worker 表示工人，factory 表示工厂。",
+        "knowledge_point": "Revision 1·综合运用",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 1010004,
+        "type": "choice",
+        "question": "综合复习：选择正确表达“我想像妈妈一样当记者”的句子。",
+        "options": [
+          "I wants to be a reporter.",
+          "I want to be a report.",
+          "I want to reporter be my mother.",
+          "I want to be a reporter like my mother."
+        ],
+        "answer": "I want to be a reporter like my mother.",
+        "explanation": "want to be 表达理想；like my mother 表示像妈妈一样。",
+        "knowledge_point": "Revision 1·综合运用",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 1010005,
+        "type": "choice",
+        "question": "综合复习：Ms Chen 是对陈老师的称呼。Ms 有什么含义？",
+        "options": [
+          "只用于已婚女性",
+          "只用于未婚女性",
+          "只用于男性",
+          "女士，不指明婚姻状况"
+        ],
+        "answer": "女士，不指明婚姻状况",
+        "explanation": "Ms 不说明女性是否结婚，可用于姓氏前。",
+        "knowledge_point": "Revision 1·综合运用",
+        "difficulty": 1,
+        "score": 10
+      },
+      {
+        "id": 1010006,
+        "type": "choice",
+        "question": "综合复习：想确认对方是否在电视台工作，哪句合适？",
+        "options": [
+          "Do you work at a TV station?",
+          "Whose TV station you?",
+          "Is you work at TV?",
+          "Are you a TV station?"
+        ],
+        "answer": "Do you work at a TV station?",
+        "explanation": "Do you work at ...? 可用于确认工作地点。",
+        "knowledge_point": "Revision 1·综合运用",
+        "difficulty": 1,
+        "score": 10
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "Revision 1·综合运用",
+      "core_concept": "结合情境复习国家、职业与工作地点。",
+      "key_formula": "",
+      "tips": "先判断问题问的是人物、地点、职业还是物品归属，再选择回答。",
+      "common_mistakes": [
+        "不要只凭一个熟悉的单词作答，要读完整句话。"
+      ]
+    }
+  ]
+}

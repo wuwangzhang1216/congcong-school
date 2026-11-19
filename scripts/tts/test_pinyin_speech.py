@@ -18,7 +18,7 @@ class PinyinContract(unittest.TestCase):
     p=out/subject/'quizzes';p.mkdir(parents=True)
     (p/'测试一年级上册_unit1.json').write_text(json.dumps({'unit_test':{'questions':[{'options':['b','an','ā']}]}}))
    manifest=root/'manifest.json'
-   with patch.multiple(collector,OUTPUT_DIR=out,PASSAGES_DIR=root/'absent',STORIES_DIR=root/'absent',MANIFEST_PATH=manifest),contextlib.redirect_stdout(io.StringIO()):collector.collect()
+   with patch.multiple(collector,OUTPUT_DIR=out,PASSAGES_DIR=root/'absent',BUNDLED_PASSAGES_DIR=root/'absent',STORIES_DIR=root/'absent',MANIFEST_PATH=manifest),contextlib.redirect_stdout(io.StringIO()):collector.collect()
    items=json.loads(manifest.read_text())['items']
    for text in ['b','an']:
     rows=[x for x in items if x['text']==text];self.assertEqual(len(rows),2)

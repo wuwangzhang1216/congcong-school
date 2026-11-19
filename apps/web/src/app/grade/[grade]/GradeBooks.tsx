@@ -43,7 +43,7 @@ export default function GradeBooks({ books }: { books: Book[] }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:gap-5">
           {subjectBooks.map(book => <SoundLink
             key={book.id} href={`/book/${book.id}/`}
-            aria-label={`${subject.label} ${book.textbookName}，${book.unitsCount} 单元${book.activitiesCount ? `，${book.activitiesCount} 个实践活动` : ""}，${book.lessonsCount} 节小课`}
+            aria-label={`${subject.label} ${book.textbookName}，${book.unitsCount} 单元${book.activitiesCount ? `，${book.activitiesCount} 个拓展板块` : ""}，${book.lessonsCount} 节小课`}
             hapticIntensity="medium"
             className="duo-chunky-card ui-book-card group relative block rounded-2xl border-2 border-bg-softer select-none overflow-hidden"
           >
@@ -54,8 +54,9 @@ export default function GradeBooks({ books }: { books: Book[] }) {
                   {book.gradeName}{book.semesterName}
                   {book.editionLabel && <span className="ml-1 text-xs">（{book.editionLabel}）</span>}
                 </div>
+                {book.publisherLabel && <div className="text-sm font-bold text-ink-light mt-1">{book.publisherLabel}</div>}
                 <div className="text-sm text-ink-light mt-1">
-                  {book.unitsCount} 单元{book.activitiesCount ? ` · ${book.activitiesCount} 个实践活动` : ""} · {book.lessonsCount} 节小课
+                  {book.unitsCount} 单元{book.activitiesCount ? ` · ${book.activitiesCount} 个拓展板块` : ""} · {book.lessonsCount} 节小课
                 </div>
                 {book.sourceEdition && <div className="text-sm text-ink-light mt-1">{book.sourceEdition}</div>}
               </div>

@@ -7,6 +7,13 @@ export type FetchLesson = (
   init?: RequestInit,
 ) => Promise<Response>;
 
+export function reviewLessonBookId(lessonId: unknown): string | undefined {
+  if (typeof lessonId !== "string") return undefined;
+  // Edition suffixes belong to the book slug. Match the unit and lesson at the
+  // end and only accept path-safe slugs.
+  return /^([a-z0-9]+(?:-[a-z0-9]+)*)-u\d+-(?:kp\d+|exam)$/.exec(lessonId)?.[1];
+}
+
 function validateLesson(lesson: Lesson, id: string): void {
   if (
     lesson.id !== id ||
@@ -45,13 +52,8 @@ export async function loadReviewLessons(
 ): Promise<LessonMap> {
   const lessons = await Promise.all(
     [...new Set(entries.map((entry) => entry.lessonId))].map(async (id) => {
-      if (
-        !/^(?:(?:chinese|english|science)-)?g[1-6](?:up|down)(?:-\d{4})?-u\d+-(?:kp\d+|exam)$/.test(
-          id,
-        )
-      )
-        throw new Error("Invalid lesson id");
-      const book = id.split("-u")[0];
+      const book = reviewLessonBookId(id);
+      if (!book) throw new Error("Invalid lesson id");
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), timeoutMs);
       try {

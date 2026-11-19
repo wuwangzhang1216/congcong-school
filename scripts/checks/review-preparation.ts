@@ -20,6 +20,30 @@ const due: SrsMistakeEntry = {
   nextReviewDate: "2020-01-01",
 };
 async function main() {
+  const publishedPaths = [
+    ["g1up", "g1up-u1-kp2"],
+    ["g1up-54-qingdao", "g1up-54-qingdao-u101-kp1"],
+    ["english-g3up-54-luke", "english-g3up-54-luke-u1-exam"],
+    ["english-g5up-jingtong-2026", "english-g5up-jingtong-2026-u1-kp1"],
+  ];
+  const published = new Map(publishedPaths.map(([book, id]) => [
+    `/data/books/${book}/lessons/${id}.json`,
+    { id, title: "当前练习", questions: [question] },
+  ]));
+  const mixedBank = publishedPaths.map(([, lessonId]) => ({
+    ...due,
+    lessonId,
+    question: { ...question, question: "旧题面" },
+  }));
+  const mixed = await prepareReview(mixedBank, false, undefined, async url => {
+    const lesson = published.get(url.split("?")[0]);
+    return lesson ? Response.json(lesson) : new Response(null, { status: 404 });
+  });
+  assert.deepEqual(mixed.items.map(item => item.lessonId), mixedBank.map(entry => entry.lessonId));
+  assert(mixed.items.every(item => item.scheduled && item.question.question === question.question),
+    "mixed editions must load their published questions in the same scheduled round");
+  assert.equal(mixed.retiredCount, 0);
+
   const bank = [
     ...Array.from({ length: 5 }, (_, i) => ({
       ...due,
@@ -53,7 +77,7 @@ async function main() {
     false,
     "course fallback does not advance or create SRS entries",
   );
-  console.log("PASS: deleted-question refill and empty-bank source practice.");
+  console.log("PASS: mixed-edition review, deleted-question refill and empty-bank source practice.");
 }
 main().catch((e) => {
   console.error(e);

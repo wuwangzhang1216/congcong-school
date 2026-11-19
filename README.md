@@ -5,7 +5,7 @@
 <details>
 <summary>版本与资源说明</summary>
 
-> **当前版本 v1.8.2**：修复计算填空题超过 10 个字符无法完整输入的问题；安装器支持按分包增量更新和下载量预览。继承 v1.8.1 的前台续学计时修复，以及 v1.8.0 新增的26册五四制教材：青岛版数学、科学各10册（小学1—5年级上下册），鲁科版英语6册（3—5年级上下册）。按原书版次与目录独立编排，增加1,585个常规课时、244个单元挑战和375组英语听读，新增音频使用Edge。五四制与六三制分别选书，新教材使用独立ID，原58册教材和成绩保留。来源为2010—2022年间的相应版次，并非“2026最新版”；[逐册版次、ISBN与目录核对](docs/five-four-2026-10-27/README.md)。继承v1.7.3首课互动、v1.7.2拼音朗读及此前修订教材。#12的教师、儿童与真机验收仍待完成。
+> **当前版本 v1.8.3**：新增人教版（精通）五年级上册（2026秋版），与 PEP 并列，保留原有教材和成绩。新增6个单元、2节复习、96条词汇、32节小课、216道练习和36道挑战题；词汇、题目与讲解音频齐全，新增847条语音由Edge TTS生成，另复用197条既有音频。听读覆盖单元词汇，不包含全册课文、歌曲或原页点读。[来源与范围](docs/issue-62-jingtong-2026.md)。继承长数字输入、资源增量更新和续学计时修复。#12的教师、儿童与真机验收仍待完成。
 
 </details>
 
@@ -122,7 +122,7 @@
 | 功能 | 说明 |
 |------|------|
 | **单元小测** | 跟着课本章节走，学完一课就能练 |
-| **知识讲解** | 4,448节常规课均有知识讲解，题组每课至少6题；[五四制来源与范围](docs/five-four-2026-10-27/README.md) |
+| **知识讲解** | 4,480节常规课均有知识讲解，题组每课至少6题；[五四制来源与范围](docs/five-four-2026-10-27/README.md) |
 | **课文听读** | 语文/英语课文逐句朗读，支持跟读练习，展示课本原页 |
 | **跟读录音** | 浏览器内录音与回放，不上传录音；需要 HTTPS 和麦克风授权，暂无语音识别评分 |
 | **课外故事** | 每单元 2 篇 AI 分级故事 + 阅读理解题 + 儿童插画配图 |
@@ -143,7 +143,9 @@
 | 英语 | 人教版 PEP | 三至六年级 | 96 篇 |
 | 科学 | 教科版 | 一至六年级 | — |
 
-**当前资源规模（v1.8.2）**：84册教材版本（70册当前版本、14册旧版兼容），其中六三制58册、五四制26册；4,448个常规课时、629个单元挑战，常规题27,669道、挑战题6,339道，另有1,311篇/组课文和284篇故事。这是资源覆盖统计，不代表所有题目已通过教师逐题审核。
+**当前资源规模（v1.8.3）**：85册教材版本（71册当前版本、14册旧版兼容），其中六三制59册、五四制26册；4,480个常规课时、635个单元挑战，常规题27,885道、挑战题6,375道，另有1,317篇/组课文和284篇故事。这是资源覆盖统计，不代表所有题目已通过教师逐题审核。
+
+人教精通五上已纳入本版教材与语音资源，独立 ID 为 `english-g5up-jingtong-2026`；来源、覆盖范围和构建方法见 [#62 教材说明](docs/issue-62-jingtong-2026.md)。
 
 **历史审计状态（v1.4.3，非当前规模）**：原补齐版的 2,356 课、15,117 道常规题及讲解已恢复；保留 2026 秋版二上数学的 28 课、168 题，以及三节视觉数感示范的 18 题。原数感课的 24 道题另保留为三节巩固练习，旧错题仍可按原记录复习。全库共 2,387 节常规课、15,303 题，缺讲解 0、单题课 0、少于六题课 0。题目及故事题共 20,804 道通过实际判分检查，音频与 Docker 验证通过；教师签审仍为独立待办。详见 [本版审计及验证记录](docs/content-audit-v1.4.3.md)。
 
@@ -160,18 +162,18 @@
 ```sh
 git clone --branch main https://github.com/wuwangzhang1216/ChinaTextbookStudyFree.git
 cd ChinaTextbookStudyFree
-docker compose build --build-arg ASSETS_RELEASE=v1.8.2
+docker compose build --build-arg ASSETS_RELEASE=v1.8.3
 docker compose up -d --no-build --wait --wait-timeout 120
 ```
 
-打开 [http://localhost:8080](http://localhost:8080)。首次构建自动下载、校验 `v1.8.2` 全部资源，复用已验证的 MP3 与转换缓存，再构建网站。
+打开 [http://localhost:8080](http://localhost:8080)。首次构建自动下载、校验 `v1.8.3` 全部资源，复用已验证的 MP3 与转换缓存，再构建网站。
 
 **从旧版升级**：升级前备份自定义代码，在原项目根目录执行以下命令，并保留原来的 `.env`、Compose 项目名和访问协议、域名/IP、端口；如原先使用 `-p`、`-f` 等参数，以下每条 `docker compose` 命令都沿用这些参数。构建完成后再替换容器，浏览器学习记录继续保存在同一地址下。
 
 ```sh
 git switch main
 git pull --ff-only origin main
-docker compose build --build-arg ASSETS_RELEASE=v1.8.2
+docker compose build --build-arg ASSETS_RELEASE=v1.8.3
 docker compose up -d --no-build --force-recreate --wait --wait-timeout 120
 ```
 
@@ -201,14 +203,14 @@ cd ChinaTextbookStudyFree
 
 ### 2. 下载或升级完整资源
 
-音频、图片和配套数据通过 [v1.8.2 Release](https://github.com/wuwangzhang1216/ChinaTextbookStudyFree/releases/tag/v1.8.2) 分发。音频按体积分为多个独立 ZIP，每个不超过 1.4 GB；新版安装器先逐文件校验已有资源，仅下载需要更新的分包，解压后再次核验，已有目录也会正常更新。
+音频、图片和配套数据通过 [v1.8.3 Release](https://github.com/wuwangzhang1216/ChinaTextbookStudyFree/releases/tag/v1.8.3) 分发。音频按体积分为多个独立 ZIP，每个不超过 1.4 GB；新版安装器先逐文件校验已有资源，仅下载需要更新的分包，解压后再次核验，已有目录也会正常更新。
 
 ```bash
 # macOS / Linux：在仓库根目录执行
-python3 scripts/install-release.py --tag v1.8.2
+python3 scripts/install-release.py --tag v1.8.3
 
 # Windows PowerShell
-py -3 scripts/install-release.py --tag v1.8.2
+py -3 scripts/install-release.py --tag v1.8.3
 ```
 
 完整包包含 MP3、原路径音频、数据、配图和课本原页，以及可选的匹配源码与现成网站。`manifest.json`、`files.jsonl` 和 `SHA256SUMS` 提供附件及逐文件校验。仓库中的新版安装器默认按分包增量更新：本地文件与目标版本完全一致的包不再下载，`--dry-run` 可预览所需包及大小。首次完整安装建议预留至少 80 GB 用于下载、暂存和安装，已有备份另计；有本地修改时先备份。增量更新、单独资源下载、离线安装及验证命令见 [安装与升级说明](docs/release-install.md)。
@@ -225,7 +227,7 @@ npm run dev
 **直接使用现成网站**：无需 Git、Node.js 或 FFmpeg。从 Release 下载新版 `install-release.py`，执行：
 
 ```bash
-python3 install-release.py --tag v1.8.2 --mode static --root ChinaStudyFree-site
+python3 install-release.py --tag v1.8.3 --mode static --root ChinaStudyFree-site
 python3 -m http.server 8080 --directory ChinaStudyFree-site
 ```
 
