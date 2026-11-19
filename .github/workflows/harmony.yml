@@ -1,0 +1,27 @@
+name: Harmony host regressions
+on:
+  pull_request:
+    paths:
+      - 'apps/harmony/**'
+      - 'apps/web/src/app/layout.tsx'
+      - 'scripts/*harmony*'
+      - 'scripts/checks/harmony-*'
+      - 'package*.json'
+      - '.github/workflows/harmony.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  host-tests:
+    name: Resource and policy tests (not SDK compilation)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run harmony:test
+      - run: npm test
+      - run: npm run type-check

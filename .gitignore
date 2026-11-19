@@ -71,3 +71,16 @@ release-assets/
 
 # Local build verification and audio conversion cache
 deploy-output/
+
+# Harmony generated bundles, local SDK and signing files
+apps/harmony/entry/src/main/resources/rawfile/site/
+apps/harmony/.hvigor/
+apps/harmony/build/
+apps/harmony/entry/build/
+apps/harmony/local.properties
+apps/harmony/build-profile.local.json5
+apps/harmony/*.p12
+apps/harmony/*.cer
+apps/harmony/*.p7b
+apps/harmony/oh_modules/
+apps/harmony/entry/oh_modules/

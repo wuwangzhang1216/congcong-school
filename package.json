@@ -13,7 +13,12 @@
     "test": "npm test --workspace=@cstf/core",
     "check:web-experience": "tsx --tsconfig scripts/checks/tsconfig.json scripts/checks/answer-feedback.tsx && tsx --tsconfig scripts/checks/tsconfig.json scripts/checks/text-answer-keyboard.tsx && tsx --tsconfig scripts/checks/tsconfig.json scripts/checks/numeric-answer-keyboard.tsx && tsx --tsconfig scripts/checks/tsconfig.json scripts/checks/jump-loading.ts && tsx --tsconfig scripts/checks/tsconfig.json scripts/checks/reading-session.ts && tsx --tsconfig scripts/checks/tsconfig.json scripts/checks/recorder-lifecycle.ts && tsx scripts/checks/theme-colors.ts",
     "check:learning-quality": "tsx --tsconfig scripts/checks/tsconfig.json scripts/checks/weekly-learning.tsx && tsx --tsconfig scripts/checks/tsconfig.json scripts/checks/number-sense.tsx && tsx --tsconfig scripts/checks/tsconfig.json scripts/checks/current-first-lesson.tsx",
-    "check:visual-controls": "tsx --tsconfig scripts/checks/tsconfig.json scripts/checks/visual-controls.tsx"
+    "check:visual-controls": "tsx --tsconfig scripts/checks/tsconfig.json scripts/checks/visual-controls.tsx",
+    "harmony:prepare-web": "node scripts/package-harmony-web.mjs",
+    "harmony:assets-server": "node scripts/harmony-assets-server.mjs",
+    "harmony:test": "node --test scripts/harmony-*.test.mjs && node scripts/run-python.mjs scripts/checks/harmony-package.py",
+    "harmony:build": "node scripts/harmony-build.mjs",
+    "harmony:fetch-assets": "node scripts/run-python.mjs scripts/fetch-harmony-resources.py"
   },
   "devDependencies": {
     "react-test-renderer": "19.2.5"

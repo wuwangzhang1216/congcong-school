@@ -1,0 +1,13 @@
+{
+  apiType: "stageMode",
+  buildOption: {
+    sourceOption: {
+      workers: ["./src/main/ets/workers/assetWorker.ts"],
+    },
+  },
+  targets: [
+    {
+      name: "default",
+    },
+  ],
+}
