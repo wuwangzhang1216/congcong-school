@@ -1039,7 +1039,7 @@ export function LessonRunner({ lesson, chestSlot = null, nextLessonId }: LessonR
       try {
         clearLessonSession();
       } catch {
-        /* 清理失败也继续刷新，至少能离开这一屏 */
+        /* 本地存储不可用时仍允许尝试重新加载。 */
       }
       if (typeof window !== "undefined") window.location.reload();
     };
@@ -1048,7 +1048,7 @@ export function LessonRunner({ lesson, chestSlot = null, nextLessonId }: LessonR
         <Mascot size={128} mood="think" animate={false} />
         <h1 className="text-2xl font-extrabold text-ink mt-6">这道题出了点问题</h1>
         <p className="text-sm text-ink-light leading-relaxed mt-3 max-w-xs">
-          题目数据没有加载完整，已经记录下来。回到首页换个内容，或者重新开始这节课。
+          这节课暂时没有可显示的题目。可以重新开始这节课，或者返回学习页面换个内容。
         </p>
         <div className="flex flex-col gap-3 mt-7 w-full max-w-[256px]">
           <button type="button" onClick={restartLesson} className="btn-chunky-primary w-full">

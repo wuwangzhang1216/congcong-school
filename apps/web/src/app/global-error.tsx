@@ -12,7 +12,7 @@ import { useEffect } from 'react';
  * 依赖项目样式或组件可能再次报错，所以用内联样式保证一定能渲染出来。
  */
 const MESSAGES: Record<string, string> = {
-  zh: '应用启动时出了点问题。刷新一下通常就能恢复，学习记录都还在。',
+  zh: '应用启动时出了点问题。可以先重试一次，或者返回首页。',
 };
 
 export default function GlobalError({
