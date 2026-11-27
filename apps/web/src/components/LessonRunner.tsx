@@ -1029,10 +1029,35 @@ export function LessonRunner({ lesson, chestSlot = null, nextLessonId }: LessonR
   }
 
   if (!current) {
-    // 数据异常兜底（题目为空的课程）
+    // 数据异常兜底：题目为空，或存档里的 currentId 在当前题库中已找不到
+    // （题库更新、会话恢复后内容变更都会走到这里）
+    //
+    // 早期版本这里只渲染一个 Mascot 图标，没有文字说明也没有任何操作入口，
+    // 用户答到一半碰到就只能杀掉 App 重进，而且这节课的进度会丢失。
+    // 现在补齐说明和两条出路：回首页 / 清掉坏会话重开这节课。
+    const restartLesson = () => {
+      try {
+        clearLessonSession();
+      } catch {
+        /* 本地存储不可用时仍允许尝试重新加载。 */
+      }
+      if (typeof window !== "undefined") window.location.reload();
+    };
     return (
-      <main className="min-h-screen bg-bg-soft flex items-center justify-center">
-        <Mascot mood="think" size={100} />
+      <main className="min-h-screen bg-bg-soft flex flex-col items-center justify-center px-6 py-12 text-center">
+        <Mascot size={128} mood="think" animate={false} />
+        <h1 className="text-2xl font-extrabold text-ink mt-6">这道题出了点问题</h1>
+        <p className="text-sm text-ink-light leading-relaxed mt-3 max-w-xs">
+          这节课暂时没有可显示的题目。可以重新开始这节课，或者返回学习页面换个内容。
+        </p>
+        <div className="flex flex-col gap-3 mt-7 w-full max-w-[256px]">
+          <button type="button" onClick={restartLesson} className="btn-chunky-primary w-full">
+            重新开始这节课
+          </button>
+          <Link href="/" className="btn-chunky-ghost w-full">
+            返回学习页面
+          </Link>
+        </div>
       </main>
     );
   }
@@ -1750,7 +1775,28 @@ function IntroCard({
     setPageIdx(i => i - 1);
   }
 
-  if (!current) return null;
+  if (!current) {
+    // 讲解页数据缺失（knowledge 字段不全或内容更新后不匹配）时的兜底。
+    // 早期版本这里直接 return null，整屏一片空白，用户既看不了讲解也退不出去。
+    // 现在给出两条出路：直接进入练习，或返回学习页面。
+    return (
+      <main className="min-h-screen bg-bg flex flex-col items-center justify-center px-6 py-12 text-center">
+        <Mascot size={128} mood="think" animate={false} />
+        <h1 className="text-2xl font-extrabold text-ink mt-6">这节课的讲解还没准备好</h1>
+        <p className="text-sm text-ink-light leading-relaxed mt-3 max-w-xs">
+          可以直接开始练习，或者返回学习页面换个内容。
+        </p>
+        <div className="flex flex-col gap-3 mt-7 w-full max-w-[256px]">
+          <button type="button" onClick={onStart} className="btn-chunky-primary w-full">
+            直接开始练习
+          </button>
+          <button type="button" onClick={onExit} className="btn-chunky-ghost w-full">
+            返回学习页面
+          </button>
+        </div>
+      </main>
+    );
+  }
   const Icon = current.icon;
 
   return (
